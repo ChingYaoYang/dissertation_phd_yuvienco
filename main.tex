@@ -25,9 +25,9 @@
 %% Page Intentionally Left Blank'', use the ``leftblank'' option, as
 %% above. 
 
-\documentclass[12pt]{mitthesis}
+\documentclass[11pt,draft]{mitthesis}
 \usepackage{lgrind}
-\pagestyle{plain}
+\pagestyle{drafthead}
 
 %% This bit allows you to either specify only the files which you wish to
 %% process, or `all' to process all files which you \include.
@@ -36,18 +36,20 @@
 
 \begin{document}
  
-\include{cover}
+%\include{cover}
 
 % Some departments (e.g. 5) require an additional signature page.  See
 % signature.tex for more information and uncomment the following line if
 % applicable.
-\include{signature}
-\pagestyle{plain}
-\include{contents}
+%\include{signature}
+%\pagestyle{drafthead}
+%\include{contents}
 \pagenumbering{arabic}
 \include{chap1}
-\appendix
+%\appendix
 %\include{appa}
 %\include{appb}
-\include{biblio}
+
+\bibliography{main}
+\bibliographystyle{achemso}
 \end{document}
