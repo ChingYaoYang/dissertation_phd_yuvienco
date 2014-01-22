@@ -32,7 +32,8 @@
 %% This bit allows you to either specify only the files which you wish to
 %% process, or `all' to process all files which you \include.
 %% Krishna Sethuraman (1990).
-\usepackage[round,numbers,sort&compress]{natbib}
+\usepackage[backend=biber,doi=false,url=false,maxnames=10,firstinits,citestyle=numeric-comp,bibstyle=nature]{biblatex}
+\addbibresource{main.bib}
 
 \begin{document}
  
@@ -50,6 +51,4 @@
 %\include{appa}
 %\include{appb}
 
-\bibliography{main}
-\bibliographystyle{achemso}
 \end{document}
