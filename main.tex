@@ -32,8 +32,13 @@
 %% This bit allows you to either specify only the files which you wish to
 %% process, or `all' to process all files which you \include.
 %% Krishna Sethuraman (1990).
-\usepackage[backend=biber,doi=false,url=false,maxnames=10,firstinits,citestyle=numeric-comp,bibstyle=nature]{biblatex}
-\addbibresource{main.bib}
+\usepackage[backend=biber,doi=false,isbn=false,url=false,maxnames=10,firstinits,citestyle=numeric-comp,bibstyle=nature]{biblatex}
+\bibliography{thesis.bib}
+
+% Figure inclusion
+
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
 
 \begin{document}
  
