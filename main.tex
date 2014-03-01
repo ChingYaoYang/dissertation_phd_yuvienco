@@ -27,7 +27,7 @@
 
 \documentclass[11pt,draft]{mitthesis}
 \usepackage{lgrind}
-\pagestyle{drafthead}
+\pagestyle{plain}
 
 %% This bit allows you to either specify only the files which you wish to
 %% process, or `all' to process all files which you \include.
@@ -39,6 +39,13 @@
 
 \usepackage{graphicx}
 \graphicspath{{../figures/}}
+
+\newcommand{\blankpage}{
+    \newpage
+    \thispagestyle{empty}
+    \mbox{}
+    \newpage
+}
 
 \begin{document}
  
@@ -52,6 +59,7 @@
 %\include{contents}
 \pagenumbering{arabic}
 \include{chap1}
+\include{chap2}
 %\appendix
 %\include{appa}
 %\include{appb}
