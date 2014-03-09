@@ -40,12 +40,17 @@
 \usepackage{graphicx}
 \graphicspath{{../figures/}}
 
+% Blank page definition
+
 \newcommand{\blankpage}{
     \newpage
     \thispagestyle{empty}
     \mbox{}
     \newpage
 }
+
+% SI Units declaration
+\usepackage{siunitx}
 
 \begin{document}
  
@@ -56,10 +61,10 @@
 % applicable.
 %\include{signature}
 %\pagestyle{drafthead}
-%\include{contents}
+\include{contents}
 \pagenumbering{arabic}
 \include{chap1}
-\include{chap2}
+%\include{chap2}
 %\appendix
 %\include{appa}
 %\include{appb}
