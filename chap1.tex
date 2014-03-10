@@ -15,16 +15,22 @@ research, enabling the fabrication of polymers with monodisperse molecular
 weights, a diverse set of side chain functionality, and well-defined secondary
 structure elements.\cite{
 Yoshikawa1994,Wang2001,Rabotyagova2009,Martin2009,Dinerman2002,Megeed2002,Haider2004,Wright2002,Banta2010,Link2003,Straley2009,Rabotyagova2011}
+
+\begin{figure}[h!] \centering \includegraphics[width=0.7\textwidth]{f_1_03}
+    \caption{The predominant methodologies of protein
+        engineering.\cite{VanHest2001}}\label{fig:protein_engineering_methods} \end{figure}
+    
 Compared against a backdrop of predominant synthetic polymers, protein polymers,
 particularly those generated via high-fidelity recombinant DNA technologies,
 exhibit defined molecular weight, composition, sequence, and
-stereochemistry.\cite{} While proteins are not alone amongst engineered
-materials of biological origin, they exist as the intersection of biological
-function and structure. The latter feature spans the gamut of length scales,
-ranging from the nanoscopic to the macroscopic, with notable examples including
-actin filaments in the intracellular milieu to the silk fibers visible to the
-naked eye.\cite{Rabotyagova2009} Their frequent roles as both sensors and
-chemical catalysts are testaments to their functional impact on nature.
+stereochemistry.\cite{VanHest2001} While proteins are not alone amongst
+engineered materials of biological origin, they exist as the intersection of
+biological function and structure. The latter feature spans the gamut of length
+scales, ranging from the nanoscopic to the macroscopic, with notable examples
+including actin filaments in the intracellular milieu to the silk fibers visible
+to the naked eye.\cite{Rabotyagova2009,Megeed2002,Nagarsekar2002} Their frequent
+roles as both sensors and chemical catalysts are testaments to their functional
+impact on nature.
 
 % Begin to focus on example of proteins that have secondary structural motifs
 % that abstract themselves to higher order structures, such as fibers.
@@ -113,13 +119,13 @@ genetic code. In 2001, the Schultz group reported on the development of a unique
 transfer RNA (tRNA)/aminoacyl-tRNA synthetase pair that were genetically
 engineered to exist as orthongal complments to their endogenous analogues, as
 well as associate the encoding for the amber nonsense codon with a non-natural
-amino acid - O-methyl-L-tyrosine. The group was able to thus incorporate a
+amino acid - \iupac{\ortho-methyl-\L-tyrosine}. The group was able to thus incorporate a
 non-natural, synthetic amino acid with notably high fidelity
 (99\%).\cite{Wang2001} This method relies on the translation suppression of
 endogenous amber nonsense codons, which is addressed by the orthogonal nature of
 the system's design. Similarly, Kwon and coworkers have been able to reassign
 one of the degenerate codons (UUU) that correspond to phenylalanine to encode
-for 2-naphthylalanine.\cite{Kwon2003}
+for \iupac{2-naphthylalanine}.\cite{Kwon2003}
 
 Other groups have pushed the envelope still further with this technique,
 reimagining the genetic code itself.
@@ -136,6 +142,10 @@ particular identity within a given sequence. It is made possible by two
 prominent factors: 1) the promiscuity and relaxed specificity of aminoacyl-tRNA
 synthetase endogenous to certain expression hosts, and 2) the existence of
 auxotrophic expression hosts.
+
+\begin{figure}[h!] \centering \includegraphics[width=0.7\textwidth]{f_1_02}
+    \caption{Terminal pathway of phenylalanine
+        biosynthesis.\cite{Yoshikawa1994}}\label{fig:chorismate_pathway} \end{figure}
 
 \subsection{Fluorinated amino acids}
 
@@ -201,11 +211,11 @@ proteins.\cite{Voloshchuk2009,Yoshikawa1994}
 Plasmids were transformed into AF-IQ cells via electroporation using the
 following parameters on an electroporator (BioRad, Inc.) The cells were then
 plated onto a tryptic soy agar plate, 40
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\g\per\L},
+\si{\g\per\L},
 supplemented with ampicillin (200 
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL})
+\si{\ug\per\mL})
 and chloramphenicol (35
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL}), and
+\si{\ug\per\mL}), and
 allowed to grow overnight at 37 \si{\celsius}. Single colonies were then picked
 and used to inoculate starter cultures, grown in M9 minimal media, supplemented
 with the following components:
@@ -218,20 +228,13 @@ with the following components:
   \multicolumn{2}{|c|}{Component (Final Concentrations)} \\
   \hline
 
-  ampicillin & 200 
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL} \\
-  chloramphenicol & 35 
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL} \\
-  thiamine hydrochloride & 35 
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL} \\
-  magnesium sulfate & 35 
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL} \\
-  calcium chloride & 35 
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL} \\
-  glucose & 35 
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL} \\
-  20 amino acids & 1
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\mg\per\mL} \\
+  ampicillin & \SI{200}{ug\per\mL} \\
+  chloramphenicol & \SI{200}{ug\per\mL} \\
+  thiamine hydrochloride & \SI{200}{ug\per\mL} \\
+  magnesium sulfate & \SI{200}{ug\per\mL} \\
+  calcium chloride & \SI{200}{ug\per\mL} \\
+  glucose & \SI{200}{ug\per\mL} \\
+  20 amino acids & \SI{1}{ug\per\mL} \\
 
   \hline
 \end{tabular}
@@ -241,52 +244,159 @@ with the following components:
 
 Cells were grown in M9 supplemented media in two stages - a pre-induction stage
 and a post-induction stage - which are separated by a media shift step.  The
-starter culture was used to inoculate a larger 200 \si{mL} culture, as 4\% v/v,
-grown in pre-induction M9 media as per Table \ref{tab:preinduction_recipe}.  The
-culture was then allowed to grow in a 1 \si{L} flask for 6 \si{h} at 37
-\si{celsius}, shaking at 350 \si{rpm}. The culture was subsequently harvested
-and pelleted via centrifugation. The pellet was subjected to resuspension in a
-volumetric equivalent of 0.9\% w/v NaCl solution, followed by centrifugation.
-This ``wash'' step was performed 2 times in an effort to deplete the media of
+starter culture was used to inoculate a larger \SI{200}{\mL} culture, as
+\SI{4}{\volper}, grown in pre-induction M9 media as per Table
+\ref{tab:preinduction_recipe}.  The culture was then allowed to grow in a
+\SI{1}{\L} flask for \SI{6}{\hour} at \SI{37}{\celsius}, shaking at
+\SI{350}{\rpm}. The culture was subsequently harvested and pelleted via
+centrifugation. The pellet was subjected to resuspension in a volumetric
+equivalent of \SI{0.9}{\wtper} NaCl solution, followed by centrifugation.  This
+``wash'' step was performed 2 times in an effort to deplete the media of
 residual amounts of extracellular phenylalanine. The washed pellet was
-resuspended in fresh M9 supplemented media. The distinct difference between the
+resuspended in fresh M9 supplemented media.  The distinct difference between the
 pre- and post-induction supplemental reagents pertain to the amino acids
 constitution; the post-induction media does not contain phenylalanine, but
-rather contains 91.59 \si[inter-unit-product=\ensuremath{{}\cdot{}}]{\mg\per\mL}
-\iupac{\para-fluorophenylalanine}, prepared from a stock. Cells in the new media
-were allowed to grow at the same incubation conditions for 30 \si{min}, at which
-time the media was supplemented with \iupac{isopropyl
-\b-\D-1-thiogalactopyranoside} (IPTG, 100
-\si[inter-unit-product=\ensuremath{{}\cdot{}}]{\ug\per\mL}). Cells were
-harvested and stored at -20 \si{celsius} for subsequent lysis and purification.
+rather contains \SI{91.59}{\mg\per\mL} \iupac{\para-fluorophenylalanine},
+prepared from a stock.  Cells in the new media were allowed to grow at the same
+incubation conditions for \SI{30}{\minute}, at which time the media was
+supplemented with \iupac{isopropyl \b-\D-1-thiogalactopyranoside} (IPTG,
+\SI{100}{\ug\per\mL}).  Cells were harvested and stored at -20 \si{\celsius} for
+subsequent lysis and purification.
 
 \subsection{Protein purification}
 
-The cells were lysed with a 
+All solutions used in the extraction and purification of recombinant proteins
+were filtered through \SI{0.22}{\um} sterile filters. In addition, all solutions
+were adjusted to the appropriate \pH with either \SI{37}{\percent} \ch{HCl} or
+\SI{1}{\moLar} \ch{NaOH}. Cell pellets were thawed at \SI{4}{\celsius} and
+immediately subected to an osmotic shock protocol adapted from methods set forth
+by Berglund \emph{et al}.  for the preparation of cell lysate for immobilized
+metal affinity chromatography (IMAC)
+purification.\cite{Neu1965,Bae2000,Magnusdottir2009} Briefly, cells were gently
+resuspended in a cold hypertonic sucrose solution, consisting of
+\SI{50}{\milli\moLar} HEPES, \SI{20}{\wtper} sucrose, \SI{1}{\milli\moLar}
+ethylenediaminetetraacetic acid (EDTA), \pH 7.9. For every \SI{10}{\mL} of
+original culture media, the resultant pellet was resuspended in \SI{1}{\mL} of
+sucrose solution. The cell suspension was then pelleted via centrifugation at
+\SI{7000}{\gforce} for \SI{30}{\minute} at \SI{4}{\celsius}. The resultant
+pellet was separated from its supernatant and gently resuspended in a cold
+hypotonic solution consisting of \SI{5}{\milli\moLar} \ch{MgSO4}, with a
+volumetric equivalent to that of the previous step, and incubated on ice for
+\SI{10}{\minute}. The suspension was then centrifuged at \SI{4500}{\gforce} for
+\SI{20}{\minute} at \SI{4}{\celsius}. The resultant pellet was separated from
+its supernatant and stored at \SI{-20}{\celsius} for downstream lysis. 
+
+Osmotically shocked expression pellets were resuspended in lysis buffer,
+consisting of \SI{50}{\milli\moLar} \ch{Na2HPO4}, \SI{6}{\moLar} \ch{CO(NH2)2},
+\pH 8.0. The pellet was resuspended in a 4:70 volumetric ratio (buffer:culture
+volume) on ice. The cell lysate was then passed through a French press
+(40K-cell; Thermo Scientific), processed at \SI{165.5}{\MPa}, and collected on
+ice. The cold lysate was then centrifuged at \SI{40000}{\gforce} for
+\SI{45}{\minute} at \SI{4}{\celsius}. The clarified lysate was then applied to a
+\SI{5}{\mL} HiTrap IMAC FastFlow column (GE Life Sciences), charged with
+\ch{CoCl2}, using an \"{A}KTA purifier system (GE Life Sciences). The lysate was
+loaded with \SI{0}{\moLar} imidazole and washed with 10 column volumes
+(CV) of the same buffer constitution. The protein was then eluted across 1 CV of
+\SI{48}{\milli\moLar} imidazole and 3 CV of \SI{1}{\moLar} imidazole.  Purified
+elutions were assayed for purity via sodium dodecylsulfate polyacrylamide gel
+electrophoresis (SDS-PAGE) analysis and, contingent upon confirmation of
+\SI{90}{\percent} purity, was dialyzed extensively against water with a 3500
+MWCO regenerated cellulose membrane (SnakeSkin Dialysis Tubing, Pierce) and
+subsequently freeze-dried prior to use in experiments.
 
 \subsection{Compositional characterization}
-
 \subsubsection{MALDI-ToF mass spectrometry}
 
-The lazy brown fox.
+Incorporation levels of pFF were assessed via matrix-assisted laser desorption
+ionization, time-of-flight mass spectrometry analysis on an Omniflex
+spectrometer (Bruker Daltonics). Chymotryptic digests of purified proteins were
+prepared by resuspending \SIrange[range-phrase=--]{50}{100}{\ug} of protein in \SI{100}{\milli\moLar}
+Tris-HCl and \SI{10}{\milli\moLar} \ch{CaCl2} (\pH 8.0) to a final concentration
+of \SI{1.25}{\ug\per\uL}. Sequencing grade chymotrypsin (Promega) was added to
+the mixture to yield a final concentration of \SI{2}{\wtper}. The digestion
+reaction was allowed to occur at \SI{25}{\celsius} for \SI{20}{\hour} and
+subsequently stopped by adjusting the mixture to \pH 4 by titrating with
+\SI{1}{\percent} trifluoroacetic acid (TFA). Sample mixtures were mixed with
+saturated solutions of \iupac{\a-cyano-4-hydroxycinnamic acid} prepared in
+\SI{1}{\percent} TFA/acetonitrile (2:1) in a 1:1 ratio. Samples were then
+spotted onto a 7x7 OmniFlex MALDI target (Bruker Daltonics) and allowed to dry
+under vacuum. Relative estimates of peptide digest fragment quantities were conducted by
+comparing relative peak intensities at different \emph{m/z} values.
 
 \subsubsection{Amino acid analysis}
 
-The lazy brown fox.
+Amino acid analysis was performed on purified protein samples that have
+undergone hydrolysis. Hydrolysate samples were then analyzed on a Hitachi L-8900
+pH amino acid analyzer at the W. M. Keck Foundation Biotechnology Resource
+Laboratory at Yale University. Incorporation levels of pFF were calculated based
+on the measurements of normalized Phe levels in the samples.
 
 \subsection{Physicochemical characterization}
 
 \subsubsection{UV/Vis spectroscopy}
 
-The lazy brown fox.
+UV/vis spectroscopy was performed on a Cary 100 UV/vis spectrometer (Agilent) to
+determine the inverse temperature transition point ({$T_t$}) of 
+\SI{4}{\micro\moLar} protein prepared in \SI{10}{\milli\moLar} Gomori buffer,
+\pH 8.0. The absorbance at \SI{350}{\nm} was measured as each protein sample was
+heated from \SIrange{10}{65}{\celsius}, at a heating rate of
+\SI{0.5}{\celsius\per\minute}.\cite{Chilkoti2002a}
 
 \subsubsection{Circular dichroism spectroscopy}
 
-The lazy brown fox.
+Circular dichroism (CD) spectroscopy was carried out on a J-815 CD polarimeter
+(Jasco) equipped with a PTC-423S single position Peltier temperature control
+system and cuvette holder, counter-cooled with an Isotemp 3016S water bath
+(Fisher Scientific) set to \SI{22}{\celsius}. Protein samples were prepared to
+\SI{4}{\micro\moLar} in \SI{10}{\milli\moLar} Gomori buffer, by resuspending
+lyophilized protein and loading into a Helma 218 quartz cuvette (\SI{500}{\uL}
+capacity, \SI{1}{mm} path length). Immediately prior to loading into the
+spectrometer, samples were degassed for \SI{10}{\minute} by sparging samples
+with nitrogen. Operation and analysis parameters were adapted from existing
+procedures.\cite{Haghpanah2009} Wavelength scans were performed while holding
+temperature constant as the samples were heated from \SIrange{10}{65}{\celsius},
+at a heating rate of \SI{1}{\celsius\per\minute}.  Wavelength scans were
+performed from \SIrange{250}{190}{\nm} with a \SI{1}{\nm} step size. Wavelength
+scans were collected as the average of 3 consecutive scans, with a preliminary
+equilibration time of \SI{5}{\minute} prior to the first scan. All wavelength
+scans were subtracted from the background of Gomori buffer.
 
+Mean residue ellipticity, $[\theta]_{\mathrm{mrw}}$ is calculated from
+expression \ref{eq:mre} below:
+
+\begin{equation}
+    \label{eq:mre}
+    [\theta]_{\text{mrw}}=
+    \frac{[\theta]_{\text{obs}}\cdot\text{MRW}}{10\cdot{C_\text{mg/mL}}\cdot{L}}
+    \text{ (units : \si{\degtext\cm\squared\per\deci\mol})}
+\end{equation}
+
+where $[\theta]_{\text{obs}}$ is the observed ellipticity signal, MRW is the
+mean residue weight (molecular weight divided by the number of residues), $L$ is
+the path length of the cell (in cm), and $C_\text{mg/mL}$ is the protein's
+concentration.\cite{Martin2008} MRE spectral data was smoothed using a
+Savitsky-Golay low-pass filter, applied with SpectraManager software package (Jasco),
+using a smoothing width of 25. Estimation of secondary structure was performed
+computationally using the CDSSTR method, as distributed by DICHROWEB (Birkbeck
+College of the University of London). The method was applied with the SDP49
+protein reference set.
 \subsubsection{Microrheology}
 
-The lazy brown fox.
+To interrogate the mechanical properties of the proteins, passive microrheology
+was performed using an inverted Leica DM-138 IRB microscope with a 20$\times$
+objective lens at \SI{22}{\celsius} and \SI{42}{\celsius}, maintained by a
+Linkam temperature-controlled microscope stage. Samples were prepared from
+lyophilized proteins by dissolving dry powder in deionized water at
+\SI{4}{\celsius} to two concentrations, \SI{1.25}{\mg\per\mL} and
+\SI{2.5}{\mg\per\mL}. \SI{2}{\uL} of a \SI{2}{\wtper} stock of
+fluorescently-labeled amidated polystyrene beads (\SI{1.0}{\um} was added to
+\SI{10}{\uL} samples of protein. Brownian motion of the beads was observed by a
+Peltier-cooled video camera (QiCam) and digitally recorded.  Mean square
+displacement (MSD) measurements of the beads, dispersed in the protein sol gels,
+were determined using IDL software (Research Systems, Inc.) and an application
+of microrheological processing subroutines set forth by. The prominent
+processing parameters used for the work herein are below.  These parameters feed
+the subroutines documented in Appendix.
 
 \section{Results}
 
@@ -294,12 +404,8 @@ The lazy brown fox.
 
 The lazy brown fox.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{}
-    \label{fig:biosynthesis_report}
-\end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:biosynthesis_report} \end{figure}
 
 The lazy brown fox.
 
@@ -307,21 +413,13 @@ The lazy brown fox.
 
 The lazy brown fox.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{}
-    \label{fig:CD_temp_wl}
-\end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:CD_temp_wl} \end{figure}
 
 The lazy brown fox.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{}
-    \label{fig:CD_computation}
-\end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:CD_computation} \end{figure}
 
 The lazy brown fox.
 
@@ -329,25 +427,15 @@ The lazy brown fox.
 
 The lazy brown fox.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{}
-    \label{fig:lcst}
-\end{figure}
-k
-The lazy brown fox.
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:lcst} \end{figure} k The lazy brown fox.
 
 \subsection{Mechanical Behavior}
 
 The lazy brown fox.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{}
-    \label{fig:rheology}
-\end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:rheology} \end{figure}
 
 The lazy brown fox.
 
