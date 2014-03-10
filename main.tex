@@ -51,7 +51,7 @@
 
 % SI Units declaration
 \usepackage{siunitx}
-\sisetup{inter-unit-product=\ensuremath{{}\cdot{}}}
+\sisetup{inter-unit-product=\ensuremath{{}\cdot{}},range-units=single}
 \DeclareSIUnit[number-unit-product = \;]
 \gforce{{$\times$}\emph{g}}
 \DeclareSIUnit[]
@@ -60,6 +60,8 @@
 \volper{\% v/v}
 \DeclareSIUnit[number-unit-product = \;]
 \rpm{rpm}
+\DeclareSIUnit[number-unit-product = \;]
+\degtext{degrees}
 
 \usepackage{chemmacros}
 \usepackage{hyperref}
@@ -77,8 +79,8 @@
 \pagenumbering{arabic}
 \include{chap1}
 %\include{chap2}
-%\appendix
-%\include{appa}
-%\include{appb}
+\appendix
+\include{appa}
+\include{appb}
 
 \end{document}
