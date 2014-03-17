@@ -220,27 +220,29 @@ allowed to grow overnight at 37 \si{\celsius}. Single colonies were then picked
 and used to inoculate starter cultures, grown in M9 minimal media, supplemented
 with the following components:
 
-%INSERT PRE-INDUCTION REAGENTS TABLE HERE
+%START_TABLE
+%PRE-INDUCTION REAGENTS TABLE
 \begin{table}[h!]
     \centering
-\begin{tabular}{ |l|l| }
+\begin{tabular}{ ll }
   \hline
-  \multicolumn{2}{|c|}{Component (Final Concentrations)} \\
+  \multicolumn{2}{c}{Component (Final Concentrations)} \\
   \hline
 
-  ampicillin & \SI{200}{ug\per\mL} \\
-  chloramphenicol & \SI{200}{ug\per\mL} \\
-  thiamine hydrochloride & \SI{200}{ug\per\mL} \\
-  magnesium sulfate & \SI{200}{ug\per\mL} \\
-  calcium chloride & \SI{200}{ug\per\mL} \\
-  glucose & \SI{200}{ug\per\mL} \\
-  20 amino acids & \SI{1}{ug\per\mL} \\
+  ampicillin & \SI{200}{\ug\per\mL} \\
+  chloramphenicol & \SI{200}{\ug\per\mL} \\
+  thiamine hydrochloride & \SI{200}{\ug\per\mL} \\
+  magnesium sulfate & \SI{200}{\ug\per\mL} \\
+  calcium chloride & \SI{200}{\ug\per\mL} \\
+  glucose & \SI{200}{\ug\per\mL} \\
+  20 amino acids & \SI{1}{\ug\per\mL} \\
 
   \hline
 \end{tabular}
 \caption{Pre-induction M9 Supplement Specifications}
 \label{tab:preinduction_recipe}
 \end{table}
+%END_TABLE
 
 Cells were grown in M9 supplemented media in two stages - a pre-induction stage
 and a post-induction stage - which are separated by a media shift step.  The
@@ -402,10 +404,60 @@ the subroutines documented in Appendix.
 
 \subsection{Biosynthesis of Fluorinated Block Polymers}
 
-The lazy brown fox.
+Residue-specific incorporation of pFF was accomplished using previously
+established techniques by the Montclare Group, and previously by the Tirrell
+Group. Three primary methods of incorporation analysis were conventionally
+practiced at the time of this work: SDS-PAGE, amino acid analysis (AAA), and mass
+spectrometry (MS). SDS-PAGE analysis of \emph{E.coli} expression lysate samples were
+carried out to confirm proper control of induction via the \emph{lac} operon of
+the pQE-30 expression vector, as well as the suppression of significant amounts
+of protein expression in the absence of \iupac{phenylalanine}.
+Figure \ref{fig:expression_gel_pFF} indicates the sufficient control of expression
+so as to achieve effectively sole incorporation of \emph{p}FF.
+
+%Cite comparative works that use this overall approach of 3 methods.
+%Cite comparative SDS-PAGE results
 
 \begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{} \label{fig:biosynthesis_report} \end{figure}
+    \caption{} \label{fig:expression_gel_pFF} \end{figure}
+
+AAA and MS serve as orthogonal means to assess incorporation, with each method
+providing its own merits and succumbing to its respective limitations. While AAA
+provides high-fidelity quantitation of the amino acid composition of a protein,
+it comes at the expense of complete hydrolysis of the sample and resultant loss
+of primary sequence information. MS of enzymatic-digest fragments of the
+protein, on the other hand, 
+
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:MALDI_spectrum_EC} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:MALDI_spectrum_CE} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
+    \caption{} \label{fig:MALDI_spectrum_ECE} \end{figure}
+
+%Cite comparative incorporation results
+
+%START_TABLE
+%Incorporation Levels TABLE
+\begin{table}[h!]
+    \centering
+\begin{tabular}{lcc}
+  \hline
+  \multicolumn{3}{c}{Incorporation Levels} \\
+  \hline
+  Protein Construct & AAA & MALDI-ToF MS \\
+  \hline
+  pFF-EC & \SI{81.00(12)}{\percent} & \SI{89(5)}{\percent} \\
+  pFF-CE & \SI{77.75(29)}{\percent} & \SI{87(7)}{\percent} \\
+  pFF-ECE & \SI{88.85(100)}{\percent} & \SI{94(3)}{\percent} \\
+  \hline
+\end{tabular}
+\caption{Incorporation levels as measured by Amino Acid Analysis (AAA) and
+MALDI-ToF MS Analysis, accompanied by associated standard deviations for
+respective measurements.}
+\label{tab:incorporation_numbers}
+\end{table}
+%END_TABLE
 
 The lazy brown fox.
 
