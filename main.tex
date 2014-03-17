@@ -51,7 +51,12 @@
 
 % SI Units declaration
 \usepackage{siunitx}
-\sisetup{inter-unit-product=\ensuremath{{}\cdot{}},range-units=single}
+\sisetup{
+    inter-unit-product=\ensuremath{{}\cdot{}},
+    range-units=single,
+    separate-uncertainty = true,
+    multi-part-units=single
+}
 \DeclareSIUnit[number-unit-product = \;]
 \gforce{{$\times$}\emph{g}}
 \DeclareSIUnit[]
