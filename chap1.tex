@@ -199,6 +199,10 @@ of the bulk polymer, supported by the current understanding of elatin-like
 peptides, elastin-like peptide fusions, and precedent observations of
 fluorinated biomacromolecules.
 
+% Reference the particular of the following works in an effort to draft a
+% rational hypothesis of what will happen upon incorporation. Then justify why
+% CD, turbidity, and microrheology is used to interrogate these effects.
+% vide supra List
 % Guest residue effects by Urry.
 % Chilkoti's block influence work.
 % Fluorous effect.
@@ -213,8 +217,34 @@ nature of the protein. UV/Vis spectroscopy was implemented to roughly quantify
 the extent of macroscopic assembly occurring as a result of temperature-induced
 transitions, the mechanical nature of which was probed by microrheology. 
 
-\subsubsection{Circular Dichroism}
-Circular dichroism has been used extensively in the 
+\subsubsection{Circular Dichroism} Circular dichroism has been used extensively
+in the investigation of proteins, providing a relatively rapid method for
+structure elucidation with minimal sample requirements (i.e. mass, volume,
+concentration, and matrix). It lacks the capacity, however, for exact structural
+determination, which has become readily possible amongst a myriad of classes of
+proteins via high resolution NMR and X-ray diffraction analysis.\cite{Adler1973}
+Nevertheless, circular dichroism has been utilized to fingerprint protein
+secondary structure since the 1960's, including one of the foundational studies
+on \iupac{poly-\L-lysine} by Norma Greenfield.\cite{Greenfield1969} The method
+of analysis has continued to mature across decades of application to various
+biomolecules, yielding advancements in the computationally-aided deconvolution
+of
+spectra,\cite{Andrade1993,Sreerama1993,Manavalan1987,Provencher1981,Johnson1999}
+and expansion into the far-UV region of CD
+spectroscopy.\cite{Brahms1980,Wallace2009,Miles2006} It is a technique of
+particular relevance as it has been applied extensively to both classes of
+blocks of the block copolymers investigated in this work, providing a nominal
+reference structures on which to base the interpretation of structural
+alterations. Variants of the elastin-like peptide have undergone extensive CD
+spectroscopic characterization, including investigations on the affects of motif
+pattern modifications,\cite{Nuhn2008,Kim2005} solvent conditions,\cite{URRY1974}
+as well as polymer length.\cite{Nuhn2008,Urry1986,Reiersen1998} While the larger
+cartilage-oligomeric matrix protein has not been extensively studied for its
+secondary structure via CD spectroscopy, its coiled-coil region has been
+isolated and studied for its secondary structural conformation with CD
+spectroscopy.\cite{Gunasekar2009,Terskikh1997} More recently, the natively
+constructed block copolymers themselves were characterized with CD
+spectroscopy.\cite{Haghpanah2009}
 
 \subsubsection{UV/Vis spectroscopy}
 It has long been the convention to monitor the coacervation of materials that
@@ -372,23 +402,25 @@ volumetric equivalent to that of the previous step, and incubated on ice for
 \SI{20}{\minute} at \SI{4}{\celsius}. The resultant pellet was separated from
 its supernatant and stored at \SI{-20}{\celsius} for downstream lysis. 
 
-Osmotically shocked expression pellets were resuspended in lysis buffer,
-consisting of \SI{50}{\milli\moLar} \ch{Na2HPO4}, \SI{6}{\moLar} \ch{CO(NH2)2},
-\pH 8.0. The pellet was resuspended in a 4:70 volumetric ratio (buffer:culture
-volume) on ice. The cell lysate was then passed through a French press
-(40K-cell; Thermo Scientific), processed at \SI{165.5}{\MPa}, and collected on
-ice. The cold lysate was then centrifuged at \SI{40000}{\gforce} for
-\SI{45}{\minute} at \SI{4}{\celsius}. The clarified lysate was then applied to a
-\SI{5}{\mL} HiTrap IMAC FastFlow column (GE Life Sciences), charged with
+Osmotically shocked expression pellets were resuspended in denaturing lysis
+buffer, consisting of \SI{50}{\milli\moLar} \ch{Na2HPO4}, \SI{6}{\moLar}
+\ch{CO(NH2)2}, \pH 8.0. The pellet was resuspended in a 4:70 volumetric ratio
+(buffer:culture volume) on ice. The cell lysate was then passed through a French
+press (40K-cell; Thermo Scientific), processed at \SI{165.5}{\MPa}, and
+collected on ice. The cold lysate was then centrifuged at \SI{40000}{\gforce}
+for \SI{45}{\minute} at \SI{4}{\celsius}. The clarified lysate was then applied
+to a \SI{5}{\mL} HiTrap IMAC FastFlow column (GE Life Sciences), charged with
 \ch{CoCl2}, using an \"{A}KTA purifier system (GE Life Sciences). The lysate was
-loaded with \SI{0}{\moLar} imidazole and washed with 10 column volumes
-(CV) of the same buffer constitution. The protein was then eluted across 1 CV of
+loaded with \SI{0}{\moLar} imidazole and washed with 10 column volumes (CV) of
+the same buffer constitution. The protein was then eluted across 1 CV of
 \SI{48}{\milli\moLar} imidazole and 3 CV of \SI{1}{\moLar} imidazole.  Purified
 elutions were assayed for purity via sodium dodecylsulfate polyacrylamide gel
 electrophoresis (SDS-PAGE) analysis and, contingent upon confirmation of
 \SI{90}{\percent} purity, was dialyzed extensively against water with a 3500
 MWCO regenerated cellulose membrane (SnakeSkin Dialysis Tubing, Pierce) and
-subsequently freeze-dried prior to use in experiments.
+subsequently freeze-dried prior to use in experiments. Gel lanes of pure protein
+were used to quantitate post-purification yields, using an ImageQuant gel
+imaging system (GE Life Sciences).
 
 \subsection{Compositional characterization}
 \subsubsection{MALDI-ToF mass spectrometry}
@@ -542,6 +574,9 @@ intensities so as to conclude suppression of expression.
         presence and incorporation of \emph{p}FF in the system.}
         \label{fig:expression_gel_pFF} \end{figure}
 % --------------------------
+Biosynthetic yields for all three proteins were computed from the quantitation
+of protein 
+
 AAA and MS serve as orthogonal means to assess incorporation, with each method
 providing its own merits and succumbing to its respective limitations. While AAA
 provides high-fidelity quantitation of the amino acid composition of a protein,
@@ -585,14 +620,65 @@ Fortuitously, the enzyme appears to easily cleave sites that display \emph{p}FF
 as opposed to Phe. Each spectrum indicates a shift in mass-to-charge ratio that
 results from the shift imparted by an additional \SI{18}{\dalton}.
 % --------------------------
-\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{} \label{fig:MALDI_spectrum_EC} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_06}
+    \caption{MALDI-TOF spectrum of \emph{p}FF-EC with computed extents of
+incorporation based on peak intensities.} \label{fig:MALDI_spectrum_EC} \end{figure}
 % --------------------------
-\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{} \label{fig:MALDI_spectrum_CE} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_07}
+    \caption{MALDI-TOF spectrum of \emph{p}FF-CE with computed extents of
+incorporation based on peak intensities.} \label{fig:MALDI_spectrum_CE} \end{figure}
 % --------------------------
-\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{} \label{fig:MALDI_spectrum_ECE} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_08}
+    \caption{MALDI-TOF spectrum of \emph{p}FF-ECE with computed extents of
+incorporation based on peak intensities.} \label{fig:MALDI_spectrum_ECE} \end{figure}
+% --------------------------
+%Amino Acid Analysis Results
+Amino acid analysis was calculated based on the internal standardization of
+three conserved amino acids - Val, Leu, His - indicated in Table
+\ref{tab:aaa_analysis}. The average values are reported in
+Table \ref{tab:incorporation_numbers}, with incorporation levels ranging from
+\SIrange{76}{88}{\percent}, suggestive of lesser extents of incorporation as
+compared to the MALDI-TOF results. 
+% --------------------------
+%START_TABLE
+%AAA Analysis TABLE
+\begin{table}[h!]
+    \centering
+\begin{tabular}{ clllll }
+  \hline
+  &
+  \multicolumn{3}{l}{\emph{p}FF-EC Sample} &
+  \multicolumn{2}{l}{Expected Composition} \\
+  \hline
+  Internal Standard & nmole Phe & nmole Val & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Leu & 0.1172 & 5.1090 & 0.0229 & 0.1200 & \SI{80.88}{\percent} \\
+  Val & 0.1172 & 1.1381 & 0.1030 & 0.5455 & \SI{81.12}{\percent} \\
+  His & 0.1172 & 0.6173 & 0.1899 & 1.0000 & \SI{81.01}{\percent} \\
+  \hline
+  &
+  \multicolumn{3}{l}{\emph{p}FF-CE Sample} &
+  \multicolumn{2}{l}{Expected Composition} \\
+  \hline
+  Internal Standard & nmole Phe & nmole Val & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Leu & 0.1531 & 5.4115 & 0.0283 & 0.1200 & \SI{76.42}{\percent} \\
+  Val & 0.1531 & 1.2132 & 0.1262 & 0.5455 & \SI{76.86}{\percent} \\
+  His & 0.1531 & 0.6651 & 0.2302 & 1.0000 & \SI{76.98}{\percent} \\
+  \hline
+  &
+  \multicolumn{3}{l}{\emph{p}FF-ECE Sample} &
+  \multicolumn{2}{l}{Expected Composition} \\
+  \hline
+  Internal Standard & nmole Phe & nmole Val & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Leu & 0.1477 & 11.1488 & 0.0132 & 0.1146 & \SI{88.44}{\percent} \\
+  Val & 0.1477 & 1.3925 & 0.1061 & 0.9167 & \SI{88.43}{\percent} \\
+  His & 0.1477 & 0.6055 & 0.2439 & 1.8333 & \SI{86.69}{\percent} \\
+  \hline
+\end{tabular}
+\caption{Tabulation of calculations to derive levels of incorporation from amino
+acid analysis data}
+\label{tab:aaa_analysis}
+\end{table}
+%END_TABLE
 % --------------------------
 %Cite comparative incorporation results
 The discrepancy between AAA and MALDI-MS estimations for incorporation,
@@ -602,11 +688,10 @@ same order of magnitude.\cite{Voloshchuk2009}
 % --------------------------
 %Implications of incomplete incorporation
 
-The lazy brown fox.
-
 \subsection{Secondary Structural Anaylsis}
+CD spectroscopic wavelength scans were obtained for all three fluorinated
+proteins. \emph{p}FF-EC was randomly structured at low temperatures.
 
-The lazy brown fox.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
     \caption{} \label{fig:CD_temp_wl} \end{figure}
