@@ -360,7 +360,7 @@ with the following components:
 
 Cells were grown in M9 supplemented media in two stages - a pre-induction stage
 and a post-induction stage - which are separated by a media shift step.  The
-starter culture was used to inoculate a larger \SI{200}{\mL} culture, as
+starter culture was used to inoculate a larger \SI{100}{\mL} culture, as
 \SI{4}{\volper}, grown in pre-induction M9 media as per Table
 \ref{tab:preinduction_recipe}.  The culture was then allowed to grow in a
 \SI{1}{\L} flask for \SI{6}{\hour} at \SI{37}{\celsius}, shaking at
@@ -418,9 +418,13 @@ elutions were assayed for purity via sodium dodecylsulfate polyacrylamide gel
 electrophoresis (SDS-PAGE) analysis and, contingent upon confirmation of
 \SI{90}{\percent} purity, was dialyzed extensively against water with a 3500
 MWCO regenerated cellulose membrane (SnakeSkin Dialysis Tubing, Pierce) and
-subsequently freeze-dried prior to use in experiments. Gel lanes of pure protein
-were used to quantitate post-purification yields, using an ImageQuant gel
-imaging system (GE Life Sciences).
+subsequently freeze-dried prior to use in experiments. Polyacrylamide gels were
+cast using ammonium persulfate and tetramethylethylenediamine-catalyzed
+polymerization to obtain \SI{12}{\wtper} acrylamide gels. Gel lanes of pure
+protein were used to quantitate post-purification yields, using an ImageQuant
+gel imaging system (GE Life Sciences). Loaded mass of protein, from
+\SI{10}{\uL}, was calibrated against a volumetric equivalent of Precision Plus
+Protein Unstained Standard mixture (Bio-Rad).
 
 \subsection{Compositional characterization}
 \subsubsection{MALDI-ToF mass spectrometry}
@@ -574,8 +578,68 @@ intensities so as to conclude suppression of expression.
         presence and incorporation of \emph{p}FF in the system.}
         \label{fig:expression_gel_pFF} \end{figure}
 % --------------------------
-Biosynthetic yields for all three proteins were computed from the quantitation
-of protein 
+Biosynthetic yields for all three proteins were computed from the gel-based
+quantitation of SDS-PAGE gels of purified protein. Overall yields from
+expression and purification range from \SIrange{3}{6}{\mg \per \L of
+expression}.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{f_1_09}
+        \caption{\emph{p}FF-EC}
+        \label{fig:A}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{f_1_10}
+        \caption{\emph{p}FF-CE}
+        \label{fig:B}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{f_1_11}
+        \caption{\emph{p}FF-ECE}
+        \label{fig:C}
+    \end{subfigure}
+    \caption{Inverted gray scale images of SDS-PAGE gels of total purified
+    protein elutions, with accompanying quantitation in Table
+    \ref{tab:yield_analysis}}\label{fig:purification_gels}
+\end{figure}
+
+%START_TABLE
+%Expression Yield TABLE
+\begin{table}[h!]
+    \centering
+\begin{tabular}{ lllllll }
+  \hline
+  Lane & 
+  \multicolumn{3}{c}{Mass in Lane (\si{\ng})} & 
+  \multicolumn{3}{c}{Mass in \SI{1}{\mL} aliquot (\si{\ug})} \\
+  \hline
+  &
+  \emph{p}FF-EC &
+  \emph{p}FF-CE &
+  \emph{p}FF-ECE &
+  \emph{p}FF-EC &
+  \emph{p}FF-CE &
+  \emph{p}FF-ECE \\ 
+  \hline
+  1 & 545 & 710 & 752 & 55 & 71 & 75 \\
+  2 & 845 & 780 & 1118 & 85 & 78 & 112 \\
+  3 & 948 & 711 & 948 & 95 & 71 & 95 \\
+  4 & 650 & 506 & 783 & 65 & 51 & 78 \\
+  5 & 459 & 350 & 592 & 46 & 35 & 59 \\
+  6 & 330 & 282 & 481 & 33 & 28 & 48 \\
+  7 & 264 & 212 & 395 & 26 & 21 & 39 \\
+  8 & 231 & 167 & 344 & 23 & 17 & 34 \\
+  9 & 172 & 156 & 268 & 17 & 16 & 27 \\
+  \hline
+  \multicolumn{4}{r}{Yield \si{\mg \per \L of expression}} & 4.44 & 3.87 & 5.68
+\end{tabular}
+\caption{Quantitation of protein yields from gels in Figure
+    \ref{fig:purification_gels}.}
+\label{tab:yield_analysis}
+\end{table}
+%END_TABLE
 
 AAA and MS serve as orthogonal means to assess incorporation, with each method
 providing its own merits and succumbing to its respective limitations. While AAA
@@ -650,7 +714,7 @@ compared to the MALDI-TOF results.
   \multicolumn{3}{l}{\emph{p}FF-EC Sample} &
   \multicolumn{2}{l}{Expected Composition} \\
   \hline
-  Internal Standard & nmole Phe & nmole Val & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Internal Standard & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
   Leu & 0.1172 & 5.1090 & 0.0229 & 0.1200 & \SI{80.88}{\percent} \\
   Val & 0.1172 & 1.1381 & 0.1030 & 0.5455 & \SI{81.12}{\percent} \\
   His & 0.1172 & 0.6173 & 0.1899 & 1.0000 & \SI{81.01}{\percent} \\
@@ -659,7 +723,7 @@ compared to the MALDI-TOF results.
   \multicolumn{3}{l}{\emph{p}FF-CE Sample} &
   \multicolumn{2}{l}{Expected Composition} \\
   \hline
-  Internal Standard & nmole Phe & nmole Val & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Internal Standard & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
   Leu & 0.1531 & 5.4115 & 0.0283 & 0.1200 & \SI{76.42}{\percent} \\
   Val & 0.1531 & 1.2132 & 0.1262 & 0.5455 & \SI{76.86}{\percent} \\
   His & 0.1531 & 0.6651 & 0.2302 & 1.0000 & \SI{76.98}{\percent} \\
@@ -668,7 +732,7 @@ compared to the MALDI-TOF results.
   \multicolumn{3}{l}{\emph{p}FF-ECE Sample} &
   \multicolumn{2}{l}{Expected Composition} \\
   \hline
-  Internal Standard & nmole Phe & nmole Val & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Internal Standard & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
   Leu & 0.1477 & 11.1488 & 0.0132 & 0.1146 & \SI{88.44}{\percent} \\
   Val & 0.1477 & 1.3925 & 0.1061 & 0.9167 & \SI{88.43}{\percent} \\
   His & 0.1477 & 0.6055 & 0.2439 & 1.8333 & \SI{86.69}{\percent} \\
