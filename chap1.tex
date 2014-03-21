@@ -206,10 +206,24 @@ fluorinated biomacromolecules.
 To probe the effects on the physicochemical behavior of these block copolymers,
 three primary experiments were conducted, spanning various scales of structure -
 circular dichroism spectroscopy, UV/Vis spectroscopy, and microrheology.
-Circular dichroism was implemented in order to interrogate the 
+Circular dichroism was implemented in order to interrogate the effects of
+incorporation on the secondary structure of the fusion proteins as a function of
+temperature, thereby probing the affects of \emph{p}FF on the transitional
+nature of the protein. UV/Vis spectroscopy was implemented to roughly quantify
+the extent of macroscopic assembly occurring as a result of temperature-induced
+transitions, the mechanical nature of which was probed by microrheology. 
+
+\subsubsection{Circular Dichroism}
+Circular dichroism has been used extensively in the 
+
+\subsubsection{UV/Vis spectroscopy}
+It has long been the convention to monitor the coacervation of materials that
+demonstrate a lower critical
+solution temperature point via their temperature-resolved absorption in the
+range of \SIrange{300}{400}{\nm}.
+The LCST was defined as half-maximal turbidity.\cite{Urry1993}
 
 \subsubsection{Microrheology}
-
 While several methods exist to evaluate the mechanical properties of fluids,
 colloidal suspensions, and polymeric gels, microrheological techniques are
 necessary to evaluate samples that are limited in volume and material
@@ -230,7 +244,27 @@ tracking\cite{Valentine2004,Crocker2000,Chen2003}- all methods toward an effort
 to quantify the Brownian motion of particles suspended in the rheological fluid
 of interest.
 
-The particular application of particle tracking implemented hails from 
+The particular application of particle tracking documented herein is based on
+the work and source code distributed by Weitz and Mason for particle tracking
+microrheology of complex fluids.\cite{Mason1997} The technique assumes a
+homogeneous isotropic solution in which an ensemble of spherical particles are
+suspended, and the motion of which is primarily governed by the Brownian motion
+within the medium.  The technique further assumes that the continuum medium is
+incompressible. Given these assumptions, the technique relates the viscoelastic
+spectrum of the fluid medium, ${\tilde{G}(s)}$, to the unilateral Laplace
+transform of the mean square displacement, ${\langle \Delta r^2(t) \rangle}$, of
+the particles, via the Stokes-Einstein equation:
+
+\begin{equation}
+    \label{eq:stokes-einstein}
+    \tilde{G}(s)=
+    \frac{k_BT}{\pi a s \langle \Delta \tilde{r}^2(s) \rangle}
+    \text{ (units : \si{\pascal})}
+\end{equation}
+
+where ${s}$ is the Laplace frequency and ${k_B}$ is the Boltzmann's constant. In
+this work, ${\tilde{G}(s)}$ was computed from ${\Delta r^2(t)}$ obtained via
+image-based particle tracking, \latin{vide infra}.
 
 \section{Methods}
 
@@ -417,7 +451,7 @@ scans were collected as the average of 3 consecutive scans, with a preliminary
 equilibration time of \SI{5}{\minute} prior to the first scan. All wavelength
 scans were subtracted from the background of Gomori buffer.
 
-Mean residue ellipticity, $[\theta]_{\mathrm{mrw}}$ is calculated from
+Mean residue ellipticity, $[\theta]_{\mathrm{mrw}}$ was calculated from
 expression \ref{eq:mre} below:
 
 \begin{equation}
