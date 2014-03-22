@@ -436,7 +436,7 @@ prepared by resuspending \SIrange[range-phrase=--]{50}{100}{\ug} of protein in
 \SI{100}{\milli\moLar} Tris-HCl and \SI{10}{\milli\moLar} \ch{CaCl2} (\pH 8.0)
 to a final concentration of \SI{1.25}{\ug\per\uL}. Sequencing grade chymotrypsin
 (Promega) was added to the mixture to yield a final concentration of
-\SI{2}{\wtper}. The digestion reaction was allowed to occur at \SI{25}{\celsius}
+\SI{2}{\wtperwt}. The digestion reaction was allowed to occur at \SI{25}{\celsius}
 for \SI{20}{\hour} and subsequently stopped by adjusting the mixture to \pH 4 by
 titrating with \SI{1}{\percent} trifluoroacetic acid (TFA). The protein digest
 mixtures were desalted and concentrated by using ZipTip(\ch{C18}) silica resin
@@ -714,7 +714,7 @@ compared to the MALDI-TOF results.
   \multicolumn{3}{l}{\emph{p}FF-EC Sample} &
   \multicolumn{2}{l}{Expected Composition} \\
   \hline
-  Internal Standard & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Int Std Residue & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
   Leu & 0.1172 & 5.1090 & 0.0229 & 0.1200 & \SI{80.88}{\percent} \\
   Val & 0.1172 & 1.1381 & 0.1030 & 0.5455 & \SI{81.12}{\percent} \\
   His & 0.1172 & 0.6173 & 0.1899 & 1.0000 & \SI{81.01}{\percent} \\
@@ -723,7 +723,7 @@ compared to the MALDI-TOF results.
   \multicolumn{3}{l}{\emph{p}FF-CE Sample} &
   \multicolumn{2}{l}{Expected Composition} \\
   \hline
-  Internal Standard & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Int Std Residue & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
   Leu & 0.1531 & 5.4115 & 0.0283 & 0.1200 & \SI{76.42}{\percent} \\
   Val & 0.1531 & 1.2132 & 0.1262 & 0.5455 & \SI{76.86}{\percent} \\
   His & 0.1531 & 0.6651 & 0.2302 & 1.0000 & \SI{76.98}{\percent} \\
@@ -732,7 +732,7 @@ compared to the MALDI-TOF results.
   \multicolumn{3}{l}{\emph{p}FF-ECE Sample} &
   \multicolumn{2}{l}{Expected Composition} \\
   \hline
-  Internal Standard & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
+  Int Std Residue & nmole Phe & nmole Std & Ratio Phe:Std & Ratio Phe:Std& \emph{p}FF \\
   Leu & 0.1477 & 11.1488 & 0.0132 & 0.1146 & \SI{88.44}{\percent} \\
   Val & 0.1477 & 1.3925 & 0.1061 & 0.9167 & \SI{88.43}{\percent} \\
   His & 0.1477 & 0.6055 & 0.2439 & 1.8333 & \SI{86.69}{\percent} \\
@@ -759,11 +759,33 @@ proteins. \emph{p}FF-EC was randomly structured at low temperatures.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=\textwidth]{f_1_12}
     \caption{} \label{fig:CD_temp_wl} \end{figure}
+
 % --------------------------
 The lazy brown fox.
 % --------------------------
-\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{} \label{fig:CD_computation} \end{figure}
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[scale=0.65]{f_1_13_1}
+        \caption{\emph{p}FF-EC}
+        \label{fig:CDcomp_ECpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[scale=0.65]{f_1_13_2}
+        \caption{\emph{p}FF-CE}
+        \label{fig:CDcomp_CEpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[scale=0.65]{f_1_13_3}
+        \caption{\emph{p}FF-ECE}
+        \label{fig:CDcomp_ECEpFF}
+    \end{subfigure}
+    \caption{Secondary structure analysis of protein polymers, performed using
+    the CDSSTR method with protein reference set SDP48.}\label{fig:CD_computation}
+\end{figure}
 % --------------------------
 The lazy brown fox.
 
@@ -771,8 +793,42 @@ The lazy brown fox.
 
 The lazy brown fox.
 % --------------------------
-\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_01}
-    \caption{} \label{fig:lcst} \end{figure} k The lazy brown fox.
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_1}
+        \caption{}
+        \label{fig:LCST_ECpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_2}
+        \caption{}
+        \label{fig:LCST_CEpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_3}
+        \caption{}
+        \label{fig:LCST_ECEpFF}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_4}
+        \caption{}
+        \label{fig:LCST_deriv_ECpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_5}
+        \caption{}
+        \label{fig:LCST_deriv_CEpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_6}
+        \caption{}
+        \label{fig:LCST_deriv_ECEpFF}
+    \end{subfigure}
+    \caption{}\label{fig:lcst}
+\end{figure}
+
 % --------------------------
 
 \subsection{Mechanical Behavior}
