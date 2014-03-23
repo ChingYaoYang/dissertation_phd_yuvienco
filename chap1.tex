@@ -681,8 +681,11 @@ out. Figures \ref{fig:MALDI_spectrum_EC}, \ref{fig:MALDI_spectrum_CE}, and
 \ref{fig:MALDI_spectrum_ECE} delineate the main two fragments that result from
 chymotrypsin digestion, which cleaves the protein at Phe residues.
 Fortuitously, the enzyme appears to easily cleave sites that display \emph{p}FF
-as opposed to Phe. Each spectrum indicates a shift in mass-to-charge ratio that
-results from the shift imparted by an additional \SI{18}{\dalton}.
+as well as Phe. Each spectrum indicates a shift in mass-to-charge ratio that
+results from the shift imparted by an additional \SI{18}{\dalton}. Four regions
+of interest on the MS spectra are highlighted, indicating expected fragments
+from the digestion reaction, three of which derive from the COMP domain, and one
+of which is the degenerate fragment of the elastin-like peptide domain.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_06}
     \caption{MALDI-TOF spectrum of \emph{p}FF-EC with computed extents of
@@ -754,14 +757,45 @@ same order of magnitude.\cite{Voloshchuk2009}
 
 \subsection{Secondary Structural Anaylsis}
 CD spectroscopic wavelength scans were obtained for all three fluorinated
-proteins. \emph{p}FF-EC was randomly structured at low temperatures.
+proteins and compared against previously collected spectra for wild-type
+variants of the protein polymers, show in Figure
+\ref{fig:CD_temp_wl}.\cite{Haghpanah2009} 
 
+Figure \ref{fig:CD_temp_wl}A suggests the \emph{p}FF-EC is randomly structured
+at low temperatures, transitioning to an ${\alpha+\beta}$-rich conformation  at
+higher temperatures. By contrast, \emph{p}FF-CE revealed a more structured
+${\alpha+\beta}$ conformation at temperatures less than \SI{30}{\celsius}. Upon
+heating from \SIrange{30}{50}{\celsius}, \emph{p}FF-CE adopted a predominantly
+${\beta}$-rich structure indicated by a single minimum present above
+\SI{220}{\nm}. \emph{p}FF-ECE revealed a highly cooperative transition from a
+randomly structured protein to a ${\beta}$-rich protein (indicated by a single
+minimum at \SI{30}{\celsius}), eventually losing all evidence of structure. The
+secondary structures depend on the orientation of the block segments and the
+number of the block segments, consistent with the behavior of the wild-type 
+proteins.\cite{Haghpanah2009} While both fluorinated diblocks appeared to
+exhibit minimal deviation in structure relative to their wild-type analogues,
+pFF-ECE only resembled its wild-type counterpart at lower temperatures and
+conformed to a ${\beta}$-rich structure at higher temperatures. The wild-type
+ECE spectra demonstrated an isodichroic point, conventionally indicative of a
+two-state transition, a feature clearly absent in the pFF-ECE spectra
+collection.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=\textwidth]{f_1_12}
-    \caption{} \label{fig:CD_temp_wl} \end{figure}
-
+    \caption[CD wavelength spectra collected as a function of temperature for
+    (a)wt-EC, (b)wt-CE, (c)wt-ECE, (d)pFF-EC, (e)pFF-CE, (f)pFF-ECE, indicating
+the secondary structural changes that accompany the thermoresponsiveness of the
+proteins as well as the incorporation of \iupac{\para-fluorophenylalanine}.
+]{CD wavelength spectra collected as a function of temperature for
+    (a)wt-EC, (b)wt-CE, (c)wt-ECE, (d)pFF-EC, (e)pFF-CE, (f)pFF-ECE, indicating
+the secondary structural changes that accompany the thermoresponsiveness of the
+proteins as well as the incorporation of \iupac{\para-fluorophenylalanine}.
+Samples were prepared to \SI{4}{\micro\moLar} in phosphate buffer initially at
+\SI{4}{\celsius}, establishing congruent preparation protocols to previously
+committed studies on the wild-type protein.\cite{Haghpanah2009}} \label{fig:CD_temp_wl} \end{figure}
 % --------------------------
-The lazy brown fox.
+%Reserve this section for expositing on the computational derivation of
+%structures and more on the reference set used and the rationale for choosing
+%said reference set.
 % --------------------------
 \begin{figure}[h!]
     \centering
@@ -787,11 +821,50 @@ The lazy brown fox.
     the CDSSTR method with protein reference set SDP48.}\label{fig:CD_computation}
 \end{figure}
 % --------------------------
-The lazy brown fox.
-
 \subsection{Thermoresponsive Supramolecular Assembly}
+The effect of temperature on the supramolecular assembly of the proteins was
+examined via absorption at \SI{350}{\nm}. The inverse temperature transition
+(${T_t}$) was determined via, temperature-dependent absorption, shown in Figure
+\ref{fig:lcst}, consistent with conventional techniques in studying coacervation
+phenomena of elastin-like peptides.\cite{Urry1985} While this technique is more
+commonly used to quantify the turbidity of solutions of coacervates, previous
+work on these block polymers used the more resolved techniques of dynamic and
+static light scattering in order to obtain size distribution profiles for each
+of the proteins during their thermoresponsive transitions. However, this work
+details the first application of simple turbidity measurements to the
+wild-type, in addition to the \emph{p}FF-incorporated variants of block polymers.
 
-The lazy brown fox.
+In comparison to previously reported results, obtained via dynamic light
+scattering, turbidity measurements provided evidence of thermoresponsive
+transitions occurring for wild-type proteins in the same range about
+\SI{25}{\celsius}, with the onset of transitions occurring close to
+\SI{20}{\celsius} for all wild-type proteins (see black curves in Figure 
+\ref{fig:lcst}). However, as is evident from turbidity, the process continues
+to intensify with respect to absorption, in contrast to the previously obtained
+DLS results, which indicated single particle size distributions (for the EC and
+ECE proteins) beyond \SI{20}{\celsius} with no further information regarding the
+cooperativity of the transition.
+
+The ${T_t}$ values for all fluorinated block polymers were different, affirming
+the significance of block orientation and number, consistent with the primary
+conclusions drafted previously for the wild-type
+variants.\cite{Haghpanah2010,Haghpanah2009} The ${T_t}$ of pFF-EC was determined
+to be \SI{25}{\celsius}, while pFF-CE and pFF-ECE exhibited a ${T_t}$ at
+\SI{28}{\celsius} and \SI{32}{\celsius}, respectively. In comparison to the
+wild-type proteins, fluorination appeared to depress the ${T_t}$ of the CE
+protein from \SIrange{36}{28}{\celsius}, consistent with the primary hypothesis
+regarding the affects of fluorine substitution within the elastin-like peptide
+guest residue. While fluorination did not appear to affect the ${T_t}$ of EC or
+ECE proteins, an enhanced cooperativity was observed in the transition for ECE.
+
+Charts d-f in Figure \ref{fig:lcst} indicate the first derivative charts of
+turbidity profiles shown in charts a-c of the same figure. The maxima of each of
+the first derivative curves was computed and corresponding temperatures reported
+as ${T_t}$ points. The transition for pFF-ECE, however, did not conform to a
+distinctly sigmoidal profile, nor did it demonstrate a distinguishable maximum
+in its first derivative. As such, the ${T_t}$ was interpolated as the midpoint
+of a linear fit, with endpoints delineated by the onset and plateau of
+transition in Figure \ref{fig:LCST_ECEpFF}.
 % --------------------------
 \begin{figure}[h!]
     \centering
@@ -826,7 +899,12 @@ The lazy brown fox.
         \caption{}
         \label{fig:LCST_deriv_ECEpFF}
     \end{subfigure}
-    \caption{}\label{fig:lcst}
+    \caption{(a-c) Turbidity observations for EC, CE, and ECE, respectively,
+        measured by way of absorbance at \SI{350}{\nm}, from which the bulk
+        meso-/macroscale assembly event is partially concluded. Black lines
+        correspond to wild-type data; red lines correspond to pFF data. (d-f)
+    Computed first derivative of turbidity profiles in a-c.}
+    \label{fig:lcst}
 \end{figure}
 
 % --------------------------
