@@ -252,7 +252,8 @@ free ATRA solution.
 
 \subsubsection{Protein-based drug delivery vehicles}
 
-\subsection{Cartilage oligomeric matrix protein}
+\subsection{Cartilage oligomeric matrix protein}\footnote{This section was
+previously presented in Chapter 1 of this document.}
 
 Cartilage oligomeric matrix protein (COMP) is a non-collagenous matrix protein
 found in the cartilaginous extracellular matrix, discovered in the early 1990's,
@@ -766,7 +767,134 @@ as per the aforementioned methods.
 
 \subsection{Scaling biosynthetic methods}
 
+Expression of COMPcc was carried out in auto-inducing media, encompassing a
+shift in protocols to lactose-rich media, in agreement with the methods refined
+by Studier.\cite{Studier2005} Figure \ref{fig:AI_IPTG_gel} suggests that the
+levels of incorporation are comparable on a cellular basis. More noteworthy is
+the maximal growth level obtained via bioreactor expression, as shown in Figure
+\ref{fig:bioreactor_OD_comparison}. Yields have been estimated to be in the
+range of \SIrange{10}{20}{\mg\per\mL of culture}, prior to purification.
+% --------------------------
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{f_2_12a}
+        \caption{}
+        \label{fig:AI_OD_curve}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{f_2_12c}
+        \caption{}
+        \label{fig:bioreactor_OD_comparison}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{f_2_12b}
+        \caption{}
+        \label{fig:AI_IPTG_gel} \end{subfigure}
+    \caption[Summary of biosynthetic
+    expresssion results]{Summary of biosynthetic expression results. (a) The
+        auto-induction growth profile of BL21 (DE3) \emph{E.coli} transformed
+        with pQE9-COMPcc. (b) Comparison of culture formats using auto-induction
+        media, measuring turbidity via ${OD_{600}}$. Lanes 1-4 correspond to
+        \SIrange{200}{250}{\mL} flask expressions grown for \SI{6}{\hour}, Lanes
+        5-7 correspond to \SI{3}{\L} bioreactor expressions grown for 7, 9, and
+        \SI{24}{\hour}, respectively. (c) SDS-PAGE analysis of cell culture
+    lysate, comparing IPTG-inducible expression to that of
+auto-induction.}
+\label{fig:expression_results}
+\end{figure}
+% --------------------------
 
+\subsection{Dosage}
+\subsubsection{UPLC method development}
+UPLC method was optimized by first attempting separation of BMS493, retinoic
+acid, and retinyl palmitate using a binary system of acetonitrile and water.
+However, this resulted in poor resolution of retinoic acid. The addition of
+methanol was then added, in agreement with previously reported
+methods.\cite{DeLeenheer1982,Kane2008,Wang2001a,Schaffer2010} However, BMS493
+and retinoic were shown to co-elute easily with each other. To optimize the
+resolution of BMS493 and endogenous retinoids, but also to maintain maximum
+attainable peak heights (and signal/noise), a linear scouting gradient was
+performed from 10:10:80 (ACN:MetOH:\ch{H2O}, \SI{0.1}{\percent} formic acid) to 45:45:10 (ACN:MetOH:\ch{H2O},
+\SI{0.1}{\percent} formic acid) over \SI{30}{\minute} (data not shown). From
+this optimization, maximal resolution and minimum peak width were determined to
+be obtained using an isocratic mobile phase consisting of 41.2:41.2:17.6
+(ACN:MetOH:\ch{H2O}, \SI{0.1}{\percent} formic acid). Elution of retinyl
+palmitate requires a relatively abrupt gradient to \SI{100}{\percent} ACN, then
+held isocratically for approximately \SI{3}{\minute} (Figure
+\ref{fig:uplc_gradient}). 
+% --------------------------
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.75\textwidth}
+        \includegraphics[width=\textwidth]{f_2_13a}
+        \caption{UPLC gradient for chromatographic separation}
+        \label{fig:uplc_gradient}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{f_2_13b}
+        \caption{}
+        \label{fig:std_chromatogram}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{f_2_13c}
+        \caption{}
+        \label{fig:retinoid_spectra}
+    \end{subfigure}
+    \caption{}\label{fig:uplc_report}
+\end{figure}
+% --------------------------
+\subsubsection{\latin{In vitro} availability}
+To assess the availability of uptake of BMS493 \latin{in vitro}, liquid-liquid
+extraction was applied to aqueous samples of BMS493. Test control extracts were
+prepared at \SI{1}{\micro\moLar} in \SI{50}{\uL} of sample, consistent with the
+operating parameters of the \latin{in vitro} cell culture experiments. Dried
+organic phase extract was dissolved in ethanol and injected onto a reverse-phase
+column as per the method set forth above. Levels were averaged across 5
+replicates and compared against a benchmark of \SI{100}{\percent} extraction
+efficiency, or a \SI{0.36405}{\ng} injection. (Figure \ref{fig:extract_controls} 
+% --------------------------
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.75\textwidth}
+        \includegraphics[width=\textwidth]{f_2_14a}
+        \caption{MilliQ, \SI{0.3366}{\ng}, \SI{92.46}{\percent} recovery}
+        \label{fig:milliq_extract}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{f_2_14b}
+        \caption{DMEM, \SI{0.335}{\ng}, \SI{92.02}{\percent} recovery}
+        \label{fig:lonza_extract}
+    \end{subfigure}
+    \caption{UPLC quantitation of BMS493 (\SI{3.1}{\minute}) in extract controls prepared in
+    different media. Each sample was spiked with \SI{0.1}{\volper} \SI{1}{\milli\moLar}
+    BMS493 prepared in DMSO}\label{fig:extract_controls}
+\end{figure}
+% --------------------------
+This extraction protocol was applied to a preliminary set of culture samples
+from a BMS493 dosage study, 
+% --------------------------
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.75\textwidth}
+        \includegraphics[width=\textwidth]{f_2_15a}
+        \caption{}
+        \label{fig:culture_extracts}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_2_15b}
+        \caption{}
+        \label{fig:culture_extracts_focus}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_2_15c}
+        \caption{}
+        \label{fig:culture_extracts_chart}
+    \end{subfigure}
+    \caption{}\label{fig:uplc_report_culture_extracts}
+\end{figure}
+% --------------------------
 
 %\subsection{Screening of agonists/antagonists}
 
@@ -783,10 +911,37 @@ as per the aforementioned methods.
 %Final attempt, including curves from last MM report.
 %DATA: method application to BMS493 dosage study
 
+\subsection{Small molecule binding}
+% --------------------------
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.75\textwidth}
+        \includegraphics[width=\textwidth]{f_2_16a}
+        \caption{}
+        \label{fig:zonal_elution_chrom}
+    \end{subfigure}
 
-%\subsection{Small molecule binding}
-
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_2_16b}
+        \caption{}
+        \label{fig:ze_intensity}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_2_16c}
+        \caption{}
+        \label{fig:ze_retention_times}
+    \end{subfigure}
+    \caption[Zonal elution profile for ATRA mixed with COMPcc]{(a) Zonal elution
+        profile for COMPcc mixed with ATRA as a 1:1 mixture of
+        \SI{25}{\micro\moLar} prepared in \SI{100}{\milli\moLar} Gomori
+        phosphate buffer, pH 8.0, \SI{10}{\volper} ethanol. Darkening
+        curves indicate an increase in incubation time from \SI{0}{\hour} to
+        \SI{18}{\hour}. (b) Signal intensity increase at the peak absorption of
+    each successive run. (c) Peak retention time/volume shift of each successive run.}\label{fig:zonal_elution_report}
+\end{figure}
+% --------------------------
 %DATA: zonal elution chromatography
+
 %First attempts with ATRA as a control molecule. Unfortunately no dice, despite
 %the promising results, it is probably due to light scattering effects.
 %DATA: Hummel Dreyer chromatography
