@@ -239,6 +239,8 @@ work specifically addresses the delivery of the inverse agonist, BMS493 (Figure
 % --------------------------
 The research goals for this work are the following:
 \begin{description}
+    \item[Production] Application of high-yield protein biosynthesis methods to
+        COMP protein.
     \item[Dosage] Evaluation of the effects of BMS493 and COMP concentration on
         \latin{in vitro} chondrocyte cultures.
         %pivot: endotoxin purification
@@ -258,20 +260,141 @@ The lazy brown fox.
 
 \subsection{Biosynthesis}
 
+All reagents used for the biosynthesis of COMP protein were sterile filtered
+through a \SI{0.22}{\um} filter prior to usage. Biosynthesis of pQE9-COMP was carried out in a chemically competent BL21(DE3)
+\emph{E.coli} host cell line grown at large scales with auto-induction media.
+The plasmid vector DNA (Figure \ref{fig:plasmid_pQE9-COMP}) was transformed into
+the cells following the improved \ch{RbCl2} method of chemical transformation,
+specifically abiding by the protocol set forth by Nicholas
+Renzette.\cite{Renzette2011} Cells were then plated onto tryptic soy agar plates
+(\SI{40}{\mg\per\mL} supplemented with ampicillin (\SI{200}{\ug\per\mL}.
+\SI{10}{\mL} starter
+cultures were prepared from single colonies, prepared in 1xM9 media and
+supplemented with the reagents listed in Table
+\ref{tab:COMP_expression_media}.
+% --------------------------
+%START_TABLE
+%AUTO-INDUCTION REAGENTS TABLE
+\begin{table}[h!]
+    \centering
+\begin{tabular}{ ll }
+  \hline
+  \multicolumn{2}{c}{Component (Final Concentrations)} \\
+  \hline
+
+  ampicillin & \SI{200}{\ug\per\mL} \\
+  chloramphenicol & \SI{35}{\ug\per\mL} \\
+  thiamine hydrochloride & \SI{34}{\ug\per\mL} \\
+  magnesium sulfate & \SI{1}{\milli\moLar} \\
+  calcium chloride & \SI{0.1}{\milli\moLar} \\
+  glucose & \SI{0.4}{\wtper} \\
+  20 amino acids & \SI{100}{\ug\per\mL} \\
+
+  \hline
+\end{tabular}
+\caption{M9 Supplement Specifications}
+\label{tab:COMP_expression_media}
+\end{table}
+%END_TABLE
+% --------------------------
+Starter cultures were used to inoculate larger scale expression media in either
+a baffled flask or a bioreactor format, comprising a \SI{4}{\volper} of the
+large scale media. Cells were grown in M9 in a single auto-induction stage as
+per the methods set forth by Studier.\cite{Studier2005} As per this method, the
+media of the large scale expression was bereft of glucose, as documented in
+Table \ref{tab:COMP_expression_media} and instead was supplemented with
+\SI{0.5}{\wtper} glycerol, \SI{0.05}{\wtper} glucose, and \SI{0.2}{\wtper}
+lactose, the ratios of which have been previously optimized to yield optimally
+timed expression of protein controlled by an inducible promoter governed by the
+\emph{lac} operon.\cite{Studier2005} Flask expressions were carried out in
+\SI{1}{\L} baffled flasks for \SI{8}{\hour} at \SI{37}{\celsius}, shaking at
+\SI{350}{\rpm}. In addition, larger scale expression methods were employed by
+ways of a \SI{7.5}{\L} BioFlo 110 bioreactor/fermentor (New Brunswick
+Scientific), operated in bioreactor mode for \emph{E.coli} growth and equipped
+with a water jacketed temperature control system. The reactor was operated with
+the parameters shown in Table \ref{tab:bioreactor_parameters}.
+% --------------------------
+%START_TABLE
+%BIOREACTOR PARAMETERS TABLE
+\begin{table}[h!]
+    \centering
+\begin{tabular}{ ll }
+  \hline
+  \multicolumn{2}{c}{Bioreactor Parameters} \\
+  \hline
+
+  Culture volume & \SI{3}{\L} \\
+  Temperature & \SI{37}{\celsius} \\
+  Flow rate & \SI{3}{\L\per\minute} \\
+  Dissolved \ch{O2} & \SI{35}{\percent} \\
+  pH & 7.0 \\
+  Impeller speed & \SI{450}{\rpm} \\
+
+  \hline
+\end{tabular}
+\caption{Operating parameters for expression using a BioFlo 110 system}
+\label{tab:bioreactor_parameters}
+\end{table}
+%END_TABLE
+The cultures were subsequently havested and pelleted via centrifugation at
+\SI{4000}{\gforce} for \SI{20}{\minute} at \SI{4}{\celsius}, and stored
+immediately at \SI{-20}{\celsius} for downstream lysis. \SI{1}{\mL} aliquots
+of the cultures were sampled at particular time points for downstream SDS-PAGE analysis. Each
+aliquot was centrifuged at \SI{12000}{\rpm} prior to decanting of the
+supernatant and storage at \SI{-20}{\celsius}.
 
 \subsection{Protein purification}
 
-The lazy brown fox.
+All solutions used in the extraction and purification of recombinant proteins
+were filtered through \SI{0.22}{\um} sterile filters. In addition, all solutions
+were adjusted to the appropriate pH with either \SI{37}{\percent} \ch{HCl} or
+\SI{1}{\moLar} \ch{NaOH}. Lysis of harvested cells was carried out under
+denaturing conditions, assisted with probe sonication. Cell pellets were thawed
+at \SI{4}{\celsius} and immediately resuspended in lysis buffer consisting of
+\SI{50}{\milli\moLar} \ch{Na2HPO4}, \SI{6}{\moLar} urea, and
+\SI{20}{\milli\moLar} imidazole, \pH 8.0. The suspension was then subjected to
+sonication with a Q700 probe sonication system (Qsonica), equipped with a
+\SI{127}{\mm} probe and operated at \SI{50}{\percent} intensity with a
+\SI{50}{\percent} duty cycle across a \SI{10}{\second} period duration,
+ultimately transferring approximately \SI{200}{\joule\per\mL} of lysate slurry -
+approximately requiring \SI{10}{\minute} for a \SI{100}{\mL} sample, averaging
+\SI{33}{\watt}. The lysate was kept secured within an ice bath during sonication
+so as to inhibit a significant increase in temperature. The sonicated product
+was then clarified of debris by centrifugation at \SI{20000}{\gforce} for
+\SI{2}{\hour} at \SI{4}{\celsius}.
+
+The clarified lysate was then applied to a \SI{5}{\mL} HiTrap IMAC FastFlow
+column (GE Life Sciences), charged with \ch{CoCl2}, using an \"{A}KTA purifier
+system (GE Life Sciences) at \SI{4}{\celsius}. The purifier was equipped with a
+sample pump for external loading. The lysate was loaded with
+\SI{20}{\milli\moLar} imidazole and washed with 10 column volumes (CV) of the
+same buffer constitution. The protein was then eluted across 3 CVs of
+\SI{510}{\milli\moLar} imidazole. Purified elutions were assayed for purity via
+SDS-PAGE analysis. Polyacrylamide gels were cast using ammonium persulfate and
+tetramethylethylenediamine-catalyzed polymerization to obtain \SI{12}{\wtper}
+acrylamide gels. Gel lanes of pure protein were used to quantitate
+post-purification yields, using an ImageQuant gel imaging system (GE Life
+Sciences). Loaded mass of protein, from \SI{10}{\uL}, was calibrated against a
+volumetric equivalent of Precision Plus Protein Unstained Standard mixture
+(Bio-Rad). Contingent upon confirmation of \SI{90}{\percent} purity, was
+desalted using Sephadex G-25 desalting resin, loaded into a pre-packed 5mL
+HiTrap column format (GE Life Sciences) and equilibrated with
+\SI{10}{\milli\moLar} Gomori buffer, prepared to pH 8.0. Desalting procedure was
+accomplished using the \"{A}KTA purifier system. Purification elutions were
+loaded into a \SI{10}{\mL} column format superloop for queued \SI{1}{\mL}
+injections onto the desalting column. The desalting column was equilibrated with
+5 CVs of buffer prior to each injection. Protein samples underwent 2 rounds of
+subsequent desalting so as to ensure stringent buffer replacement as well as
+accommodating for the relatively high concentrations of imidazole and urea in
+the elution fractions.
 
 \subsection{Small molecule characterization}
 
-\subsubsection{Solubility testing}
-
-The lazy brown fox.
+%\subsubsection{Solubility testing}
 
 \subsubsection{Reverse-phase chromatographic quantitation}
 
-The lazy brown fox.
+
 
 \subsection{Protein complex formulation}
 
