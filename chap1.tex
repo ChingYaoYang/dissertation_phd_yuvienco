@@ -163,7 +163,7 @@ length of \SI{70}{\angstrom} and an average outer diameter of approximately
 motif pattern, with \emph{a} and \emph{d} positions predominantly occupied by
 aliphatic, non-polar residues.\cite{Burkhard2001} 
 % --------------------------
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{f_2_10a} \caption[Dimensions of
@@ -743,8 +743,8 @@ Biosynthetic yields for all three proteins were computed from the gel-based
 quantitation of SDS-PAGE gels of purified protein. Overall yields from
 expression and purification range from \SIrange{3}{6}{\mg \per \L of
 expression}.
-
-\begin{figure}
+% --------------------------
+\begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{f_1_09}
@@ -765,7 +765,20 @@ expression}.
     protein elutions, with accompanying quantitation in Table
     \ref{tab:yield_analysis}}\label{fig:purification_gels}
 \end{figure}
-
+% --------------------------
+AAA and MS serve as orthogonal means to assess incorporation, with each method
+providing its own merits and succumbing to its respective limitations. While AAA
+provides high-fidelity quantitation of the amino acid composition of a protein,
+it comes at the expense of complete hydrolysis of the sample and resultant loss
+of primary sequence information. MS of enzymatic-digest fragments of the
+protein, on the other hand, may only be considered quasi-quantitative under the
+assumption of equivalent propensities of fragments to ionize, despite the
+difference in primary structure and molecular weight; however, under this
+assumption, it may be used to elucidate the relative incorporation levels of a
+non-natural amino acid across different segments of the protein, allowing the
+researcher to conclude an homogeneous dispensation of non-natural amino acid
+throughout the primary sequence of the protein.
+% --------------------------
 %START_TABLE
 %Expression Yield TABLE
 \begin{table}[h!]
@@ -801,20 +814,7 @@ expression}.
 \label{tab:yield_analysis}
 \end{table}
 %END_TABLE
-
-AAA and MS serve as orthogonal means to assess incorporation, with each method
-providing its own merits and succumbing to its respective limitations. While AAA
-provides high-fidelity quantitation of the amino acid composition of a protein,
-it comes at the expense of complete hydrolysis of the sample and resultant loss
-of primary sequence information. MS of enzymatic-digest fragments of the
-protein, on the other hand, may only be considered quasi-quantitative under the
-assumption of equivalent propensities of fragments to ionize, despite the
-difference in primary structure and molecular weight; however, under this
-assumption, it may be used to elucidate the relative incorporation levels of a
-non-natural amino acid across different segments of the protein, allowing the
-researcher to conclude an homogeneous dispensation of non-natural amino acid
-throughout the primary sequence of the protein.
-
+% --------------------------
 %START_TABLE
 %Incorporation Levels TABLE
 \begin{table}[h!]
@@ -836,7 +836,7 @@ respective measurements.}
 \label{tab:incorporation_numbers}
 \end{table}
 %END_TABLE
-
+% --------------------------
 MALDI-ToF analysis of chymotryptic digests of each of the proteins was carried
 out. Figures \ref{fig:MALDI_spectrum_EC}, \ref{fig:MALDI_spectrum_CE}, and
 \ref{fig:MALDI_spectrum_ECE} delineate the main two fragments that result from
