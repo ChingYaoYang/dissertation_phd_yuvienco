@@ -223,7 +223,7 @@
 \setlength{\oddsidemargin}{0.50in}	% 1.25in left margin 
 \setlength{\evensidemargin}{0.50in}	% 1.25in left margin (even pages)
 \setlength{\topmargin}{0.0in}		% 1in top margin
-\setlength{\textwidth}{6.0in}		% 6.0in text - 1.25in rt margin
+\setlength{\textwidth}{6.25in}		% 6.0in text - 1.25in rt margin
 \setlength{\textheight}{9in}		% Body ht for 1in margins
 \addtolength{\topmargin}{-\headheight}	% No header, so compensate
 \addtolength{\topmargin}{-\headsep}	% for header height and separation
