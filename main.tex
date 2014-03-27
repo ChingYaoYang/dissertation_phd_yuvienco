@@ -25,7 +25,7 @@
 %% Page Intentionally Left Blank'', use the ``leftblank'' option, as
 %% above. 
 
-\documentclass[11pt]{mitthesis}
+\documentclass[11pt,twoside,leftblank]{mitthesis}
 \usepackage{lgrind}
 \pagestyle{plain}
 
@@ -86,7 +86,9 @@
 % applicable.
 %\include{signature}
 %\pagestyle{drafthead}
+\pagenumbering{roman}
 \include{contents}
+\include{pre-defense-preface}
 \pagenumbering{arabic}
 \include{chap1}
 \include{chap2}
