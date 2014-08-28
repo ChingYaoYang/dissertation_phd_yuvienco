@@ -683,11 +683,13 @@ where $[\theta]_{\text{obs}}$ is the observed ellipticity signal, MRW is the
 mean residue weight (molecular weight divided by the number of residues), $L$ is
 the path length of the cell (in cm), and $C_\text{mg/mL}$ is the protein's
 concentration.\cite{Martin2008} MRE spectral data was smoothed using a
-Savitsky-Golay low-pass filter, applied with SpectraManager software package (Jasco),
-using a smoothing width of 25.\cite{Savitzky1964} Estimation of secondary structure was performed
-computationally using the CDSSTR method, as distributed by DICHROWEB (Birkbeck
-College of the University of London).\cite{Whitmore2008} The method was applied with the SDP49
-protein reference set.\cite{Sreerama2000a,Sreerama2000b}
+Savitsky-Golay low-pass filter, applied with SpectraManager software package
+(Jasco), using a smoothing width of 25.\cite{Savitzky1964} Estimation of
+secondary structure was performed computationally using the CDSSTR method, as
+distributed by DICHROWEB (Birkbeck College of the University of
+London).\cite{Whitmore2008} The method was applied with the SDP49 protein
+reference set.\cite{Sreerama2000a,Sreerama2000b}
+
 \subsubsection{Microrheology}
 
 To interrogate the mechanical properties of the proteins, passive microrheology
@@ -986,6 +988,40 @@ committed studies on the wild-type protein.\cite{Haghpanah2009}} \label{fig:CD_t
 %structures and more on the reference set used and the rationale for choosing
 %said reference set.
 
+An implementation of the variable selection method,\cite{Manavalan1987} entitled
+CDSSTR, was employed to supplement the interpretation of CD spectra. Singular
+value decomposition of the initially seeded data set of basis proteins,
+designated SDP48, resulted in a reduced data set, which then are averaged as
+best fit basis spectra. Four metered rules are imposed to filter collections of
+best fit spectra: the sum of fractions of structural content is between 0.95 and
+1.05; each fraction is greater than -0.03; the RMS deviation between the
+reconstructed and experimental CD is less than 0.25 ${\Delta\epsilon}$; helical
+content is concluded from helical fraction estimates using the complete
+reference set and the maximum/minimum helix fraction from the acceptable
+solutions. The SDP48 reference set is comprised of CD data garnered from 43
+soluble proteins and 5 denatured/disordered proteins. Those classified as
+denatured/disordered are known to contain \SI{90}{\percent} unordered structures
+and \SI{2}{\percent} of each of the other types of
+structures.\cite{Sreerama2000b}
+
+The spectral decompositions derived using the CDSSTR implementation for all
+three block copolymers, shown in Figure \ref{fig:CD_computation}, suggest an
+overall high fractional content consisting of random or unordered structure,
+which is consistent with the general disordered nature of elastin-like peptides
+at temperatures below their LCST.  While the dominance of unordered composition
+tends to persist across the entire temperature ranges explored for all three
+polymers, the other secondary structural features, i.e. beta, turn, and helical
+content, do obey transitional trends. For \emph{p}FF-EC, the ${\beta}$ content
+increases with temperature, consistent with the visual interpretation of the
+dataset, which displays a more intense minimum at 208 nm at lower temperatures,
+and a more intense minimum at 222 nm at higher temperatures. The diminishing
+helical content of \emph{p}FF-CE is consistent with the migration of the
+isothermal spectra from a signature defined by dual minima to one of a single
+minimum at ca. 220 nm. A similar disappearance of helical content is also
+observed for the \emph{p}FF-ECE construct, which experiences a precipitous drop
+in helical content at \SI{30}{\celsius}. This cooperative transition of both
+signal intensity and structural content is revisited at the supramolecular scale
+in the next section.
 
 % --------------------------
 \begin{figure}[h!]
