@@ -1,5 +1,84 @@
 \chapter{Supplementary data}
 
+\section{Solid-state \NMR*{19,F} on \emph{p}FF-CE\textsubscript{3} protein}
+
+All experiments were carried out using a Varian 500 MHz spectrometer operating
+at \SI{470.6}{\mega\hertz} for \textsuperscript{19}F.\footnote{\NMR*{19,F}
+experiments were carried out with the generous assistance and supervision of Dr.
+Christopher Klug (Naval Research Laboratory, Chemistry Division).}
+% --------------------------
+The sample was packed into a \SI{3.2}{\mm} SiN rotor and spun at
+\SI{20}{\kilo\hertz}.  The mass of the sample was \SI{10.5}{\mg}.  All data was
+acquired using a rotor synchronized spin echo, with varying amounts of 1H
+decoupling. The measurements were run at two temperatures, \SI{10}{\celsius} and
+\SI{35}{\celsius}.
+
+Typical spectra are shown in Figure \ref{fig:nmr_result_1}.  The narrow peak at
+roughly \SI{-122}{\ppm} is assigned to residual Teflon present in the Torlon
+components of the NMR rotor.  The relatively broad peak at ~\SI{115}{\ppm}
+associated with \emph{p}FF-CE\textsubscript{3} reflects a distribution of local
+environments for the \textsuperscript{19}F nuclei of these side groups.  (Note
+that the other peaks in the spectra are spinning sidebands.) There is no
+significant difference in the results obtained at the two temperatures.
+% --------------------------
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_c_05}
+    \caption{\NMR*{19,F} spectra obtained at \SI{10}{\celsius} and
+    \SI{35}{\celsius} for \emph{p}FF-CE\textsubscript{3} protein.}
+    \label{fig:nmr_result_1} \end{figure}
+% --------------------------
+
+As the decoupling power increases there is first a minimum peak intensity for
+the \emph{p}FF-CE\textsubscript{3} sample at 1000 followed by a gradual
+increase (see Figure \ref{fig:nmr_result_2}).  As expected, the Teflon peak was
+relatively insensitive to \textsuperscript{1}H decoupling.  Higher decoupling
+powers were not attempted to avoid excessive sample heating.
+
+% --------------------------
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_c_06a}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_c_06b}
+    \end{subfigure}
+    \caption{\NMR*{19,F} peak intensities for the residual Teflon (green) and
+    \emph{p}FF-CE\textsubscript{3} (red) on the \textsuperscript{1}H decoupling
+    power parameter aHtppm at (a) \SI{10}{\celsius} and (b)
+    \SI{35}{\celsius}.  Spectra suggest a dependence of the peak intensities for
+    the residual Teflon (green) and \emph{p}FF-CE\textsubscript{3} (red) on the
+    \textsuperscript{1}H decoupling power parameter \emph{aHtppm} at
+    \SI{10}{\celsius} and \SI{35}{\celsius}.}\label{fig:nmr_result_2}
+\end{figure}
+% --------------------------
+
+Figure \ref{fig:nmr_result_3} shows the dependence of the peak intensities in
+the \NMR*{19,F} spectra on time between spin echoes, d1.  This gives a measure
+of the spin-lattice relaxation time, T1.  The solid lines are fits to a simple
+single-exponential recovery corresponding to a single T1.  While there is a
+slight decrease in the calculated T1 for the Teflon from ~2.1 s to 1.8 s as the
+temperature increased from \SI{10}{\celsius} to \SI{35}{\celsius}.  There is no
+clear change in the calculated T1 for \emph{p}FF-CE\textsubscript{3}, which
+remains at ~2.2-2.3 s.  This somewhat unexpected result may be due to a broad
+distribution in relaxation behavior for the 19F in
+\emph{p}FF-CE\textsubscript{3}.
+% --------------------------
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_c_07a}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{f_c_07b}
+    \end{subfigure}
+    \caption{\NMR*{19,F} peak intensities for the (a) residual Teflon and (b)
+    \emph{p}FF-CE\textsubscript{3} as a function of the time between spin
+    echoes, d1, at \SI{10}{\celsius} (green) and \SI{35}{\celsius} (red).}
+    \label{fig:nmr_result_3}
+\end{figure}
+% --------------------------
+
+
 \section{The cytotoxic effects of protein constructs}
 \begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_c_01}
     \caption{The effects of COMP and block copolymer protein constructs on the
@@ -10,7 +89,7 @@
     \end{figure}
 Cytotoxicity of the protein constructs were evaluated by
 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl tetrasodium bromide, MTT assay.
-MC3T3-E1 proosteoblast cells (
+MC3T3-E1 preosteoblast cells (
 \SI[scientific-notation=true,retain-unity-mantissa=true]{1e6}{\per\ml}) in
 \SI{100}{\uL} of ${\alpha}$MEM (Invitrogen) supplemented with \SI{10}{\volper}
 FBS were seeded in 96-well plates and incubated overnight. The
@@ -103,3 +182,67 @@ linear regression fit along the standard data points.}\label{fig:LAL_assay}
         Overlay of chromatograms of protein standards in the presence of BMS493
         in the mobile phase buffer.}\label{fig:sec_standards}
 \end{figure}
+
+\section{UPLC method development}
+\label{sec:uplc_method}
+% --------------------------
+\begin{figure}[h!] \centering \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{f_2_13a} \caption{UPLC gradient for
+        chromatographic separation} \label{fig:uplc_gradient} \end{subfigure}
+    \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{f_2_13b} \caption{Separation of BMS493, ATRA, and retinyl palmitate, collected at
+            \SI{329}{\nm}, with noted retention times of \SI{2.176}{\minute},
+            \SI{2.372}{\minute}, and \SI{7.151}{\minute}, respectively.}
+        \label{fig:std_chromatogram} \end{subfigure}
+    \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{f_2_13c} \caption{Cross-sectional
+            spectra
+            at points of peak maxima, corresponding to ATRA, BMS493, and retinyl
+        palmitate (top to bottom).}
+        \label{fig:retinoid_spectra} \end{subfigure}
+    \caption[Chromatographic separation of BMS493, ATRA, and retinyl
+    palmitate]{Chromatographic separation of BMS493, ATRA, and retinyl palmitate
+        using the UPLC gradient shown in (a). The resultant chromatogram (b)
+        demonstrate successful separation of this control sample. From 3D
+        spectra (data not shown), single retention time peak spectra were
+    extracted for the identification of optimal wavelengths for
+analytes.}\label{fig:uplc_report} \end{figure}
+% --------------------------
+UPLC method was optimized by first attempting separation of BMS493, retinoic
+acid, and retinyl palmitate using a binary system of acetonitrile and water.
+However, this resulted in poor resolution of retinoic acid. The addition of
+methanol was then added, in agreement with previously reported
+methods.\cite{DeLeenheer1982,Kane2008b,Wang2001a,Schaffer2010} However, BMS493
+and retinoic were shown to co-elute easily with each other. To optimize the
+resolution of BMS493 and endogenous retinoids, but also to maintain maximum
+attainable peak heights (and signal/noise), a linear scouting gradient was
+performed from 10:10:80 (ACN:MetOH:\ch{H2O}, \SI{0.1}{\percent} formic acid) to
+45:45:10 (ACN:MetOH:\ch{H2O}, \SI{0.1}{\percent} formic acid) over
+\SI{30}{\minute} (data not shown). From this optimization, maximal resolution
+and minimum peak width were determined to be obtained using an isocratic mobile
+phase consisting of 41.2:41.2:17.6 (ACN:MetOH:\ch{H2O}, \SI{0.1}{\percent}
+formic acid). Elution of retinyl palmitate requires a relatively abrupt gradient
+to \SI{100}{\percent} ACN, then held isocratically for approximately
+\SI{3}{\minute} (Figure \ref{fig:uplc_gradient}). The cross-sectional spectra
+presented in Figure \ref{fig:retinoid_spectra} allowed for single channels -
+\SI{355}{\nm}, \SI{329}{\nm}, and \SI{324}{\nm} for ATRA, BMS493, and retinyl
+palmitate, respectively - to be collected to obtain the best sensitivity of
+detection as well as cross-channel calibration against retinyl palmitate.
+
+% --------------------------
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.75\textwidth}
+        \includegraphics[width=\textwidth]{f_2_14a}
+        \caption{MilliQ, \SI{0.3366}{\ng}, \SI{92.46}{\percent} recovery}
+        \label{fig:milliq_extract}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{f_2_14b}
+        \caption{DMEM, \SI{0.335}{\ng}, \SI{92.02}{\percent} recovery}
+        \label{fig:lonza_extract}
+    \end{subfigure} \caption{UPLC quantitation of BMS493 (\SI{3.1}{\minute}) in
+    extract controls prepared in different media. Each sample was spiked with
+    \SI{0.1}{\volper} \SI{1}{\milli\moLar} BMS493 prepared in
+DMSO}\label{fig:extract_controls} \end{figure}
+% --------------------------
