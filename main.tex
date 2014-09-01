@@ -49,6 +49,11 @@
     \newpage
 }
 
+%Allowance for TOC reporting and alphanumeric labeling of subsubsections.
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\renewcommand\thesubsubsection{\thesubsection\alph{subsubsection}}
+
 % SI Units declaration
 \usepackage{siunitx}
 \sisetup{
@@ -71,6 +76,8 @@
 \EU{EU}
 \DeclareSIUnit[number-unit-product = \;]
 \ppm{ppm}
+\DeclareSIUnit[number-unit-product = \;]
+\AU{AU}
 \DeclareSIUnit[number-unit-product = \;]
 \psi{psi}
 \DeclareSIUnit[number-unit-product = \;]
