@@ -491,6 +491,10 @@ composition, and the scaling of these methods to a bioreactor format. The
 results of benchmark observations pertaining to these efforts are in the Results
 section.
 
+MMP-13 (collagenase-3) is known to be involved in degradation
+of type II collagen, proteoglycans and other matrix
+proteins,\cite{Flannery2006} 
+
 Quantification of BMS493 from cultures required the optimization of an
 extraction methodology, two of which were investigated.\footnote{Solid phase
     extraction methods, using commercially available Sep-Pak \ch{C18} and Oasis
@@ -1296,17 +1300,16 @@ from the mobile phase as the macromolecule migrates through the column bed. This
 results in a differential accumulation (peak) and corresponding dearth (trough)
 in small molecule signal along the chromatographic separation curve. 
 
-BMS493 was intended to be
-measured in this fashion by monitoring absorption at \SI{329}{\nm}, and
-concurrent data pertaining to protein elution by monitoring \SI{254}{\nm}.
-Control injections of BMS493, however, did not produce significant signal either
-at \SI{329}{\nm} or within \SIrange{210}{400}{\nm} sufficient to illicit
-quantitative results. This is in contrast to the significant signal achieved via
-reverse-phase separation (see Section \ref{sec:rp_method}); the difference may
-be due to either a suffered loss in absorption coefficient when BMS493 is
-co-solvated in buffer with \SI{10}{\volper} or a lack of solvation of BMS493
-when co-solvated under those conditions and concentrations (i.e.
-\SI{50}{\micro\moLar}. 
+BMS493 was intended to be measured in this fashion by monitoring absorption at
+\SI{329}{\nm}, and concurrent data pertaining to protein elution by monitoring
+\SI{254}{\nm}.  Control injections of BMS493, however, did not produce
+significant signal either at \SI{329}{\nm} or within \SIrange{210}{400}{\nm}
+sufficient to illicit quantitative results. This is in contrast to the
+significant signal achieved via reverse-phase separation (see Section
+\ref{sec:rp_method}); the difference may be due to either a suffered loss in
+absorption coefficient when BMS493 is co-solvated in buffer with
+\SI{10}{\volper} or a lack of solvation of BMS493 when co-solvated under those
+conditions and concentrations (i.e.  \SI{50}{\micro\moLar}).
 
 In the presence of a mobile phase containing co-solvated BMS493, COMP does
 demonstrate a decrease in retention time within the column as compared to its
@@ -1315,7 +1318,7 @@ the dominance of distinctly different oligomeric species for the two conditions.
 A shift is observed for the COMP+BMS493 complex from a tetrameric species to a
 molecular weight above its expected pentameric state. The peak retention time
 for COMP+BMS493 corresponds to approximately \SI{3200}{\Da} above the expected
-pentameric molecular weight of the protein (i.e. ${7297.2 \times 5}$ or
+pentameric molecular weight of the protein (i.e. ${7297.2 \times 5}$, or
 \SI{36486}{\Da}). If this loss in retention time is indeed attributed to
 sequestered BMS493 molecules, then the additional weight can be assigned to
 approximately 8 molecules of BMS493 for every pentameric complex.
@@ -1323,37 +1326,61 @@ approximately 8 molecules of BMS493 for every pentameric complex.
 While this particular instance of the Hummel-Dreyer method did not yield the
 anticipated results derived from small molecule signal analysis performed at
 \SI{329}{\nm}, its application on a high-resolution size-exclusion column may
-have still provided valuable insight into the propensity of COMP to
-complex to BMS493. This high-resolution separation allowed the observation of
-BMS493 forming pentameric complexes with 8 molecules of BMS493. Furthermore, no
-other oligomeric species were observed for both conditions of the experiments.
+have still provided valuable insight into the propensity of COMP to complex to
+BMS493. This high-resolution separation allowed the observation of BMS493
+forming pentameric complexes with 8 molecules of BMS493. Furthermore, no other
+oligomeric species were observed for both conditions of the experiments.
 
 \section{Discussion}
+% --------------------------
+\subsection{Contamination of recombinant COMP with endotoxins}
+The importance of endotoxin removal from recombinant protein preparations has
+been emphasized in the related literature,\cite{Petsch2000,Sengupta2010} and
+has remained an elusive goal many recombinant proteins with conventional
+column chemistries and separation strategies.\cite{Chen2009,Liu1997,Ritzen2007}
+Contamination of the protein samples produced for this study resulted in the
+unanticipated effects on the chondrocyte transcriptome. Specifically, elevated
+levels in pyrogenic lipopolysaccharides present in the proteins following
+column-assisted desalting correlated with the elevated levels in MMP-13
+expression observed for the protein. While, according to the data in Section
+\ref{sec:mmp13}, it is still feasible to deliver nanomolar quantities
+(\SIrange{10}{50}{\nano\moLar}) of ``endo-toxin-free'' protein to chondrocytes
+without eliciting a catabolic response, the efficiencies of endotoxin removal
+can be improved, with current efficiencies ranging \SIrange{80}{95}{\percent}.
+Furthermore, polymixin B-based column chemistry for the separation of endotoxins
+from COMP may not be ideal given that NaCl is required to elute COMP from this
+particular media, allowing for co-elution of endotoxins with COMP if NaCl also
+disrupts the affinity for the charged head groups of lipopolysaccharides.
 
-\subsection{Endotoxic contamination of recombinant COMP}
+Further supporting attribution of causality of the results in Section
+\ref{sec:bms493_results} to the presence of endotoxins by way of discrediting
+the alternative hypothesis that COMP itself is potentially a trigger for the
+modified gene levels, a recent study by Ruthard \latin{et al.} concluded that
+the larger COMP protein lacks the ability to cause proinflammatory response in
+chondrocytes.\cite{Ruthard2014} This finding stands in the face of at least two
+decades of reports contributing to the hypothesis that COMP and its fragments
+are causally involved in the inflammatory response of
+chondrocytes.\cite{Lohmander1994,Vilim1997,Heinegard2011,Adams2001,Vilim2002}
+This simply leaves the result of down-regulation of the hypertrophic phenotype,
+as demonstrated in Figure \ref{fig:pcr_panel}E, indicating relatively lower
+levels of ${\alpha}$1 type X collagen for COMP-containing formulations.
+Therefore, contingent upon further optimization of endotoxin removal strategies,
+COMP may provide additional benefit to the delivery of RAR/RXR
+antagonists and inverse agonists as demonstrated by early evidence of
+down-regulating hypertrophic gene expression and terminal differentiation.
 
-\subsection{Inhibition of hypertrophy in chondrocytes}
+\subsection{COMP inhibits hypertrophy in osteoarthritic chondrocytes}
+
 
 \subsection{Insights into the molecular properties of COMP upon mixing with
 BMS493}
 
+\subsection{Meso-scale features COMP promote intra-articular delivery
+applications}
+
 \section{Conclusion}
 
-\section{Completion Pending}
-
-As these studies are currently in the process of completion, any discussion and
-conclusions based on this work have yet to be drafted. It can be stated,
-however, that based on the zonal elution profiles collected thus far, the better
-method to entertain is that of Hummel Dreyer chromatography. As a more robust
-method to sample dilution through the column, it will yield more relevant
-information regarding the binding characteristics of the protein to BMS493. More
-interesting is the potential dual outcome of committing such an experiment on an
-oligomeric acceptor species (COMPcc), yielding information not just of the
-binding of BMS493 onto COMPcc, but also the binding of BMS493 to particular
-oligomeric species as they resolve themselves through the column. This would
-yield potential insight as to whether the full coiled-coil is necessary for
-binding, and perhaps separate the engineering goals of optimizing full
-pentameric coiled-coil assembly and binding affinities to small molecules.
+\subsection{Future work}
 
 \printbibliography[heading=subbibliography]
 
