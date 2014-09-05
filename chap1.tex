@@ -58,13 +58,13 @@ the quaternary scale of folding. This arena of self-assembly is of particular
 focus herein, requiring inquiry into the evidence of such phenomenon occurring,
 and more importantly, how these self-assembly events occur mechanistically via a
 through-line that spans multiple scales of structure. In the case of collagen,
-secondary structure is established as alpha-helices but further progresses to
-the self-association of monomers to form triple helices.  More interestingly,
-this tiered assembly, wherein the larger macromolecular assemblies become
-dependent on the secondary structure of monomers imbues the opportunity for
-sequence-dependent specificity of assemblies. Indeed this inherent feature of
-these self-assembling systems has been leveraged by several engineering design
-groups.\cite{Kar2009,Stahl2010a,Fletcher2012}
+secondary structure is established as extended polyproline II-like helix, but
+further progresses to the self-association of monomers to form triple helices.
+More interestingly, this tiered assembly, wherein the larger macromolecular
+assemblies become dependent on the secondary structure of monomers imbues the
+opportunity for sequence-dependent specificity of assemblies. Indeed this
+inherent feature of these self-assembling systems has been leveraged by several
+engineering design groups.\cite{Kar2009,Stahl2010a,Fletcher2012}
 
 Similarly, resilin, the proteinaceous material responsible for the elasticity of
 various insect wings and appendages, relies on a critical proline residue to
@@ -119,10 +119,10 @@ copolymers is still elusive, and to-date, appears to require a case-by-case
 empirical investigation. Studies of independent block components are, however,
 carried out extensively, such as in the case of silk-, elastin-like peptide-,
 coiled-coil protein-based fusions, establishing behavioral trends based on salt
-concentration and primary sequence.\cite{Cho2008,Nuhn2008} In addition, the interdependence of
-biophysical properties of disparate
-self-assembling domains as they exist as part of fusion constructs is still being
-probed. 
+concentration and primary sequence.\cite{Cho2008,Nuhn2008,Reiersen1998} In
+addition, the interdependence of biophysical properties of disparate
+self-assembling domains as they exist as part of fusion constructs is still
+being probed. 
 
 \subsubsection{Fusion Proteins}
 
@@ -451,10 +451,11 @@ fluorocarbon-fluorocarbon
 interaction.\cite{Woll2006,Lee2004,Marsh2009,Jackel2006,Yoder2002} Examples
 include the incorporation of trifluoromethyl phenylalanine by way of a modified
 tRNA-synthetase to ultimately attempt to study \latin{E.coli} proteins via
-NMR,\cite{Li2010a,Jackson2007} the incorporation of hexafluoroleucine into
+\textsuperscript{19}F NMR,\cite{Li2010a,Jackson2007} the incorporation of hexafluoroleucine into
 Buforin and Magainin,\cite{Meng2007} the incorporation of hexafluoroleucine into
 GCN4 coiled-coils,\cite{Lee2004} and the incorporation of
-pentafluoro-phenylalanine\cite{Woll2006} (Figure \ref{fig:fluorination_examples}.
+pentafluoro-phenylalanine\cite{Woll2006} (Figure
+\ref{fig:fluorination_examples}).
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.7\textwidth]{f_1_19}
     \caption[Examples of incorporation of fluorinated, non-natural amino acids
@@ -681,7 +682,7 @@ Plasmid vectors containing the genes for the block protein polymer fusions were
 created in a modular fashion, described in a previously accomplished body of
 work.\cite{Haghpanah2009} Briefly, PCR assembly of the COMP gene and
 flanking linker regions yielded a pQE9 vector (Qiagen) containing the final
-single block construct. This was then digested with SalI and SacI restriction
+single block construct.\cite{Kwon2003} This was then digested with SalI and SacI restriction
 enzymes, and gel purified for insertion into a pQE30 plasmid vector, yielding
 pQE30/C. The 5-repeat elastin gene was PCR amplified from pUC19RGDELF, donated
 by David Tirrell, and cloned into pQE30/C between various restriction sites, to
@@ -693,9 +694,9 @@ yield pQE30/EC (BamHI and SacI), pQE30/CE (SalI and HindIII), and pQE30/ECE (all
 
 The aforementioned plasmid vectors were transformed into the phenylalanine
 auxotrophic \emph{E. coli} strain AF-IQ, previously created and donated by David
-Tirrell \emph{et al}.\cite{Yoshikawa1994,Sharma2000} Cells growth methods were based on
+Tirrell \emph{et al}.\cite{Yoshikawa1994,Sharma2000} Cell growth methods were based on
 previously established conditions for the incorporation of unnatural amino
-acids, particularly pFF, into target
+acids, particularly \emph{p}FF, into target
 proteins.\cite{Voloshchuk2009,Yoshikawa1994}
 
 Plasmids were transformed into AF-IQ cells via electroporation using the
@@ -801,7 +802,7 @@ Protein Unstained Standard mixture (Bio-Rad).
 \subsection{Compositional characterization}
 \subsubsection{MALDI-ToF mass spectrometry}
 
-Incorporation levels of pFF were assessed via matrix-assisted laser desorption
+Incorporation levels of \emph{p}FF were assessed via matrix-assisted laser desorption
 ionization, time-of-flight mass spectrometry analysis on an Omniflex
 spectrometer (Bruker Daltonics). Chymotryptic digests of purified proteins were
 prepared by resuspending \SIrange[range-phrase=--]{50}{100}{\ug} of protein in
@@ -826,7 +827,7 @@ Biolabs.
 Amino acid analysis was performed on purified protein samples that have
 undergone hydrolysis. Hydrolysate samples were then analyzed on a Hitachi L-8900
 pH amino acid analyzer at the W. M. Keck Foundation Biotechnology Resource
-Laboratory at Yale University. Incorporation levels of pFF were calculated based
+Laboratory at Yale University. Incorporation levels of \emph{p}FF were calculated based
 on the measurements of normalized Phe levels in the samples.
 
 \subsection{Physicochemical characterization}
@@ -880,6 +881,22 @@ distributed by DICHROWEB (Birkbeck College of the University of
 London).\cite{Whitmore2008} The method was applied with the SDP49 protein
 reference set.\cite{Sreerama2000a,Sreerama2000b}
 
+An implementation of the variable selection method,\cite{Manavalan1987} entitled
+CDSSTR, was employed to supplement the interpretation of CD spectra. Singular
+value decomposition of the initially seeded data set of basis proteins,
+designated SDP48, resulted in a reduced data set, which then are averaged as
+best fit basis spectra. Four metered rules are imposed to filter collections of
+best fit spectra: the sum of fractions of structural content is between 0.95 and
+1.05; each fraction is greater than -0.03; the RMS deviation between the
+reconstructed and experimental CD is less than 0.25 ${\Delta\epsilon}$; helical
+content is concluded from helical fraction estimates using the complete
+reference set and the maximum/minimum helix fraction from the acceptable
+solutions. The SDP48 reference set is comprised of CD data garnered from 43
+soluble proteins and 5 denatured/disordered proteins. Those classified as
+denatured/disordered are known to contain \SI{90}{\percent} unordered structures
+and \SI{2}{\percent} of each of the other types of
+structures.\cite{Sreerama2000b}
+
 \subsubsection{Transmission electron microscopy}
 \label{sec:TEM_method}
 
@@ -919,11 +936,11 @@ fed, are documented in Appendix B.
 
 \section{Results}
 
-\subsection{Biosynthesis of Fluorinated Block Polymers}
+\subsection{Biosynthesis of Fluorinated Block Copolymers}
 \label{sec:biosynthesis_results}
 %Cite comparative SDS-PAGE results
 % --------------------------
-\begin{figure}[h!] \centering \includegraphics[width=0.65\textwidth]{f_1_04}
+\begin{figure}[h!] \centering \includegraphics[width=0.5\textwidth]{f_1_04}
     \caption[Confirmation of
         \emph{p}FF-EC, \emph{p}FF-CE, and \emph{p}FF-ECE proteins, SDS-PAGE of
         whole cell lysate samples (normalized to OD{$_{600}$} = 1.0) in the
@@ -949,9 +966,9 @@ fed, are documented in Appendix B.
     system.}
         \label{fig:expression_gel_pFF} \end{figure}
 % --------------------------
-Residue-specific incorporation of pFF was accomplished using previously
-established techniques by the Montclare Group, and previously by the Tirrell
-Group.\cite{Yoshikawa1994,Sharma2000,Voloshchuk2009} Three primary methods of
+Residue-specific incorporation of \emph{p}FF was accomplished using 
+established techniques by Montclare \latin{et al.}, and previously by Tirrell
+\latin{et al.}.\cite{Yoshikawa1994,Sharma2000,Voloshchuk2009} Three primary methods of
 incorporation analysis were conventionally practiced at the time of this work:
 SDS-PAGE, amino acid analysis (AAA), and mass spectrometry (MS). 
 %Cite comparative works that use this overall approach of 3 methods.
@@ -959,7 +976,7 @@ This regimen of analysis for incorporation of non-natural amino acids has been
 recently implemented by Montclare, Baker, and
 Voloshchuk\cite{Voloshchuk2009,Panchenko2006,Baker2011}. In
 addition, several groups have implemented AAA as part of their evaluation of novel
-peptides. MALDI-MS, due to its limited quantitative capacity, has been
+peptides. MALDI-ToF MS, due to its limited quantitative capacity, has been
 implemented to a lesser extent, but still has been employed in some
 studies.\cite{Taki2001}
 
@@ -978,7 +995,7 @@ More specifically, in the presence of Phe or \emph{p}FF, a distinct band was
 observed at \SI{25}{\kilo\dalton} for the diblocks and \SI{37}{\kilo\dalton} for
 the triblock, confirming the production of protein polymers. Similar results
 were obtained from previous studies, of equivalent differentials in band
-intensities so as to conclude suppression of expression.
+intensities so as to conclude suppression of expression.\cite{Voloshchuk2009}
 
 Biosynthetic yields for all three proteins were computed from the gel-based
 quantitation of SDS-PAGE gels of purified protein. Overall yields from
@@ -1017,7 +1034,7 @@ assumption of equivalent propensities of fragments to ionize, despite the
 difference in primary structure and molecular weight; however, under this
 assumption, it may be used to elucidate the relative incorporation levels of a
 non-natural amino acid across different segments of the protein, allowing the
-researcher to conclude an homogeneous dispensation of non-natural amino acid
+researcher to conclude a homogeneous dispensation of non-natural amino acid
 throughout the primary sequence of the protein.
 % --------------------------
 %START_TABLE
@@ -1066,9 +1083,9 @@ throughout the primary sequence of the protein.
   \hline
   Protein Construct & AAA & MALDI-ToF MS \\
   \hline
-  pFF-EC & \SI{81.00(12)}{\percent} & \SI{89(5)}{\percent} \\
-  pFF-CE & \SI{77.75(29)}{\percent} & \SI{87(7)}{\percent} \\
-  pFF-ECE & \SI{88.85(100)}{\percent} & \SI{94(3)}{\percent} \\
+  \emph{p}FF-EC & \SI{81.00(12)}{\percent} & \SI{89(5)}{\percent} \\
+  \emph{p}FF-CE & \SI{77.75(29)}{\percent} & \SI{87(7)}{\percent} \\
+  \emph{p}FF-ECE & \SI{88.85(100)}{\percent} & \SI{94(3)}{\percent} \\
   \hline
 \end{tabular}
 \caption{Incorporation levels as measured by Amino Acid Analysis (AAA) and
@@ -1090,15 +1107,15 @@ from the digestion reaction, three of which derive from the COMP domain, and one
 of which is the degenerate fragment of the elastin-like peptide domain.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_06}
-    \caption{MALDI-TOF spectrum of \emph{p}FF-EC with computed extents of
+    \caption{MALDI-ToF spectrum of \emph{p}FF-EC with computed extents of
 incorporation based on peak intensities.} \label{fig:MALDI_spectrum_EC} \end{figure}
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_07}
-    \caption{MALDI-TOF spectrum of \emph{p}FF-CE with computed extents of
+    \caption{MALDI-ToF spectrum of \emph{p}FF-CE with computed extents of
 incorporation based on peak intensities.} \label{fig:MALDI_spectrum_CE} \end{figure}
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_08}
-    \caption{MALDI-TOF spectrum of \emph{p}FF-ECE with computed extents of
+    \caption{MALDI-ToF spectrum of \emph{p}FF-ECE with computed extents of
 incorporation based on peak intensities.} \label{fig:MALDI_spectrum_ECE} \end{figure}
 % --------------------------
 %Amino Acid Analysis Results
@@ -1107,7 +1124,7 @@ three conserved amino acids - Val, Leu, His - indicated in Table
 \ref{tab:aaa_analysis}. The average values are reported in
 Table \ref{tab:incorporation_numbers}, with incorporation levels ranging from
 \SIrange{76}{88}{\percent}, suggestive of lesser extents of incorporation as
-compared to the MALDI-TOF results. 
+compared to the MALDI-ToF results. 
 % --------------------------
 %START_TABLE
 %AAA Analysis TABLE
@@ -1150,7 +1167,7 @@ acid analysis data}
 %END_TABLE
 % --------------------------
 %Cite comparative incorporation results
-The discrepancy between AAA and MALDI-MS estimations for incorporation,
+The discrepancy between AAA and MALDI-ToF MS estimations for incorporation,
 \SIrange[range-phrase=--]{6}{11}{\percent}, are slightly higher than that
 observed previously for the incorporation of \emph{p}FF into tGCN5.\cite{Voloshchuk2009}
 % --------------------------
@@ -1159,7 +1176,7 @@ observed previously for the incorporation of \emph{p}FF into tGCN5.\cite{Voloshc
 \subsection{Secondary Structural Anaylsis}
 CD spectroscopic wavelength scans were obtained for all three fluorinated
 proteins and compared against previously collected spectra for wild-type
-variants of the protein polymers, show in Figure
+variants of the protein polymers, shown in Figure
 \ref{fig:CD_temp_wl}.\cite{Haghpanah2009} 
 
 Figure \ref{fig:CD_temp_wl}A suggests the \emph{p}FF-EC is randomly structured
@@ -1178,12 +1195,12 @@ exhibit minimal deviation in structure relative to their wild-type analogues,
 \emph{p}FF-ECE only resembled its wild-type counterpart at lower temperatures and
 conformed to a ${\beta}$-rich structure at higher temperatures. The wild-type
 ECE isothermal spectra demonstrated an isodichroic point, conventionally indicative of a
-two-state transition, a feature clearly absent in the pFF-ECE spectra
+two-state transition, a feature clearly absent in the \emph{p}FF-ECE spectra
 collection.
 
 In addition, another noteworthy feature of the isothermal CD spectra
 of \emph{p}FF-ECE is the significant loss of signal, concurrent with the
-transition to ${\beta}$ conformation. While all block polymers, both fluorinated
+transition to ${\beta}$ conformation. While all block copolymers, both fluorinated
 and wild-type, formed visible microscopic particles upon heating, only the
 \emph{p}FF-ECE demonstrated a significant loss of signal, suggesting that
 \emph{p}FF-ECE recruits more of the soluble protein population into the
@@ -1191,36 +1208,31 @@ collection of larger insoluble particles, relative to the other constructs.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=\textwidth]{f_1_12}
     \caption[CD wavelength spectra collected as a function of temperature for
-    (a)wt-EC, (b)wt-CE, (c)wt-ECE, (d)pFF-EC, (e)pFF-CE, (f)pFF-ECE, indicating
-the secondary structural changes that accompany the thermoresponsiveness of the
-proteins as well as the incorporation of \iupac{\para-fluorophenylalanine}.
-]{CD wavelength spectra collected as a function of temperature for
-    (a)wt-EC, (b)wt-CE, (c)wt-ECE, (d)pFF-EC, (e)pFF-CE, (f)pFF-ECE, indicating
-the secondary structural changes that accompany the thermoresponsiveness of the
-proteins as well as the incorporation of \iupac{\para-fluorophenylalanine}.
-Samples were prepared to \SI{4}{\micro\moLar} in phosphate buffer initially at
-\SI{4}{\celsius}, establishing congruent preparation protocols to previously
-committed studies on the wild-type protein.\cite{Haghpanah2009}} \label{fig:CD_temp_wl} \end{figure}
+        (a)wt-EC, (b)wt-CE, (c)wt-ECE, (d)\emph{p}FF-EC, (e)\emph{p}FF-CE,
+        (f)\emph{p}FF-ECE, indicating the secondary structural changes that
+        accompany the thermoresponsiveness of the proteins as well as the
+        incorporation of \iupac{\para-fluorophenylalanine}.  Samples were
+        prepared to \SI{4}{\micro\moLar} in phosphate buffer initially at
+        \SI{4}{\celsius}, establishing congruent preparation protocols to
+        previously committed studies on the wild-type protein. Units of CD
+    signal expressed as \si{\degtext\cm\squared\per\deci\mol}.]
+
+{CD wavelength spectra collected as a function of temperature for (a)wt-EC,
+    (b)wt-CE, (c)wt-ECE, (d)\emph{p}FF-EC, (e)\emph{p}FF-CE, (f)\emph{p}FF-ECE,
+    indicating the secondary structural changes that accompany the
+    thermoresponsiveness of the proteins as well as the incorporation of
+    \iupac{\para-fluorophenylalanine}.  Samples were prepared to
+    \SI{4}{\micro\moLar} in phosphate buffer initially at \SI{4}{\celsius},
+    establishing congruent preparation protocols to previously committed studies
+    on the wild-type protein.\cite{Haghpanah2009} Units of CD signal expressed
+    as \si{\degtext\cm\squared\per\deci\mol}.}
+    
+    \label{fig:CD_temp_wl}
+\end{figure}
 % --------------------------
 %Reserve this section for expositing on the computational derivation of
 %structures and more on the reference set used and the rationale for choosing
 %said reference set.
-
-An implementation of the variable selection method,\cite{Manavalan1987} entitled
-CDSSTR, was employed to supplement the interpretation of CD spectra. Singular
-value decomposition of the initially seeded data set of basis proteins,
-designated SDP48, resulted in a reduced data set, which then are averaged as
-best fit basis spectra. Four metered rules are imposed to filter collections of
-best fit spectra: the sum of fractions of structural content is between 0.95 and
-1.05; each fraction is greater than -0.03; the RMS deviation between the
-reconstructed and experimental CD is less than 0.25 ${\Delta\epsilon}$; helical
-content is concluded from helical fraction estimates using the complete
-reference set and the maximum/minimum helix fraction from the acceptable
-solutions. The SDP48 reference set is comprised of CD data garnered from 43
-soluble proteins and 5 denatured/disordered proteins. Those classified as
-denatured/disordered are known to contain \SI{90}{\percent} unordered structures
-and \SI{2}{\percent} of each of the other types of
-structures.\cite{Sreerama2000b}
 
 The spectral decompositions derived using the CDSSTR implementation for all
 three block copolymers, shown in Figure \ref{fig:CD_computation}, suggest an
@@ -1239,7 +1251,7 @@ minimum at ca. 220 nm. A similar disappearance of helical content is also
 observed for the \emph{p}FF-ECE construct, which experiences a precipitous drop
 in helical content at \SI{30}{\celsius}. This cooperative transition of both
 signal intensity and structural content is revisited at the supramolecular scale
-in the next section.
+in the Section \ref{sec:lcst}.
 
 % --------------------------
 \begin{figure}[h!]
@@ -1267,6 +1279,7 @@ in the next section.
 \end{figure}
 % --------------------------
 \subsection{Thermoresponsive Supramolecular Assembly}
+\label{sec:lcst}
 % --------------------------
 \begin{figure}[h!]
     \centering
@@ -1303,40 +1316,40 @@ in the next section.
     \end{subfigure}
     \caption{(a-c) Turbidity observations for EC, CE, and ECE, respectively,
         measured by way of absorbance at \SI{350}{\nm}, from which the bulk
-        meso-/macroscale assembly event is partially concluded. Black lines
-        correspond to wild-type data; red lines correspond to pFF data. (d-f)
+        meso-/macroscale assembly event is concluded. Black lines
+        correspond to wild-type data; red lines correspond to \emph{p}FF data. (d-f)
     Computed first derivative of turbidity profiles in a-c.}
     \label{fig:lcst}
 \end{figure}
 % --------------------------
 The effect of temperature on the supramolecular assembly of the proteins was
 examined via absorption at \SI{350}{\nm}. The inverse temperature transition
-(${T_t}$) was determined via, temperature-dependent absorption, shown in Figure
+(${T_t}$) was determined via temperature-dependent absorption, shown in Figure
 \ref{fig:lcst}, consistent with conventional techniques in studying coacervation
 phenomena of elastin-like peptides.\cite{Urry1985} While this technique is more
 commonly used to quantify the turbidity of solutions of coacervates, previous
-work on these block polymers used the more resolved techniques of dynamic and
+work on these block copolymers used the more resolved techniques of dynamic and
 static light scattering in order to obtain size distribution profiles for each
 of the proteins during their thermoresponsive transitions. However, this work
-details the first application of simple turbidity measurements to the
-wild-type, in addition to the \emph{p}FF-incorporated variants of block polymers.
+details the first application of turbidity measurements to the
+wild-type, in addition to the \emph{p}FF-incorporated variants of block copolymers.
 
 In comparison to previously reported results, obtained via dynamic light
 scattering, turbidity measurements provided evidence of thermoresponsive
-transitions occurring for wild-type proteins in the same range about
-\SI{25}{\celsius}, with the onset of transitions occurring close to
+transitions occurring for wild-type proteins in the same range (ca.
+\SI{25}{\celsius}), with the onset of transitions occurring close to
 \SI{20}{\celsius} for all wild-type proteins (see black curves in Figure 
 \ref{fig:lcst}). However, as is evident from turbidity, the process continues
 to intensify with respect to absorption, in contrast to the previously obtained
 DLS results, which indicated single particle size distributions (for the EC and
-ECE proteins) beyond \SI{20}{\celsius} with no further information regarding the
+ECE proteins) above \SI{20}{\celsius} with no further information regarding the
 cooperativity of the transition.
 
-The ${T_t}$ values for all fluorinated block polymers were different, affirming
+The ${T_t}$ values for all fluorinated block copolymers were different, affirming
 the significance of block orientation and number, consistent with the primary
 conclusions drafted previously for the wild-type
-variants.\cite{Haghpanah2010,Haghpanah2009} The ${T_t}$ of pFF-EC was determined
-to be \SI{25}{\celsius}, while pFF-CE and pFF-ECE exhibited a ${T_t}$ at
+variants.\cite{Haghpanah2010,Haghpanah2009} The ${T_t}$ of \emph{p}FF-EC was determined
+to be \SI{25}{\celsius}, while \emph{p}FF-CE and \emph{p}FF-ECE exhibited a ${T_t}$ at
 \SI{28}{\celsius} and \SI{32}{\celsius}, respectively. In comparison to the
 wild-type proteins, fluorination appeared to depress the ${T_t}$ of the CE
 protein from \SIrange{36}{28}{\celsius}, consistent with the primary hypothesis
@@ -1345,9 +1358,9 @@ guest residue.
 
 While fluorination did not appear to affect the ${T_t}$ of EC or ECE proteins,
 an enhanced cooperativity was observed in the transition for both CE and ECE.
-For the CE and ECE construct, there were also marked increases in the intensity
+For the CE and ECE constructs, there were also marked increases in the intensity
 of the first derivative signal during the transition point, which is an artefact
-of the enhanced cooperativity of the process.  Charts d-f in Figure
+of the enhanced cooperativity of the transition.  Charts d-f in Figure
 \ref{fig:lcst} indicate the first derivative charts of turbidity profiles shown
 in charts a-c of the same figure. While Urry and others have defined the
 transition temperature associated with lower critical solution temperature
@@ -1377,22 +1390,23 @@ midpoint of the resultant line. This yielded a transition temperature of
     \label{fig:block_EM_pFF}
 \end{figure}
 
-Supramolecular assembly was qualitatively confirmed via transmission electron
-microscopy studies of the protein constructs below and just above their ${T_t}$,
-using samples pre-incubated at \SI{4}{\celsius} and \SI{40}{\celsius}.
-A panel of representative micrographs of are shown in Figure
-\ref{fig:block_EM_pFF} for all three protein samples. Sample concentrations for this
-experiment were several fold higher in micromolar concentration than the
-concentrations prepared for samples analyzed using CD and UV/Vis spectroscopy.
-This allowed for sufficient density coverage of the sample grid for the
-instrument; lower concentrations did not yield sufficient coverage of sample
-onto the grid, hindering a qualitative inspection of the sample morphologies.
+Supramolecular assembly of protein constructs was qualitatively confirmed via
+transmission electron microscopy studies below and just above their ${T_t}$,
+using samples pre-incubated at \SI{4}{\celsius} and \SI{40}{\celsius}.  A panel
+of representative micrographs are shown in Figure \ref{fig:block_EM_pFF} for all
+three protein samples. Sample concentrations for this experiment were several
+fold higher in micromolar concentration than the concentrations prepared for
+samples analyzed using CD and UV/Vis spectroscopy.  This allowed for sufficient
+density coverage of the sample grid for adequate imagining results; lower
+concentrations did not yield sufficient coverage of sample onto the grid,
+hindering a qualitative inspection of the sample morphologies.
 
 At these slightly higher concentrations, several key observations of the block
 copolymers can be made. First, the \emph{p}FF- proteins, exhibit an amorphous
 particle structure on the order of \SIrange{10}{70}{\nm}. At
 \SI{4}{\celsius} these particles tend to flocculate to form larger amorphous
-assemblies. Second, when incubated above their ${T_t}$, as it was assessed by
+assemblies, evident in all micrographs collected at ${19500 \times}$
+magnification. Second, when incubated above their ${T_t}$, as it was assessed by
 UV/Vis turbidity measurements (see above), micrographs of the samples provide
 evidence of larger, micron-scale aggregates. This was particularly noted for
 \emph{p}FF-CE (Figure \ref{fig:block_EM_pFF}b) and \emph{p}FF-ECE (Figure
@@ -1403,6 +1417,7 @@ beyond \SI{1.0}{\AU} observed in the corresponding turbidity data shown in Figur
 \emph{p}FF-ECE, respectively.
 
 \subsection{Reversibility of Assembly}
+\label{sec:reversibility}
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.9\textwidth]{f_1_20}
     \caption[FTIR spectra collected for poly(AVGVP) and poly(GVGVP) vs
@@ -1426,7 +1441,7 @@ absorbance during the heating process. The absorption curves for both EC-based
 proteins demonstrated supramolecular assemblies that continued to transition
 beyond the application of additional heat to the sample.
 
-In the case of wt-EC, the sample undergoes a transition that is followed but a
+In the case of wt-EC, the sample undergoes a transition that is followed by a
 dramatic loss in signal, suggesting that the coacervate assemblies have
 agglomerated and settled out of solution as well as out of the light path
 (despite the continuous mixing of the sample during the experiment). Thus, while
@@ -1436,12 +1451,12 @@ protein in the form of large macroscopic particles. This was confirmed by visual
 inspection of the samples. For \emph{p}FF-EC, the evolution of a more turbid
 solution appears to continue despite the cooling of the sample.
 
-The observed hysteresis has been observed by other groups working on
+This manner of hysteresis has been observed by other groups working on
 elastin-like peptides, with evidence collected as early as 1972, documented in
 the work by Walton on partially-hydrolized elastin derived from extracted bovine
 \latin{ligamentum nuchae}.\cite{Jamieson1972a} The partial irreversibility of
 the formation of aggregate species was concluded from an inability to regain an
-original broad spectrum indicative of monomeric or less aggregates species from
+original broad spectrum indicative of monomeric or less aggregated species from
 light scattering experiments. It was speculated by the authors that the
 hysteresis was driven by the electrostatic charge fluctuation mechanism proposed
 by Kirkwood and Shumaker\cite{Kirkwood1952} for protein aggregation near the
@@ -1466,23 +1481,25 @@ It may be the case that the protein block copolymers EC, CE, and ECE, experience
 a hysteresis via a similar biophysical phenomenon. That is, the Phe residue that
 is located in the similarly matched motif of poly(GFGVP) may be blocking the
 repenetration of water in the polypeptide backbone upon cooling. 
+% --------------------------
+% Also discuss the and reference the paper on mesophase separation.
 
 \subsection{Mechanical Behavior}
 
 Bulk rheological of the protein polymers were evaluated by microrheology, shown
-in Figure \ref{fig:pFF_rheology}. Previous work by both the Tirrell and Chilkoti
-groups have demonstrated the concentration-dependence of elastin-like peptide
+in Figure \ref{fig:pFF_rheology}. Previous work by both Tirrell and Chilkoti
+have demonstrated the concentration-dependence of elastin-like peptide
 self-assembly.\cite{Meyer2004,Yamaoka2003} Indeed, wt-EC was predominantly
 viscous at concentrations below \SI{2.5}{\mg\per\mL} and transitioned to an
 elastic network as the concentration was prepared to \SI{10}{\mg\per\mL}, shown
 in Figure \ref{fig:wt_rheology}.\cite{Haghpanah2010} This behavior, however was
-not observed for wt-CE and wt-ECE as they existed as predominantly viscous or
+not observed for wt-CE and wt-ECE, as they existed as predominantly viscous or
 viscoelastic suspensions up to \SI{10}{\mg\per\mL}, respectively.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_15}
     \caption{Microrheological plots of viscous and elastic moduli, derived from
-    tracked particle movements within protein solutions. (A,D) pFF-EC, (B,E)
-    pFF-CE, (C,F) pFF-ECE, prepared to \SI{1.25}{\mg\per\mL} (A-C) and
+    tracked particle movements within protein solutions. (A,D) \emph{p}FF-EC, (B,E)
+    \emph{p}FF-CE, (C,F) \emph{p}FF-ECE, prepared to \SI{1.25}{\mg\per\mL} (A-C) and
     \SI{2.5}{\mg\per\mL} (D-F). Charts display storage (${G'}$, filled markers) and loss
     (${G''}$, empty markers) moduli at \SI{22}{\celsius} (black) and \SI{42}{\celsius}
 (red).} \label{fig:pFF_rheology} \end{figure}
@@ -1492,43 +1509,43 @@ viscoelastic suspensions up to \SI{10}{\mg\per\mL}, respectively.
 \begin{figure}[h!] \centering \includegraphics[width=0.95\textwidth]{f_1_16}
     \caption{Microrheological plots of viscous and elastic moduli, derived from
     tracked particle movements within protein solutions. (A,D) wt-EC, (B,E)
-    wt-CE, (C,F) wt-ECE, prepared to \SI{1.25}{\mg\per\mL} (A-C) and
-    \SI{2.5}{\mg\per\mL} (D-F). Charts display storage (${G'}$,filled markers) and loss
+    wt-CE, (C,F) wt-ECE, prepared to \SI{2.50}{\mg\per\mL} (A-C) and
+    \SI{10}{\mg\per\mL} (D-F). Charts display storage (${G'}$,filled markers) and loss
     (${G''}$, empty markers) moduli at \SI{22}{\celsius} (black) and \SI{42}{\celsius}
 (red).} \label{fig:wt_rheology} \end{figure}
 % --------------------------
 Upon fluorination, more depressed concentration-dependent percolation points for
 the protein polymers were observed. While wt-EC was predominantly viscous at
-\SI{1.25}{\mg\per\mL}, pFF-EC was viscoelastic at \SI{22}{\celsius} at the same
+\SI{1.25}{\mg\per\mL}, \emph{p}FF-EC was viscoelastic at \SI{22}{\celsius} at the same
 concentration and both demonstrating more elastic character at \SI{42}{\celsius}
 at \SI{2.5}{\mg\per\mL} (Figure \ref{fig:pFF_rheology}A,D
-\ref{fig:wt_rheology}A,D). Both the wt-CE and pFF-CE exhibited
+\ref{fig:wt_rheology}A,D). Both the wt-CE and \emph{p}FF-CE exhibited
 viscous/viscoelastic character at \SI{1.25}{\mg\per\mL} and \SI{2.5}{\mg\per\mL}
 at \SI{22}{\celsius}, however, at \SI{2.5}{\mg\per\mL} and \SI{42}{\celsius},
-pFF-CE demonstrated a dominant elastic modulus compared to the viscoelastic
+\emph{p}FF-CE demonstrated a dominant elastic modulus compared to the viscoelastic
 character of the wt-CE (Figure \ref{fig:pFF_rheology}B,E and Figure
 \ref{fig:wt_rheology}B,E). Two types of modifications to the rheology behavior
-are observed from the EC and CE sets of constructs. For pFF-EC, a transition
+are observed from the EC and CE sets of constructs. For \emph{p}FF-EC, a transition
 shift in the required concentration to yield viscoelastic behavior is
-demonstrated, whereas for pFF-CE, a rheological shift to elastic behavior was
+demonstrated, whereas for \emph{p}FF-CE, a rheological shift to elastic behavior was
 observed, which was not obtainable, even at concentrations up to
 \SI{10}{\mg\per\mL} for wt-CE.\cite{Haghpanah2010}
 
-Similar to both diblocks, pFF-ECE underwent a transition and rheological shift.
-pFF-ECE demonstrated a transition shift from viscous to viscoelastic fluid at
+Similar to both diblocks, \emph{p}FF-ECE underwent a transition and rheological shift.
+\emph{p}FF-ECE demonstrated a transition shift from viscous to viscoelastic fluid at
 \SI{1.25}{\mg\per\mL} (Figure \ref{fig:pFF_rheology}C and Figure
-\ref{fig:wt_rheology}C). Most significantly, pFF-ECE at
+\ref{fig:wt_rheology}C). Most significantly, \emph{p}FF-ECE at
 \SI{1.25}{\mg\per\mL} exhibited elastic network formation at
 \SI{42}{\celsius}, while the wt-ECE was completely viscous under the same
 concentration and temperature (Figure \ref{fig:pFF_rheology}C and Figure
 \ref{fig:wt_rheology}C).
 
-The suppression of elastic behavior at \SI{42}{\celsius} for the
+The suppression of elastic behavior of \emph{p}FF-ECE at \SI{42}{\celsius} for the
 \SI{2.5}{\mg\per\mL} preparation compared to the \SI{1.25}{\mg\per\mL}
 preparation is similar to the gel formation of fibrin clotting networks, which
 form ``fine'' transparent networks that demonstrated more elastic behavior
 compared to that of ``coarse'' opaque networks.\cite{Clark1987} In general, the
-incorporation of pFF was observed to facilitate percolation when compared to
+incorporation of \emph{p}FF was observed to facilitate percolation when compared to
 their wild-type counterparts. Moreover, fluorination yielded robust elastic
 network formation for all three protein polymers at elevated temperatures. 
 
@@ -1542,36 +1559,36 @@ conformation that accompanies the sample heating corresponds to the
 self-assembly that is taking place. For all three protein fluoropolymers, the
 supramolecular assemblies as determined by turbidity measurements are dictated
 by the transitions from either unstructured to structured as in the case of
-pFF-EC and pFF-ECE or from ${\alpha+\beta}$-rich to ${\beta}$-rich conformation,
-as demonstrated by pFF-CE. As the proteins assume more ${\beta}$- conformation
+\emph{p}FF-EC and \emph{p}FF-ECE, or from ${\alpha+\beta}$-rich to ${\beta}$-rich conformation
+as demonstrated by \emph{p}FF-CE. As the proteins assume more ${\beta}$ conformation
 due to the elastin composition within the constructs, they undergo self-assembly
-into particle aggregates. Indeed, such correlations between CD spectrograms and
+into particle aggregates, as also shown in electron micrographs. Indeed, such correlations between CD spectrograms and
 turbidimetry profiles have been presented by groups studying elastin-like
 peptides; the differential light scattering of polarized light effectively
 converts a CD signature to a damped optical rotatory dispersion curve. While
 this technique has raised the notion that changes in CD spectra are in fact
 losses in signal due to the scattering of incident light upon self-assembly into
 large particulates, which is particularly suspected of \emph{p}FF-ECE CD
-experiments, the subpopulation that is still in solution displays a marked
+measurements, the subpopulation that is still in solution displays a marked
 transformation in structure.
 
 Although fluorination does not affect the secondary structure or ${T_t}$ of
-pFF-EC, there is an effect on the ${T_t}$ of pFF-CE even though the
+\emph{p}FF-EC, there is an effect on the ${T_t}$ of \emph{p}FF-CE even though the
 temperature-dependent conformation is conserved. The downward shift in the
-${T_t}$ of pFF-CE can thus be attributed to the promotion of supramolecular
+${T_t}$ of \emph{p}FF-CE can thus be attributed to the promotion of supramolecular
 assemblies upon heating, suggested by microrheology, as opposed to alterations
 to the evolution of secondary structure with respect to temperature.
 
-In the case of pFF-ECE, the secondary structural change correlates with the more
+In the case of \emph{p}FF-ECE, the secondary structural change correlates with the more
 cooperative transition and bulk mechanical response at lower concentration. It
 is posited that the pronounced effects on supramolecular assembly upon
 fluorinating CE and ECE are due to a synergistic enhancement of the effect of
-pFF on the hydrophobic collapse of the E domain. Distinct to the CE and ECE is
+\emph{p}FF on the hydrophobic collapse of the E domain. Distinct to the CE and ECE is
 the dominant ${\beta}$-content as heat is added to the system, in contrast to
 the EC protein. The overall results suggest that the hydrophobic collapse and
 subsequent ${\beta}$-turn formation of the E domain is occurring and dominating
 the compound structure of the block proteins. As part of the dominant structure
-for the protein, the pFF residues, which are biased toward the E domain, tend to
+for the protein, the \emph{p}FF residues, which are biased toward the E domain, tend to
 effect overall changes in the self-assembly process, observed via turbidity and
 microrheology experiments.
 
@@ -1605,7 +1622,7 @@ acid incorporation.
 Fluorination alters the mechanical behavior of all these particular protein
 polymers with respect to either concentration or temperature responsiveness.
 Specifically, the results demonstrated more elastic character upon incorporation
-of pFF in all constructs. The data suggests that fluorination promotes
+of \emph{p}FF in all constructs. The data suggests that fluorination promotes
 supramolecular association facilitating percolation and elastic network
 formation.\cite{Veerman2006,Safran1985,VanderLinden2001} Indeed fluorination of
 synthetic polymers has been shown to modulate supramolecular assemblies,
@@ -1629,6 +1646,9 @@ moduli by orders of magnitude similar to the effects reported by Bausch
 \latin{et al.} for recombinantly produced spider
 silk.\cite{Rammensee2008,Breedveld2004,Yucel2008}
 
+\subsection{Predictive trends for incorporating fluorine into hydrophobically
+collapsible proteins}
+\label{sec:predictive_trends}
 While there have been numerous studies of the effects of fluorinated amino acids
 on altering the stability and structure of proteins, both \latin{de novo} and
 natural,\cite{Megeed2002,Meyer2002,Wright2002,Simnick2007,Baker2011,URRY1974,Urry1985}
@@ -1636,19 +1656,24 @@ this work demonstrates that the integration of fluorinated amino acids can also
 modify bulk material properties relevant to both the thermoresponsive behavior
 of elastin-based fusions and rheological properties of soft gel materials for
 biomedical applications. Indeed, the most significant and applicable alterations
-to the constructs upon fluorination are manifested in the enabling of unrealized
-rheological regimes, as in the case of pFF-CE and pFF-ECE (Figure
+to the constructs upon fluorination are manifested in the enablement of unrealized
+rheological regimes, as in the case of \emph{p}FF-CE and \emph{p}FF-ECE (Figure
 \ref{fig:pFF_rheology}C and E, respectively), and in the shifting of critical
-concentrations, as in the case of pFF-EC and pFF-ECE (Figure
+concentrations, as in the case of \emph{p}FF-EC and \emph{p}FF-ECE (Figure
 \ref{fig:pFF_rheology}A and E, respectively). Furthermore, these properties of
-pFF-ECE are also accompanied by a more cooperative transition, making it more
+\emph{p}FF-ECE are also accompanied by a more cooperative transition, making it more
 sensitive for applications in temperature-actuated targeting and delivery, an
 established application of elastin-based protein
 polymers.\cite{Simnick2007,Chilkoti2002a} Modifications to the transition window
 have been effected in the past by changes in protein concentration and block
-orientation.\cite{Yamaoka2003,Meyer2002}
+orientation.\cite{Yamaoka2003,Meyer2002} This work exemplifies the potential for
+fluorinated residues to narrow the transition window but not significantly alter
+the ${T_t}$. Furthermore, larger meso-scale assemblies form in the presence of
+fluorinated components, owing to the perhaps fluorophilic assembly that may
+drive the intermolecular interactions between single macromolecules.
 
 \subsection{Applications in Drug Delivery}
+\label{sec:pff_app_drug}
 
 While the irreversible behavior of this collection of protein block copolymers
 may frame the VPG(\emph{p}FF)G motif as an unattractive candidate for
@@ -1669,22 +1694,28 @@ potentially promote the entrainment of recombinant proteins in the extracellular
 space of thermally-targeted tissue, as depicted in Figure
 \ref{fig:irreversible_delivery}.
 % --------------------------
-\begin{figure}[h!] \centering \includegraphics[width=0.7\textwidth]{f_1_23}
+\begin{figure}[h!] \centering \includegraphics[width=0.5\textwidth]{f_1_23}
     \caption[Scheme proposed by Mackay and Chilkoti, conveying an
         irreversible-associating peptide that is retained in depots after the
         tissue cools to body temperature, contacting a subset of cells. This
         exists as one of several strategies for designing anti-tumor
-        temperature-sensitive peptides. Drug carriers are shown to flow through
-    permeable tumor vasculature during or after locally applied
-hyperthermia.]{Scheme proposed by Mackay and Chilkoti,\cite{Mackay2008}
-conveying an irreversible-associating peptide that is retained in depots after
-the tissue cools to body temperature, contacting a subset of cells. This exists
-as one of several strategies for designing anti-tumor temperature-sensitive
-peptides. Drug carriers are shown to flow through permeable tumor vasculature
-during or after locally applied hyperthermia.} \label{fig:irreversible_delivery} \end{figure}
+        temperature-sensitive peptides. Soluble drug carriers are shown to flow
+        through permeable tumor vasculature during or after locally applied
+        hyperthermia. Carriers irreversibly coalesce in the tumor interstitium
+        due to the hysteresis of the thermoresponsive assembly.]
+
+{Scheme proposed by Mackay and Chilkoti,\cite{Mackay2008} conveying an
+irreversible-associating peptide that is retained in depots after the tissue
+cools to body temperature, contacting a subset of cells. This exists as one of
+several strategies for designing anti-tumor temperature-sensitive peptides.
+Soluble drug carriers are shown to flow through permeable tumor vasculature
+during or after locally applied hyperthermia. Carriers irreversibly coalesce in
+the tumor interstitium due to the hysteresis of the thermoresponsive assembly.}
+
+\label{fig:irreversible_delivery} \end{figure}
 % --------------------------
-The larger morphologies of these block polymers make them potentially attractive
-for injection into and entrainment within intra-articular
+The larger morphologies of these block copolymers make them potentially attractive
+for injection into, and entrainment within, intra-articular
 cavities.\cite{Nettles2008,Betre2006a}
 
 The biophysical reasons behind the irreversibility of assembly of these proteins
@@ -1699,7 +1730,15 @@ strongly dominated by kinetics.
 %applications.
 The enhancement in cooperativity of the thermoresponsive transitions upon
 fluorination makes them ideal for hyperthermia therapy drug
-delivery.\cite{Furgeson2006}
+delivery.\cite{Furgeson2006} Conventional hyperthermia regimens consist of
+localized heating of tumorous tissue, either via focused heating modalities or
+induction of systemic physiologic temperatures (ca. \SI{42}{\celsius}), for up
+to \SI{2}{\hour} or over several cycles.\cite{Chilkoti2002a,Dreher2007a}
+The narrow window of temperature range (\SIrange{39}{43}{\celsius}), within which
+hyperthermia therapy may be administered without detrimental cell death due to
+overheating, compels the need for delivery vehicles that operate within narrow
+thermal windows. A high degree of sharpness in the transition of drug carriers
+has thus been highlighted in research efforts.\cite{Nakayama2010,Mackay2008} 
 
 While the COMP domain of the constructs was not interrogated as much for its
 functional properties as was the elastin domain for its transitional behavior,
@@ -1708,19 +1747,21 @@ applications and has shown to enhance the small molecule absorption properties
 of elastin-like peptides.\cite{Haghpanah2010}
 
 \subsection{Applicability of fluorinated proteins to \textsuperscript{19}F
+\label{sec:pff_app_mri}
 magnetic resonance imagining modalities} 
 
 While the results in Section: \ref{sec:biosynthesis_results} demonstrate that
 residue-specific incorporation methods can successfully be applied to the block
 copolymers with high efficiency (\textgreater \SI{80}{\percent}), there are
-subtle effects to the physicochemical properties of the polymers that are
+subtle effects on the physicochemical properties of the polymers that are
 relevant to the potential of these polymers to be applied as therapeutic
 delivery agents equipped with MRI detectable \textsuperscript{19}F. The need to
 focus the concentration of \textsuperscript{19}F in the physiological region of
 interest is tantamount to the viable technical applicability of the constructs,
-and is reliant on their ability to assemble into supramolecular assemblies of
+and is thereby reliant on their ability to assemble into supramolecular assemblies of
 high density.
 % --------------------------
+
 The sub-\SI{100}{\nm} diameter size distribution of the protein polymer at
 \SI{4}{\celsius}, (see Figure \ref{fig:block_EM_pFF}) as well as the consistent
 baseline in turbidity profiles for \emph{p}FF-CE and \emph{p}FF-ECE (see Figure
@@ -1743,15 +1784,16 @@ extensively as their fluorinated counterparts. This positions the fluorinated
 variants as more ideal candidates for concentrating not only small molecule
 payload, but also \textsuperscript{19}F-labeled residues.
 % --------------------------
+
 Preliminary \textsuperscript{19}F ssNMR data for a variant of these block
 polymers, containing three repeating elastin domains (as opposed to five), is
-presented in Section \ref{sec:ss_nmr} The experiment aimed to elucidate any
+presented in Section \ref{sec:ss_nmr}. The experiment aimed to elucidate any
 thermoresponsive behavior of the protein as a solid mass, when packed into an
 NMR rotor, by monitoring the spin-lattice relaxation time, ${T_{1}}$ at
 \SI{10}{\celsius} and \SI{35}{\celsius}. While the results were inconclusive
 regarding differences in relaxation behavior, the strong signal pertaining to the
 \textsuperscript{19}F in the protein demonstrated the applicability of these
-constructs as NMR contrast agent. Aside from the various attempts to monitor the
+constructs as MRI contrast agents. Aside from the various attempts to monitor the
 extravasation of liposomal drug carriers via Gd-labeling,\cite{Tagami2011} this
 is the first attempt toward the integration of fluorinated amino acids into
 elastin-based delivery vehicles, proving the technical feasibility for further
@@ -1763,24 +1805,23 @@ optimization.
 While the field of protein engineering has offered numerous examples of
 \textsuperscript{19}F-labeled proteins, by way of the incorporation of
 non-canonical fluorinated amino acids (as presented in Section
-\ref{sec:fluorinated_amino_acids}, it is the vehement opinion of this author
+\ref{sec:fluorinated_amino_acids}), it is the vehement opinion of this author
 that the costs associated with the synthesis and incorporation of non-natural
 amino acids,\cite{Hodgson2004,Ojima1989} particularly when applied to the
 screening of several mutants prior to pilot-scale development/application, 
 situates the realization of fluorinated protein-based delivery agents as a far
-reality. At the time of this publication, \iupac{trifluoro-\L-leucine} was
+reality.\footnote{At the time of this publication, \iupac{trifluoro-\L-leucine} was
 distributed from U.S. manufacturers for
-\$\SIrange[range-phrase=--]{300}{500}{\per\gram}.
+\$\SIrange[range-phrase=--]{300}{500}{\per\gram}.}
 
-Yet another challenge still exists with respect to directing the concentration
-of the proteins such that stock concentrations are not too high so as to offset
+Yet another challenge still exists with respect to controlling the concentration
+of the proteins such that stock concentrations are not too high so as to depress
 the ${T_t}$ of the stock preparation, resulting in a premature irreversible
-coacervation event, would pose a challenge to any attempts to scale the
-biosynthetic process. Furthermore, growth of elastin-like peptide-based
+coacervation event. Furthermore, growth of elastin-like peptide-based
 macromolecules with ${T_t}$ points near the operating temperatures of the growth
-conditions of bioreactors may result again in premature meso-phase separation. 
+conditions of bioreactors may result again in premature meso-phase separation.
 
-\section{Conclusion}
+\subsection{Protein design}
 
 In the realm of synthetic chemistry, there has been a long standing interest in
 the physicochemical properties of fluorinated polymers. Self-assembly into
@@ -1799,6 +1840,31 @@ protein-based materials. This provides a novel and alternative route for tuning
 smart materials that rely on gel mechanics, in the case of applications in
 tissue engineering, and thermoresponsive transition, in the case of applications
 in drug delivery. 
+
+\subsection{Future work}
+
+Further optimization devoted to the incorporation efficiencies of fluorinated
+amino acids into these block copolymers is necessary for further practical
+development of the compositions. More uniform incorporation will further promote
+consistency in the observable physicochemical properties of the block
+copolymers, notwithstanding any inherent stochastic behavior that embodies the
+self-assembly processes. This may be carried out by either carrying out the
+biosynthetic expression under stricter selective control, or by engineering the
+expression system to one more based on orthogonal transcription technologies.
+
+Beyond the improvement in incorporation methods, additional attention should be
+devoted to the functional characteristics of COMP, as it exists as part of the
+block copolymer. These observations on COMP - specifically its ability to 1)
+oligomerize and 2) bind to small molecules - should be carried out at conditions
+preceding and following thermo-actuated transitions, as they are measured in the
+body of this work. This work may seek, for example, to correlate the thermal
+transition of the elastin domain to the incrementation of COMP oligomerization
+states, providing insight into the engineered application of elastin-like
+peptides as oligomerization chaperones. Assessment of binding properties of the
+COMP domain, and/or the other elements of the block copolymers, will further
+promote these inventions toward \latin{in vitro} and \latin{in vivo}
+applications; the challenge lies with adopting viable small molecule as payload
+candidates.
 
 %\printbibliography[heading=subbibliography]
 
