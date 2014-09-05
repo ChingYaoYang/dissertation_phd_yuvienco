@@ -25,7 +25,7 @@
 %% Page Intentionally Left Blank'', use the ``leftblank'' option, as
 %% above. 
 
-\documentclass[11pt,singlespace]{mitthesis}
+\documentclass[12pt,leftblank]{mitthesis}
 \usepackage{lgrind}
 \pagestyle{plain}
 
@@ -93,8 +93,11 @@
 \usepackage{subcaption}
 \usepackage{fixltx2e}
 
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+
 \usepackage{caption}
-%\captionsetup{font={stretch=1.5}}
+\captionsetup{font={stretch=1.5}}
 
 \begin{document}
  
@@ -105,16 +108,22 @@
 % applicable.
 
 %\include{signature}
-%\pagestyle{drafthead}
+
 \pagestyle{plain}
+\singlespacing
+\include{final-defense-preface}
+
+%\pagestyle{mydraft}
 \pagenumbering{roman}
 \include{contents}
-%\include{pre-defense-preface}
+
+\doublespacing
 \pagenumbering{arabic}
 \include{chap1}
 \include{chap2}
 \appendix
 \include{appc}
+\singlespacing
 \include{appa}
 \include{appb}
 \end{document}

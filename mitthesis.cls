@@ -319,15 +319,15 @@
 
 % Redefinition of 'myheadings' page style.  
 %
-\def\ps@myheadings{\let\@mkboth\@gobbletwo
-    \def\@oddfoot{}
-    \def\@evenfoot{}
-    \def\sectionmark##1{}
-    \def\subsectionmark##1{}
-    \def\@evenhead{\rm \thepage\hfil\sl\leftmark\hbox {}}	%
-    \def\@oddhead{\hbox{}\sl\rightmark \hfil \rm\thepage}	%
+\def\ps@mydraft{
+    \let\@mkboth\markboth
+    \def\@oddfoot{\rm \today \hfil \sc \draftrmark}
+    \def\@oddhead{\hbox{}\sl \rightmark \hfil \rm\thepage}
+    \def\sectionmark##1{\markright {\uppercase{\ifnum \c@secnumdepth >\z@
+	\thesection. \ \fi ##1}}}
     \pulldownheader				% Bring header down from edge
-}						
+    \pullupfooter				% Bring footer up
+}
 
 % Redefine '/chapter' to always start on an odd page.
 % Should make no difference in singleside mode.
