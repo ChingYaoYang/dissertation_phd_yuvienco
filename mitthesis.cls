@@ -393,6 +393,8 @@
 
 \def\degreetitle#1{\gdef\@degreetitle{#1}}
 
+\def\advisor#1{\gdef\@advisor{#1}}
+
 \def\idnumber#1{\gdef\@idnumber{#1}}
 
 % If you are getting two degrees, use \and between the names.
@@ -506,23 +508,25 @@ Univerity ID\#: \choosecase{\@idnumber}
 % but we want people to also be able to get at the more
 % basic abstract environment
 \def\abstractpage{\cleardoublepage
-\begin{center}{\large{\bf \@title} \\
+\begin{center}
+    \bf{\normalsize{\uppercase\expandafter{Abstract} \\
+\uppercase\expandafter{\@title}} \\
 by \\
-\@author \\[\baselineskip]}
+\@author \par
+Advisor: \@advisor \\[\baselineskip]
+}
 \par
-\def\baselinestretch{1}\@normalsize
-Submitted to the \@department \\
-on \@thesisdate, in partial fulfillment of the \\
-requirements for the \@degreeword\ of \\
-\@degree
+\def\baselinestretch{1.5}\@normalsize
+Submitted in Partial Fulfillment of the Requirements for \\
+the Degree of \@degree (\@degreetitle) \par
+\@degreemonth\ \@degreeyear \par
 \end{center}
-\par
-\begin{abstract}}
+}
 
 %% Changed from \unvbox to \unvcopy for use with multiple copies of abstract
 %% page.
 %% Krishna Sethuraman (1990)
-    \def\endabstractpage{\end{abstract}\noindent}
+    \def\endabstractpage{\noindent}
 %% \unvcopy\@abstractsupervisor \newpage}
 
 %% This counter is used to save the page number for the second copy of
@@ -566,6 +570,6 @@ requirements for the \@degreeword\ of \\
 {\indent\raggedright Date \par}
 }
 
-\def\abstract{\subsection*{Abstract}\small\def\baselinestretch{1.5}\@normalsize}
-\def\endabstract{\par}
+%\def\abstract{\subsection*{Abstract}\small\def\baselinestretch{1.5}\@normalsize}
+%\def\endabstract{\par}
 
