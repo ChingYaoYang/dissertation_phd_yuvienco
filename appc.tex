@@ -183,13 +183,7 @@ the adhesion drop method, previously documented in \ref{sec:TEM_method}.
 
 \section{Limulus amebocyte lysate (LAL) assay of COMP protein preparation}
 \label{sec:lal_assay}
-LAL assays were performed using a Pierce LAL Chromogenic Endotoxin Quantitation
-Kit (Pierce). The kit measures endotoxin levels by measuring the activity of the
-proenzyme Factor C against lipopolysaccharides (endotoxins) derived from the
-outer cell membrane of gram-negative bacteria. The active protease derived from
-the presence of endotoxins results in the release of \iupac{\p-nitroaniline}
-(pNA) after proteolysis, which produces a maximal absorption at \SI{405}{\nm}.
-Version 2445.3 of the kit was used.
+% --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.6\textwidth]{f_c_03}
     \caption{Quantitation of endotoxin levels in COMP protein preparations
         following endotoxin removal using a Detoxi-Gel column. Open square
@@ -202,6 +196,13 @@ Version 2445.3 of the kit was used.
 linear regression fit along the standard data points.}\label{fig:LAL_assay}
 \end{figure}
 % --------------------------
+LAL assays were performed using a Pierce LAL Chromogenic Endotoxin Quantitation
+Kit (Pierce). The kit measures endotoxin levels by measuring the activity of the
+proenzyme Factor C against lipopolysaccharides (endotoxins) derived from the
+outer cell membrane of gram-negative bacteria. The active protease derived from
+the presence of endotoxins results in the release of \iupac{\p-nitroaniline}
+(pNA) after proteolysis, which produces a maximal absorption at \SI{405}{\nm}.
+Version 2445.3 of the kit was used.
 \section{Size-exclusion standard curves}
 % --------------------------
 \begin{figure}
@@ -224,7 +225,9 @@ linear regression fit along the standard data points.}\label{fig:LAL_assay}
         in the mobile phase buffer.}\label{fig:sec_standards}
 \end{figure}
 % --------------------------
-Size exclusion standard curves were collected on a Acquity H-Class UPLC
+
+
+Size exclusion standard curves (shown in Figure \ref{fig:sec_report}) were collected on a Acquity H-Class UPLC
 (Waters), using a \SI{4.6}{\mm} ${\times}$ \SI{300}{\mm} BEH125 SEC column. The
 column was used with an isocratic mobile phase consisting of
 \SI{100}{\milli\moLar} Gomori phosphate buffer, pH 8.0;
@@ -235,10 +238,11 @@ concentration of \SI{50}{\micro\moLar}). Buffer flowed through the column at a
 constant rate of \SI{250}{\uL\per\minute} with a typical back pressure of
 \SI{8000}{\psi}. Chromatograms were collected over the
 course of \SI{25}{\minute}.
+
 \section{UPLC method development}
 \label{sec:rp_method}
 % --------------------------
-\begin{figure}[h!] \centering \begin{subfigure}[b]{0.7\textwidth}
+\begin{figure} \centering \begin{subfigure}[b]{0.7\textwidth}
         \includegraphics[width=\textwidth]{f_2_13a} \caption{UPLC gradient for
         chromatographic separation} \label{fig:uplc_gradient} \end{subfigure}
     \begin{subfigure}[b]{0.7\textwidth}
@@ -260,6 +264,23 @@ course of \SI{25}{\minute}.
     extracted for the identification of optimal wavelengths for
 analytes.}\label{fig:uplc_report} \end{figure}
 % --------------------------
+% --------------------------
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.75\textwidth}
+        \includegraphics[width=\textwidth]{f_2_14a}
+        \caption{MilliQ, \SI{0.3366}{\ng}, \SI{92.46}{\percent} recovery}
+        \label{fig:milliq_extract}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{f_2_14b}
+        \caption{DMEM, \SI{0.335}{\ng}, \SI{92.02}{\percent} recovery}
+        \label{fig:lonza_extract}
+    \end{subfigure} \caption{UPLC quantitation of BMS493 (\SI{3.1}{\minute}) in
+    extract controls prepared in different media. Each sample was spiked with
+    \SI{0.1}{\volper} \SI{1}{\milli\moLar} BMS493 prepared in
+DMSO}\label{fig:extract_controls} \end{figure}
+% --------------------------
 UPLC method was optimized by first attempting separation of BMS493, retinoic
 acid, and retinyl palmitate using a binary system of acetonitrile and water.
 However, this resulted in poor resolution of retinoic acid. The addition of
@@ -279,25 +300,9 @@ to \SI{100}{\percent} ACN, then held isocratically for approximately
 presented in Figure \ref{fig:retinoid_spectra} allowed for single channels -
 \SI{355}{\nm}, \SI{329}{\nm}, and \SI{324}{\nm} for ATRA, BMS493, and retinyl
 palmitate, respectively - to be collected to obtain the best sensitivity of
-detection as well as cross-channel calibration against retinyl palmitate.
-
-% --------------------------
-\begin{figure}[h!]
-    \centering
-    \begin{subfigure}[b]{0.75\textwidth}
-        \includegraphics[width=\textwidth]{f_2_14a}
-        \caption{MilliQ, \SI{0.3366}{\ng}, \SI{92.46}{\percent} recovery}
-        \label{fig:milliq_extract}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.8\textwidth}
-        \includegraphics[width=\textwidth]{f_2_14b}
-        \caption{DMEM, \SI{0.335}{\ng}, \SI{92.02}{\percent} recovery}
-        \label{fig:lonza_extract}
-    \end{subfigure} \caption{UPLC quantitation of BMS493 (\SI{3.1}{\minute}) in
-    extract controls prepared in different media. Each sample was spiked with
-    \SI{0.1}{\volper} \SI{1}{\milli\moLar} BMS493 prepared in
-DMSO}\label{fig:extract_controls} \end{figure}
-% --------------------------
+detection as well as cross-channel calibration against retinyl palmitate. This
+method was then applied to cell culture extracts, prepared using liquid-liquid
+extraction techniques (see Figure \ref{fig:extract_controls}).
 
 \printbibliography[heading=subbibliography]
 
