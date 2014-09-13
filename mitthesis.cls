@@ -554,6 +554,14 @@ requirements for the \@degreeword\ of \\
 \def\signature#1#2{\par\noindent#1\dotfill\null\\*
   {\raggedleft #2\par}}
 
+\def\signatureentry#1#2
+{\par\setlength{\parindent}{15em}\indent\rule{0.55\textwidth}{.5pt} \\*
+{\indent\raggedright\bfseries#1\\*}
+{\indent\raggedright\mdseries#2\par}
+{\indent\raggedright\rule{0.2\textwidth}{.5pt}\\*}
+{\indent\raggedright Date \par}
+}
+
 \def\abstract{\subsection*{Abstract}\small\def\baselinestretch{1.5}\@normalsize}
 \def\endabstract{\par}
 
