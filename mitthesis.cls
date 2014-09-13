@@ -391,6 +391,10 @@
 
 \def\department#1{\gdef\@department{#1}}
 
+\def\degreetitle#1{\gdef\@degreetitle{#1}}
+
+\def\idnumber#1{\gdef\@idnumber{#1}}
+
 % If you are getting two degrees, use \and between the names.
 \def\degree#1{\setbox0\hbox{#1}	 %for side effect of setting \@degreeword
   \gdef\@degree{#1}}
@@ -470,34 +474,31 @@ reserved.\par\permission}}
 %% a macro to change the (expanded) argument to uppercase.
 \def\maketitle{\begin{titlepage}
 \large
-{\def\baselinestretch{1.2}\Large\bf \choosecase{\@title} \par}
-by\par
-{\Large  \choosecase{\@author}}
-\par
-\@prevdegrees
-\par
-\choosecase{Submitted to the} \choosecase{\@department} \\
-\choosecase{in partial fulfillment of the requirements for the}
-\choosecase{\@degreeword} 
-\choosecase{of}
-\par
-\choosecase{\@degree}
+%{\def\baselinestretch{1.2}\Large\bf \choosecase{\@title} \par}
+{\def\baselinestretch{1.2}\large\bf \uppercase\expandafter{\@title} \par}
+\uppercase\expandafter{Dissertation} \par
+\choosecase{Submitted in Partial Fulfillment of} \\
+\choosecase{the Requirements for} \\
+\choosecase{the Degree of} \\
+{\bf\uppercase\expandafter{\@degree} \choosecase{(\@degreetitle)}}
 \par
 at the
-\par\NYU\par
-\par\POLY\par
+{\Large\bf\par\NYU\\\POLY\par}
+by\par
+{\bf\large\choosecase{\@author}}
+\par
 \@degreemonth\ \@degreeyear
 \par
-\@copyrightnotice
-\par
+\vskip 2\baselineskip
+Approved: \par
 \vskip 3\baselineskip
-\signature{Author}{\@department \\ \@thesisdate}
-\par
-\vfill
-\unvbox\@titlesupervisor
-\par
-\vfill
-\signature{Accepted by}{\@chairmanname \\ \@chairmantitle}
+
+\small\signature{Department Head Signature}
+\signature{Date}
+\vskip 3\baselineskip
+\raggedright
+Copy No. \rule{0.05\textwidth}{0.5pt}\\*
+Univerity ID\#: \choosecase{\@idnumber}
 \vfill
 \end{titlepage}}
 
@@ -551,14 +552,17 @@ requirements for the \@degreeword\ of \\
    document in whole or in part in any medium now known or hereafter
    created.}\par}
 
-\def\signature#1#2{\par\noindent#1\dotfill\null\\*
-  {\raggedleft #2\par}}
+%\def\signature#1#2{\par\noindent#1\dotfill\null\\*
+%  {\raggedleft #2\par}}
 
-\def\signatureentry#1#2
-{\par\setlength{\parindent}{15em}\indent\rule{0.55\textwidth}{.5pt} \\*
+   \def\signature#1{\par\setlength{\parindent}{15em}\indent\rule{0.55\textwidth}{0.5pt}\\*{\indent#1}\null}
+
+\def\signatureentry#1#2#3
+{\par\setlength{\parindent}{15em}\indent\rule{0.55\textwidth}{0.5pt} \\*
 {\indent\raggedright\bfseries#1\\*}
-{\indent\raggedright\mdseries#2\par}
-{\indent\raggedright\rule{0.2\textwidth}{.5pt}\\*}
+{\indent\raggedright\mdseries#2\\*}
+{\indent\raggedright\mdseries#3\par}
+{\indent\raggedright\rule{0.2\textwidth}{0.5pt}\\*}
 {\indent\raggedright Date \par}
 }
 
