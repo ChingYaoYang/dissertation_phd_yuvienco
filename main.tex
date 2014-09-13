@@ -99,25 +99,37 @@
 \usepackage{caption}
 \captionsetup{font={stretch=1.5}}
 
+\usepackage{fancyhdr}
+
+\usepackage{titlesec}
+\titleformat{\section}[block]
+{\LARGE\bfseries\raggedright}{\thesection}{1em}{}
+
 \begin{document}
  
-\include{cover}
-
 % Some departments (e.g. 5) require an additional signature page.  See
 % signature.tex for more information and uncomment the following line if
 % applicable.
 
-%\include{signature}
+%\fancypagestyle{plain} {
+    %\fancyhf{}
+    %\renewcommand{\footrulewidth}{0pt}
+    %\renewcommand{\headrulewidth}{0pt}
+%}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\doublespacing
 
-\pagestyle{plain}
+\include{cover}
 \singlespacing
 \include{final-defense-preface}
-
-%\pagestyle{mydraft}
+\doublespacing
 \pagenumbering{roman}
 \include{contents}
 
-\doublespacing
 \pagenumbering{arabic}
 \include{chap1}
 \include{chap2}

@@ -223,7 +223,7 @@
 \setlength{\oddsidemargin}{0.50in}	% 1.25in left margin 
 \setlength{\evensidemargin}{0.50in}	% 1.25in left margin (even pages)
 \setlength{\topmargin}{0.0in}		% 1in top margin
-\setlength{\textwidth}{6.25in}		% 6.0in text - 1.25in rt margin
+\setlength{\textwidth}{6.0in}		% 6.0in text - 1.25in rt margin
 \setlength{\textheight}{9in}		% Body ht for 1in margins
 \addtolength{\topmargin}{-\headheight}	% No header, so compensate
 \addtolength{\topmargin}{-\headsep}	% for header height and separation
@@ -316,6 +316,27 @@
     \pulldownheader				% Bring header down from edge
 }
 \fi
+
+% --------------------------
+
+\if@twoside					% If two-sided printing.
+\def\ps@finalheadings{\let\@mkboth\markboth
+    \def\@oddfoot{}
+    \def\@evenfoot{}		% No feet.
+    \def\@evenhead{\rm \thepage\hfil \sl \leftmark}	% Left heading.
+    \def\@oddhead{\hbox{}\sl \rightmark \hfil \rm\thepage}	% Right heading.
+    \pulldownheader				% Bring header down from edge
+}
+\else						% If one-sided printing.
+\def\ps@finalheadings{\let\@mkboth\markboth
+    \def\@oddfoot{}
+    \def\@evenfoot{}		%     No feet.
+    \def\@oddhead{\hbox {}\sl \hfil \rm\thepage}	% Heading.
+    \pulldownheader				% Bring header down from edge
+}
+\fi
+
+% --------------------------
 
 % Redefinition of 'myheadings' page style.  
 %
@@ -500,8 +521,8 @@ requirements for the \@degreeword\ of \\
 %% Changed from \unvbox to \unvcopy for use with multiple copies of abstract
 %% page.
 %% Krishna Sethuraman (1990)
-\def\endabstractpage{\end{abstract}\noindent
- \unvcopy\@abstractsupervisor \newpage}
+    \def\endabstractpage{\end{abstract}\noindent}
+%% \unvcopy\@abstractsupervisor \newpage}
 
 %% This counter is used to save the page number for the second copy of
 %% the abstract.
@@ -533,6 +554,6 @@ requirements for the \@degreeword\ of \\
 \def\signature#1#2{\par\noindent#1\dotfill\null\\*
   {\raggedleft #2\par}}
 
-\def\abstract{\subsection*{Abstract}\small\def\baselinestretch{1}\@normalsize}
+\def\abstract{\subsection*{Abstract}\small\def\baselinestretch{1.5}\@normalsize}
 \def\endabstract{\par}
 
