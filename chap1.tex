@@ -178,16 +178,16 @@ gained during assembly.
 Despite the well-known terminology associated with block
 copolymers,\cite{Hamley2004} the intentional generation of
 peptide-/protein-based block copolymers is still limited in precedence. Only a
-few groups have demonstrated an application of the polymeric motif with the use
-of genetic
+few groups have demonstrated an application of the polymeric motif with the
+use of genetic
 engineering.\cite{Higashiya2007,Lim2008a,Chen2008a,Xu2005,Osborne2008} These
-groups leverage recombinant DNA technology to obtain
-precise control over protein primary sequence, length and block distributions. 
-The extent of predictability of the physicochemical properties of such block
-copolymers is still elusive, and to-date, appears to require a case-by-case
-empirical investigation. Studies of independent block components are, however,
-carried out extensively, such as in the case of silk-, elastin-like peptide-,
-coiled-coil protein-based fusions, establishing behavioral trends based on salt
+groups leverage recombinant DNA technology to obtain precise control over
+protein primary sequence, length and block distributions.  The extent of
+predictability of the physicochemical properties of such block copolymers is
+still elusive, and to-date, appears to require a case-by-case empirical
+investigation. Studies of independent block components are, however, carried out
+extensively, such as in the case of silk-, elastin-like peptide-, coiled-coil
+protein-based fusions, establishing behavioral trends based on salt
 concentration and primary sequence.\cite{Nuhn2008,Reiersen1998,Cho2008} In
 addition, the interdependence of biophysical properties of disparate
 self-assembling domains as they exist as part of fusion constructs is still
@@ -203,6 +203,8 @@ coiled-coils are just beginning to be developed via these
 techniques.\cite{Kim2008a,Meyer1999,Wheeldon2009} A prime example is the fusion
 of self-assembling proteins to host proteins to aid in the purification of the
 host protein.
+
+Wood \latin{et al.} have adapted intein-based cleavage host-domains to 
 
 The work by Meyer and Chilkoti pertaining to the fusion of
 elastin-like peptides to host proteins for the high-throughput, rapid
@@ -686,6 +688,11 @@ transitions, the mechanical nature of which was probed by microrheology.
 
 \section{Methods}
 
+\subsection{General}
+
+All reagents were obtained from Alfa Aesar or Fisher
+Scientific unless otherwise stated.
+
 \subsection{Recombinant gene construction}
 
 Plasmid vectors containing the genes for the block protein polymer fusions were
@@ -701,7 +708,7 @@ yield pQE30/EC (BamHI and SacI), pQE30/CE (SalI and HindIII), and pQE30/ECE (all
 \ref{chap:seq_data}. 
 
 \subsection{Biosynthesis}
-
+\label{sec:pFF_biosynthesis_method}
 The aforementioned plasmid vectors were transformed into the phenylalanine
 auxotrophic \emph{E. coli} strain AF-IQ, previously created and donated by David
 Tirrell \emph{et al}.\cite{Yoshikawa1994,Sharma2000} Cell growth methods were based on
@@ -761,8 +768,9 @@ rather contains \SI{91.59}{\mg\per\mL} \iupac{\para-fluorophenylalanine},
 prepared from a stock.  Cells in the new media were allowed to grow at the same
 incubation conditions for \SI{30}{\minute}, at which time the media was
 supplemented with \iupac{isopropyl \b-\D-1-thiogalactopyranoside} (IPTG,
-\SI{100}{\ug\per\mL}).  Cells were harvested and stored at -20 \si{\celsius} for
-subsequent lysis and purification.
+\SI{100}{\ug\per\mL}). Post-induction cell growth was carried out for an
+additional \SI{3}{\hour}. Cells were harvested and stored at \SI{-20}{\celsius}
+for subsequent lysis and purification.
 
 \subsection{Protein purification}
 
@@ -779,43 +787,46 @@ resuspended in a cold hypertonic sucrose solution, consisting of
 ethylenediaminetetraacetic acid (EDTA), \pH 7.9. For every \SI{10}{\mL} of
 original culture media, the resultant pellet was resuspended in \SI{1}{\mL} of
 sucrose solution. The cell suspension was then pelleted via centrifugation at
-\SI{7000}{\gforce} for \SI{30}{\minute} at \SI{4}{\celsius}. The resultant
-pellet was separated from its supernatant and gently resuspended in a cold
-hypotonic solution consisting of \SI{5}{\milli\moLar} \ch{MgSO4}, with a
-volumetric equivalent to that of the previous step, and incubated on ice for
-\SI{10}{\minute}. The suspension was then centrifuged at \SI{4500}{\gforce} for
-\SI{20}{\minute} at \SI{4}{\celsius}. The resultant pellet was separated from
-its supernatant and stored at \SI{-20}{\celsius} for downstream lysis. 
+\SI{7000}{\gforce} for \SI{30}{\minute} at \SI{4}{\celsius} on an Avanti J-25
+Centrifuge (Beckman Coulter). The resultant pellet was separated from its
+supernatant and gently resuspended in a cold hypotonic solution consisting of
+\SI{5}{\milli\moLar} \ch{MgSO4}, with a volumetric equivalent to that of the
+previous step, and incubated on ice for \SI{10}{\minute}. The suspension was
+then centrifuged at \SI{4500}{\gforce} for \SI{20}{\minute} at \SI{4}{\celsius}.
+The resultant pellet was separated from its supernatant and stored at
+\SI{-20}{\celsius} for downstream lysis. 
 % --------------------------
 Osmotically shocked expression pellets were resuspended in denaturing lysis
 buffer, consisting of \SI{50}{\milli\moLar} \ch{Na2HPO4}, \SI{6}{\moLar}
-\ch{CO(NH2)2}, \pH 8.0. The pellet was resuspended in a 4:70 volumetric ratio
+\ch{CO(NH2)2} (urea), \pH 8.0. The pellet was resuspended in a 4:70 volumetric ratio
 (buffer:culture volume) on ice. The cell lysate was then passed through a French
 press (40K-cell; Thermo Scientific), processed at \SI{165.5}{\MPa}, and
 collected on ice. The cold lysate was then centrifuged at \SI{40000}{\gforce}
-for \SI{45}{\minute} at \SI{4}{\celsius}. The clarified lysate was then applied
-to a \SI{5}{\mL} HiTrap IMAC FastFlow column (GE Life Sciences), charged with
-\ch{CoCl2}, using an \"{A}KTA purifier system (GE Life Sciences). The lysate was
-loaded with \SI{0}{\moLar} imidazole and washed with 10 column volumes (CV) of
-the same buffer constitution. The protein was then eluted across 1 CV of
-\SI{48}{\milli\moLar} imidazole and 3 CV of \SI{1}{\moLar} imidazole.  Purified
-elutions were assayed for purity via sodium dodecylsulfate polyacrylamide gel
-electrophoresis (SDS-PAGE) analysis and, contingent upon confirmation of
-\SI{90}{\percent} purity, was dialyzed extensively against water with a 3500
-MWCO regenerated cellulose membrane (SnakeSkin Dialysis Tubing, Pierce) and
-subsequently freeze-dried prior to use in experiments. Polyacrylamide gels were
-cast using ammonium persulfate and tetramethylethylenediamine-catalyzed
-polymerization to obtain \SI{12}{\wtper} acrylamide gels. Gel lanes of pure
-protein were used to quantitate post-purification yields, using an ImageQuant
-gel imaging system (GE Life Sciences). Loaded mass of protein, from
-\SI{10}{\uL}, was calibrated against a volumetric equivalent of Precision Plus
-Protein Unstained Standard mixture (Bio-Rad).
+for \SI{45}{\minute} at \SI{4}{\celsius} on an Avanti J-25 Centrifuge (Beckman
+Coulter). The clarified lysate was then applied to a \SI{5}{\mL} HiTrap IMAC
+FastFlow column (GE Life Sciences), charged with \ch{CoCl2}, using an \"{A}KTA
+purifier system (GE Life Sciences). The lysate was loaded with \SI{0}{\moLar}
+imidazole and washed with 10 column volumes (CV) of the same buffer
+constitution. The protein was then eluted across 1 CV of \SI{48}{\milli\moLar}
+imidazole and 3 CV of \SI{1}{\moLar} imidazole.  Purified elutions were assayed
+for purity via \SI{12}{\percent} sodium dodecylsulfate polyacrylamide gel electrophoresis
+(SDS-PAGE) analysis and, contingent upon confirmation of \SI{90}{\percent}
+purity, was dialyzed extensively against water with a 3500 MWCO regenerated
+cellulose membrane (SnakeSkin Dialysis Tubing, Pierce) and subsequently
+freeze-dried prior to use in experiments using a Freeze Zone 6L Freeze Dryer
+(Labconco). Polyacrylamide gels were cast using ammonium persulfate and
+tetramethylethylenediamine-catalyzed polymerization to obtain \SI{12}{\wtper}
+acrylamide gels. Gel lanes of pure protein were used to quantitate
+post-purification yields, using an ImageQuant gel imaging system (GE Life
+Sciences). Loaded mass of protein, from \SI{10}{\uL}, was calibrated against a
+volumetric equivalent of Precision Plus Protein Unstained Standard mixture
+(Bio-Rad).
 
 \subsection{Compositional characterization}
 \subsubsection{MALDI-ToF mass spectrometry}
 
 Incorporation levels of \emph{p}FF were assessed via matrix-assisted laser desorption
-ionization, time-of-flight mass spectrometry analysis on an Omniflex
+ionization, time-of-flight mass (MALDI-ToF) spectrometry analysis on an Omniflex
 spectrometer (Bruker Daltonics). Chymotryptic digests of purified proteins were
 prepared by resuspending \SIrange[range-phrase=--]{50}{100}{\ug} of protein in
 \SI{100}{\milli\moLar} Tris-HCl and \SI{10}{\milli\moLar} \ch{CaCl2} (\pH 8.0)
@@ -832,7 +843,9 @@ OmniFlex MALDI target (Bruker Daltonics) and allowed to dry under vacuum.
 Relative estimates of peptide digest fragment quantities were conducted by
 comparing relative peak intensities at different \emph{m/z} values. MS spectra
 were calibrated against a standard mixture of peptides, provided by New England
-Biolabs.
+Biolabs, consisting of Angiotensin I, Neurotensin, ACTH (1-7), ACTH (18-19),
+and ACTH (7-38). Each mass spectrum was collected in linear mode from
+approximately 2000 shots.
 
 \subsubsection{Amino acid analysis}
 
@@ -845,19 +858,65 @@ on the measurements of normalized Phe levels in the samples.
 \subsection{Physicochemical characterization}
 
 \subsubsection{UV/Vis spectroscopy}
+\label{sec:lcst_method}
 It has long been the convention to monitor the coacervation of materials that
 demonstrate a lower critical
 solution temperature point via their temperature-resolved absorption in the
 range of \SIrange{300}{400}{\nm}.\cite{Jamieson1972a} Furthermore, the lower critical solution
-temperature behavior, a key characteristic of elastin-like peptides,
-is typically qualified by the point of half-maximal turbidity.\cite{Urry1993}
+temperature behavior, a key characteristic of elastin-like peptides, is
+typically qualified by the point of half-maximal turbidity.\cite{Urry1993} It
+has alternatively been quantified by examining the first derivative of
+curves,\cite{Furgeson2006,Liu2010b,Mackay2010a,Meyer2004} which was employed in
+this work.
 
 UV/vis spectroscopy was performed on a Cary 100 UV/vis spectrometer (Agilent) to
-determine the inverse temperature transition point ({$T_t$}) of 
-\SI{4}{\micro\moLar} protein prepared in \SI{10}{\milli\moLar} Gomori buffer,
-\pH 8.0. The absorbance at \SI{350}{\nm} was measured as each protein sample was
-heated from \SIrange{10}{65}{\celsius}, at a heating rate of
-\SI{0.5}{\celsius\per\minute}.\cite{Chilkoti2002a}
+determine the inverse temperature transition point ({$T_t$}) of
+\SI{4}{\micro\moLar} protein prepared in \SI{10}{\milli\moLar} Gomori sodium
+phosphate buffer, \pH 8.0. The absorbance at \SI{350}{\nm} was measured as each
+protein sample was heated from \SIrange{10}{65}{\celsius}, at a heating rate of
+\SI{0.5}{\celsius\per\minute}.\cite{Chilkoti2002a} Discrete differences of
+temperature and signal were calculated and used to compute the first derivative
+of curves. Maximal points in the first derivative curves were then evaluated as
+the corresponding ${T_t}$ values.
+
+\label{sec:thermo_method}
+Thermodynamic analyses of UV/Vis spectrograms were committed in similar fashion
+to the methods applied by Reiersen on the study of elastin-like peptides of
+varying sequence and length.\cite{Reiersen1998} The free energy of the
+transition was fitted to a macroscopic, reversible, two-state model using the
+observed absorption at \SI{350}{\nm}, according to Equations
+\ref{eq:thermo_gibbs_1} and \ref{eq:thermo_gibbs_2}.
+
+\begin{equation}
+    \label{eq:thermo_gibbs_1}
+    \Delta G_{U \rightarrow F}=-RT\ln K_{a}=
+    \Delta H_{U \rightarrow F}-
+    T \Delta S_{U \rightarrow F}
+\end{equation}
+
+\begin{equation}
+    \label{eq:thermo_gibbs_2}
+    K_{a}=\frac
+    {[\theta]_{\text{obs}}-[\theta]_{\text{U}}}
+    {[\theta]_{\text{F}}-[\theta]_{\text{obs}}}
+\end{equation}
+
+\begin{equation}
+    \label{eq:thermo_gibbs_3}
+    \ln K_{a}=-\frac{\Delta H}{R}\cdot\frac{1}{T}+\frac{\Delta S}{R}
+\end{equation}
+
+where ${\Delta G}$ is the Gibbs free enthalpy, ${R}$ is the ideal gas constant,
+${T}$ is the temperature in Kelvins, ${K_{a}}$ is the equilibrium constant for
+the transition, ${\Delta H}$ is the standard enthalpy of the transition,
+${\Delta S}$ is the standard entropy. ${\theta}$ values correspond to signal
+intensities for the start (${[\theta]_{U}}$) and end (${[\theta]_{F}}$) points
+of the transition as well as the signal intensity as a function of temperature
+(${[\theta]_{\text{obs}}}$).
+% --------------------------
+van't Hoff plots (${\ln K \text{ vs. } 1/T}$ were generated from these
+relations, from which values for ${\Delta H}$ and ${\Delta S}$ were derived by
+linear regression of the plot, fit to Equation \ref{eq:thermo_gibbs_3}.
 
 \subsubsection{Circular dichroism spectroscopy}
 
@@ -894,7 +953,7 @@ CD spectroscopy was carried out on a J-815 CD polarimeter (Jasco) equipped with
 a PTC-423S single position Peltier temperature control system and cuvette
 holder, counter-cooled with an Isotemp 3016S water bath (Fisher Scientific) set
 to \SI{22}{\celsius}. Protein samples were prepared to \SI{4}{\micro\moLar} in
-\SI{10}{\milli\moLar} Gomori buffer, by resuspending lyophilized protein and
+\SI{10}{\milli\moLar} Gomori sodium phosphate buffer, by resuspending lyophilized protein and
 loading into a Helma 218 quartz cuvette (\SI{500}{\uL} capacity, \SI{1}{mm} path
 length). Immediately prior to loading into the spectrometer, samples were
 degassed for \SI{10}{\minute} by sparging samples with nitrogen. Operation and
@@ -905,7 +964,7 @@ samples were heated from \SIrange{10}{65}{\celsius}, at a heating rate of
 \SIrange{250}{190}{\nm} with a \SI{1}{\nm} step size. Wavelength scans were
 collected as the average of 3 consecutive scans, with a preliminary
 equilibration time of \SI{5}{\minute} prior to the first scan. All wavelength
-scans were subtracted from the background of Gomori buffer.
+scans were subtracted from the background of Gomori sodium phosphate buffer.
 
 Mean residue ellipticity, $[\theta]_{\mathrm{mrw}}$ was calculated from
 expression \ref{eq:mre} below:
@@ -948,7 +1007,7 @@ structures.\cite{Sreerama2000b}
 \label{sec:TEM_method}
 
 Prior to transmission electron microscopy (TEM), lyophilized protein samples
-were dissolved in \SI{10}{\milli\moLar} Gomori buffer, pH 8.0 (filtered through
+were dissolved in \SI{10}{\milli\moLar} Gomori sodium phosphate buffer, pH 8.0 (filtered through
 a \SI{0.22}{\um} filter to a final concentration of \SI{0.4}{\mg\per\mL}.
 Samples were either incubated at \SI{4}{\celsius} or \SI{40}{\celsius} for
 \SI{1.5}{\hour} prior to application onto a carbon-coated copper grid. Sample
@@ -1507,7 +1566,7 @@ beyond \SI{1.0}{\AU} observed in the corresponding turbidity data shown in Figur
 \ref{fig:LCST_CEpFF} and \ref{fig:LCST_ECEpFF}, for \emph{p}FF-CE and
 \emph{p}FF-ECE, respectively.
 
-\subsection{Reversibility of Assembly}
+\subsubsection{Reversibility of assembly}
 \label{sec:reversibility}
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.9\textwidth]{f_1_20}
@@ -1573,7 +1632,87 @@ a hysteresis via a similar biophysical phenomenon. That is, the Phe residue that
 is located in the similarly matched motif of poly(GFGVP) may be blocking the
 repenetration of water in the polypeptide backbone upon cooling. 
 % --------------------------
-% Also discuss the and reference the paper on mesophase separation.
+% Also discuss and reference the paper on mesophase separation.
+
+\subsubsection{Thermodynamic analysis}
+\label{sec:thermo_analysis}
+% --------------------------
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_7}
+        \caption{}
+        \label{fig:thermo_ECpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_8}
+        \caption{}
+        \label{fig:thermo_CEpFF}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{f_1_14_9}
+        \caption{}
+        \label{fig:thermo_ECEpFF}
+    \end{subfigure}
+
+    \caption{(a-c) van't Hoff plots for EC, CE, and ECE, respectively,
+        calculated from absorbance values at \SI{350}{\nm} according to a
+        reversible, two-state model. Linear fits, regression expressions, and
+        correlation coefficients for wt and \emph{p}FF data are overlaid on each
+        plot. Black data points correspond to wt group. Red data points
+        correspond to \emph{p}FF group.}
+    \label{fig:thermo}
+\end{figure}
+% -------------------------- 
+Thermodynamic values were calculated for all six thermal transition curves shown
+in Figure \ref{fig:lcst} using the method described in Section
+\ref{sec:thermo_method} and are presented in Figure \ref{fig:thermo}. While the
+transitions were assessed as non-reversible, thus invalidating the thermodynamic
+analysis based on equilibrium conditions, similar analysis has been conducted
+for partially irreversible collagen fibril formations,\cite{Cooper1970} citing
+that the necessary conditions for true thermodynamic equilibrium are that
+precipitation should obey the phase and that the protein solubility should be
+independent on the length of incubation of solution with precipitate (after the
+initial precipitation is complete). In addition, while the overall process may
+be irreversible as per the data presented in Figure \ref{fig:lcst}, the initial
+supramolecular assembly process may be considered reversible involving only
+non-covalent interactions.
+
+Computed thermodynamic properties from the curves in Figure \ref{fig:thermo} are
+tabulated in Table \ref{tab:thermo}. All constructs exhibited positive ${\Delta
+H}$ and ${\Delta S}$, supporting the model of an entropy-driven folding
+transition, and in agreement with precedent findings of elastin-like
+peptides.\cite{Reiersen1998} CD wavelength spectra (Figure \ref{fig:CD_temp_wl})
+indicate that the constructs adopt and maintain more structure (${\beta}$ or
+${\alpha+\beta}$) upon heating in the range of
+supramolecular transitions (${<}$ ca. \SI{45}{\celsius}). Increases in entropy, as
+per Figure \ref{fig:thermo} thus suggest that the transitions may be a
+consequence of hydrophobic interactions, driven by positive entropies of
+(partial) dehydration.
+% -------------------------- 
+%START_TABLE
+%THERMODYNAMIC VALUES TABLE
+\begin{table}
+    \centering
+\begin{tabular}{ lccc }
+  \hline
+  \multicolumn{4}{c}{Calculated Thermodynamic Properties} \\
+  \hline
+  Construct & ${T_t}$ (\si{\celsius}) & ${\Delta H}$ (\si{\kilo\cal\per\mole}) &
+  ${\Delta S}$ (\si{\kilo\cal\per\mole}) \\
+  wt-EC & 24.5 & 38.4 & 0.129 \\
+  wt-CE & 36.5 & 70.3 & 0.226 \\
+  wt-ECE & 33.0 & 24.3 & 0.079 \\
+  \emph{p}FF-EC & 25.0 & 29.4 & 0.098 \\
+  \emph{p}FF-CE & 28.5 & 29.3 & 0.097 \\
+  \emph{p}FF-ECE & 32.0 & 40.2 & 0.133 \\
+  \hline
+\end{tabular}
+\caption{Calculated thermodynamic properties for thermal transitions from UV/Vis
+turbidity data data.} \label{tab:thermo}
+\end{table}
+%END_TABLE
+% -------------------------- 
 
 \subsection{Mechanical Behavior}
 
@@ -1607,38 +1746,68 @@ viscoelastic suspensions up to \SI{10}{\mg\per\mL}, respectively.
 % --------------------------
 Upon fluorination, more depressed concentration-dependent percolation points for
 the protein polymers were observed. While wt-EC was predominantly viscous at
-\SI{2.5}{\mg\per\mL}, \emph{p}FF-EC was viscoelastic at \SI{22}{\celsius} at the same
-concentration and both demonstrating more elastic character at \SI{42}{\celsius}
-at \SI{10}{\mg\per\mL} (Figure \ref{fig:pFF_rheology}A,D
+\SI{2.5}{\mg\per\mL}, \emph{p}FF-EC was viscoelastic at \SI{22}{\celsius} at the
+same concentration and both demonstrating more elastic character at
+\SI{42}{\celsius} at \SI{10}{\mg\per\mL} (Figure \ref{fig:pFF_rheology}A,D
 \ref{fig:wt_rheology}A,D). Both the wt-CE and \emph{p}FF-CE exhibited
 viscous/viscoelastic character at \SI{1.25}{\mg\per\mL} and \SI{2.5}{\mg\per\mL}
 at \SI{22}{\celsius}, however, at \SI{2.5}{\mg\per\mL} and \SI{42}{\celsius},
-\emph{p}FF-CE demonstrated a dominant elastic modulus compared to the viscoelastic
-character of the wt-CE (Figure \ref{fig:pFF_rheology}B,E and Figure
+\emph{p}FF-CE demonstrated a dominant elastic modulus compared to the
+viscoelastic character of the wt-CE (Figure \ref{fig:pFF_rheology}B,E and Figure
 \ref{fig:wt_rheology}B,E). Two types of modifications to the rheology behavior
-are observed from the EC and CE sets of constructs. For \emph{p}FF-EC, a transition
-shift in the required concentration to yield viscoelastic behavior is
-demonstrated, whereas for \emph{p}FF-CE, a rheological shift to elastic behavior was
-observed, which was not obtainable, even at concentrations up to
+are observed from the EC and CE sets of constructs. For \emph{p}FF-EC, a
+transition shift in the required concentration to yield viscoelastic behavior is
+demonstrated, whereas for \emph{p}FF-CE, a rheological shift to elastic behavior
+was observed, which was not obtainable, even at concentrations up to
 \SI{10}{\mg\per\mL} for wt-CE.\cite{Haghpanah2010}
 
-Similar to both diblocks, \emph{p}FF-ECE underwent a transition and rheological shift.
-\emph{p}FF-ECE demonstrated a shift from viscous to viscoelastic at
+Similar to both diblocks, \emph{p}FF-ECE underwent a transition and rheological
+shift.  \emph{p}FF-ECE demonstrated a shift from viscous to viscoelastic at
 \SI{1.25}{\mg\per\mL} (Figure \ref{fig:pFF_rheology}C and Figure
 \ref{fig:wt_rheology}C). Most significantly, \emph{p}FF-ECE at
-\SI{1.25}{\mg\per\mL} exhibited elastic network formation at
-\SI{42}{\celsius}, while the wt-ECE was completely viscous under the same
-concentration and temperature (Figure \ref{fig:pFF_rheology}C and Figure
-\ref{fig:wt_rheology}C).
+\SI{1.25}{\mg\per\mL} exhibited elastic network formation at \SI{42}{\celsius},
+while the wt-ECE was completely viscous under the same concentration and
+temperature (Figure \ref{fig:pFF_rheology}C and Figure \ref{fig:wt_rheology}C).
 
+\label{sec:ECE_explanation}
+% --------------------------
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.47\textwidth}
+        \includegraphics[width=\textwidth]{f_1_25_1}
+        \label{fig:brightfield_ECE_2.5}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.47\textwidth}
+        \includegraphics[width=\textwidth]{f_1_25_2}
+        \label{fig:brightfield_ECE_1.25}
+    \end{subfigure}
+    \caption{Brightfield micrographs of \emph{p}FF-ECE prepared to
+    (a) \SI{2.5}{\mg\per\mL} and (b) \SI{1.25}{\mg\per\mL}, imaged at
+    \SI{42}{\celsius}. (a) indicates the presence of large, macroscopic
+    aggregates, promoting highly heterogeneous sample mixtures. (b) indicates a
+    more homogeneous mixture of smaller assemblies in lesser concentrated
+    samples of \emph{p}FF-ECE.}
+    \label{fig:brightfield_ECE}
+\end{figure}
+% --------------------------
 The suppression of elastic behavior of \emph{p}FF-ECE at \SI{42}{\celsius} for the
 \SI{2.5}{\mg\per\mL} preparation compared to the \SI{1.25}{\mg\per\mL}
 preparation is similar to the gel formation of fibrin clotting networks, which
 form ``fine'' transparent networks that demonstrated more elastic behavior
-compared to that of ``coarse'' opaque networks.\cite{Clark1987} In general, the
-incorporation of \emph{p}FF was observed to facilitate percolation when compared to
-their wild-type counterparts. Moreover, fluorination yielded robust elastic
-network formation for all three protein polymers at elevated temperatures. 
+compared to that of ``coarse'' opaque networks.\cite{Clark1987} Alternatively,
+this behavior can be attributed to multiple concentration-dependent assembly
+modes. This can be verified with bright-field micrographs of \emph{p}FF-ECE at
+\SI{42}{\celsius} prepared to \SI{2.5}{\mg\per\mL} and \SI{1.25}{\mg\per\mL}
+(Figure \ref{fig:brightfield_ECE}), which demonstrates the existence of fewer
+but larger aggregates for the \SI{2.5}{\mg\per\mL} preparation and a denser,
+more homogeneous network for the \SI{1.25}{\mg\per\mL} preparation. This may
+promote a more uniform presentation of fluorescent tracer beads, yielding
+slightly more elastic/viscoelastic measurements. In contrast, the more
+concentrated sample may contain tracer beads in the protein-deficient phase,
+allowing for viscous measurements to be collected. In general, the incorporation
+of \emph{p}FF was observed to facilitate percolation when compared to their
+wild-type counterparts. Moreover, fluorination yielded robust elastic network
+formation for all three protein polymers at elevated temperatures. 
 
 \section{Discussion}
 
@@ -1848,8 +2017,8 @@ relevant to the potential of these polymers to be applied as therapeutic
 delivery agents equipped with MRI detectable \textsuperscript{19}F. The need to
 focus the concentration of \textsuperscript{19}F in the physiological region of
 interest is tantamount to the viable technical applicability of the constructs,
-and is thereby reliant on their ability to assemble into supramolecular assemblies of
-high density.
+and is thereby reliant on their ability to assemble into supramolecular
+assemblies of high density.
 % --------------------------
 
 The sub-\SI{100}{\nm} diameter size distribution of the protein polymer at
