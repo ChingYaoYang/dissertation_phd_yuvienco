@@ -90,8 +90,8 @@ synthetic 3D hydrogels featuring assemblies of four-arm poly(ethylene glycol)
 and collagen mimetic peptides (CMPs).\cite{Stahl2010a} These formulations form
 hydrogels via physical cross-links mediated by thermally reversible triple
 helical assembly of CMPs. Woolfson \latin{et al.} have alternatively developed
-\latin{de novo} basis set sequences of alpha-helical peptides based on precedent
-studies of sequences of alpha-helical coiled-coil
+\latin{de novo} basis set sequences of ${\alpha}$-helical peptides based on precedent
+studies of sequences of ${\alpha}$-helical coiled-coil
 peptides/proteins.\cite{Fletcher2012} This work has demonstrated that heuristics
 can be ordained from natural protein sequences, with which \latin{de novo}
 design and construction is possible.
@@ -144,7 +144,7 @@ coacervates (see Figure \ref{fig:gelation_model}).\cite{Urry1991,Li2002a,Li2001,
     engineering ordered materials from protein polymers. Ultimately, the
 macroscopic ramification of this ordered assembly is the generation of a bulk
 material capable of high physical shearing loads.]
-{Model of silk processing of \latin{B. mori} silk, demonstrating how macroscopic
+{Model of silk processing of \latin{B.mori} silk, demonstrating how macroscopic
 order originates from nanoscopic self-assembly processes. Shown in the figure,
 these silk constructs are composed of a repeating block architecture defining
 regions of hydrophobicity and hydrophilicity. This results in a bottom-up
@@ -163,7 +163,7 @@ crystal material. $\beta$-sheets dominate the ordered features of silk variants,
 giving rise to high packing density and ${\beta}$-crystallinity, which is
 required for mechanical function. These hydrophobic regions vary in sequence
 among the plethora of spider silk variants. For example, the hydrophobic blocks
-of the \latin{Bombyx} fibroins are charaterized by the dipeptide units GA, GS,
+of the \latin{Bombyx} fibroins are characterized by the dipeptide units GA, GS,
 GY, and GV, arranged in GAGAGS sequences, defining a core motif that is
 typically repeated between \SIrange{2}{15}{times}. Interspersed, however, within
 the silk structure are hydrophilic regions to control water
@@ -194,7 +194,34 @@ self-assembling domains as they exist as part of fusion constructs is still
 being probed. 
 
 \subsubsection{Fusion Proteins}
-
+% --------------------------
+\begin{figure}[h!] \centering \includegraphics[width=0.8\textwidth]{f_1_28}
+    \caption[(A) Schematic representation of purification method based on the
+        conjugation of recombinant proteins to elastin-like peptide motifs
+        capable of reversible phase separation from cell lysate supernatant.
+        Method consists of multiple repetitions of thermally-induced phase
+        separation via heating, subsequent centrifugation, and thermally-induced
+        recovery via cooling. (B) Fusion of elastin-like polypeptide to
+        calmodulin, producing a reversible \ch{Ca^2+}-induced self-assembly and
+        phase separation. (C) Intein-elastin-like peptide tag as an
+        auto-cleavable purification tag. (D) \ch{Ca^2+}-induced purification
+        method based on phase separation of recombinant constructs, using a
+    \ch{Ca^2+}-sensitive CyaA repeat-in-toxin domain.]{(A) Schematic
+            representation of purification method based on the conjugation of
+            recombinant proteins to elastin-like peptide motifs capable of
+            reversible phase separation from cell lysate supernatant. Method
+            consists of multiple repetitions of thermally-induced phase
+            separation via heating, subsequent centrifugation, and
+            thermally-induced recovery via cooling.\cite{Meyer2001} (B) Fusion
+            of elastin-like polypeptide to calmodulin, producing a reversible
+            \ch{Ca^2+}-induced self-assembly and phase separation.\cite{Kim2008a}
+            (C) Intein-elastin-like peptide tag as an auto-cleavable
+            purification tag.\cite{Banki2005} (D) \ch{Ca^2+}-induced purification
+            method based on phase separation of recombinant constructs, using a
+            \ch{Ca^2+}-sensitive CyaA repeat-in-toxin domain.\cite{Shur2013}}
+            \label{fig:fusion_examples}
+\end{figure}
+% --------------------------
 While groups have devoted a great body of work to the study of block copolymers
 in order to control structural and mechanical properties,\cite{Rabotyagova2009}
 fusion polymers between functional macromolecules (i.e. enzymes and sole
@@ -202,19 +229,21 @@ binders) and structurally resilient motifs, such as silk, elastin, and
 coiled-coils are just beginning to be developed via these
 techniques.\cite{Kim2008a,Meyer1999,Wheeldon2009} A prime example is the fusion
 of self-assembling proteins to host proteins to aid in the purification of the
-host protein.
+host protein (see Figure \ref{fig:fusion_examples}).
 
-Wood \latin{et al.} have adapted intein-based cleavage host-domains to 
-
-The work by Meyer and Chilkoti pertaining to the fusion of
-elastin-like peptides to host proteins for the high-throughput, rapid
-purification via inverse-temperature cycling, by virtue of the elastin-like
-peptide's ability to self-assemble and become insoluble upon mild
-heating.\cite{Meyer1999} The work by Kim and Chilkoti further investigate the
-effects of the host on the physicochemical properties of the elastin-like
-peptide purification tag, demonstrating that the thermoresponsiveness of the
-elastin-like peptide domain can be modulated via allosteric actuation of the
-host protein.\cite{Kim2008a}
+The work by Meyer and Chilkoti pertaining to the fusion of elastin-like peptides
+to host proteins for the high-throughput, rapid purification via
+inverse-temperature cycling, by virtue of the elastin-like peptide's ability to
+self-assemble and become insoluble upon mild heating.\cite{Meyer1999,Meyer2001}
+The work by Kim and Chilkoti further investigate the effects of the host on the
+physicochemical properties of the elastin-like peptide purification tag,
+demonstrating that the thermoresponsiveness of the elastin-like peptide domain
+can be modulated via allosteric actuation of the host protein.\cite{Kim2008a}
+Wood \latin{et al.} have adapted intein-based cleavage host-domains, previously
+developed as auto-cleavage domains for coupling to affinity purification
+moieties,\cite{Wood1999} to elastin-like peptide-based purification
+methods.\cite{Banki2005} These constructs enable recombinant proteins to be
+cleaved from their purification partner tags.
 
 Banta \latin{et al.} have adapted the unexpected
 outcome of calcium-responsive insolubility amongst concatemers of the C-terminal
@@ -278,9 +307,25 @@ mechanism of LCST has come to be its hydrophobic collapse wherein upon raising
 the temperature of these proteins in water, the more ordered water surrounding
 the hydrophobic moieties becomes less ordered bulk water; this positive entropy
 change is larger in magnitude than the negative entropy change that arises
-because the polypeptide region of the system becomes more
-ordered (Figure \ref{fig:elastin_diagram}).\cite{Urry1993} This theory has further been supported by numerous
-simulations produced by the Daggett Group.\cite{Li2001,Li2003,Li2001a,Li2002a}
+because the polypeptide region of the system becomes more ordered (Figure
+\ref{fig:elastin_diagram}).\cite{Urry1993}
+This theory has been echoed by thermodynamic studies of ELPs of varying length
+and sequence, which indicate both positive changes in enthalpy (${\Delta
+    H^{\circ}}$) and entropy (${\Delta S^{\circ}}$) of the system, concurrent
+    with adoption of more ordered structure upon heating.\cite{Reiersen1998} For
+    various ELPs, which ranged from 1 to 5 repeating motifs (VPGVG), values for
+    ${\Delta H^{\circ}}$ and ${\Delta S^{\circ}}$ reportedly ranged from
+    \SIrange{11.0}{26.0}{\kilo\cal\per\mole} and from
+    \SIrange{0.035}{0.089}{\kilo\cal\per\mole\per\kelvin},
+    respectively.\cite{Reiersen1998} Yamaoka reported thermodynamic properties
+    for (VPGIG)\textsubscript{40}, with approximate enthalpies and entropies of
+    \SI{70}{\kilo\cal\per\mole} and \SI{0.260}{\kilo\cal\per\mole\per\kelvin},
+    respectively.\cite{Yamaoka2003} The conventional theory attributed to these
+    results is that the entropic changes of the system pertain to possible
+    hydrophobic collapse of the biomolecule and exclusion of water into bulk
+    phase water. This theory of entropy-driven assembly has further been
+    supported by numerous simulations produced by the Daggett
+    Group.\cite{Li2001,Li2003,Li2001a,Li2002a} 
 
 \subsubsection{Cartilage oligomeric matrix protein}
 \label{sec:comp}
@@ -353,6 +398,15 @@ the
 \SIrange[scientific-notation=true,retain-unity-mantissa=false]{1e2}{1e-1}{\micro\moLar}
 range.\cite{Haghpanah2010,Guo1998}
 
+In contrast to ELPs, COMPcc demonstrates thermal denaturation, as per
+conventional protein unfolding behavior. While coiled-coils may be used for
+their material properties, having been shown for example to form fiber
+networks,\cite{Apostolovic2010} the intention and focus of this protein design
+is based on binding function. Similar to ELPs, however, the functional benefit
+of the coiled-coil is dependent on self-association of monomers. This is
+stabilized by the strong enthalpic component of the free energy, reported by
+Gunasekar to be \SI{-85.2}{\kilo\cal\per\mole}.\cite{Gunasekar2009}
+
 \subsubsection{Block ELP-COMP Protein Polymers}
 % --------------------------
 \begin{figure}[h!]
@@ -366,7 +420,7 @@ range.\cite{Haghpanah2010,Guo1998}
         \emph{p}FF-CE, and (c) \emph{p}FF-ECE are shown. The five phenylalanine
         residues of each elastin region, depicted in black, are replaced with
         \emph{p}FF under a hypothetical incorporation efficiency of
-        \SI{100}{\percent}. The alpha-helical COMP coiled-coil domain is
+        \SI{100}{\percent}. The ${\alpha}$-helical COMP coiled-coil domain is
         depicted in red. The His-tag domain, defined by six histidine residues,
         is depicted in pink at the N-terminus of each construct.
     }
@@ -378,7 +432,7 @@ their physicochemical properties by Montclare \latin{et
 al.}.\cite{Haghpanah2010,Haghpanah2009} These copolymers were generated as a
 fusion of the aforementioned ELP and COMPcc proteins, with their specific
 primary sequence shown in Figure \ref{fig:pff_proteins}. These protein fusions
-were generated with the intention of benefiting from the coacervation formation
+were generated with the intention of benefiting from the coacervate formation
 of ELP as well as the binding capabilities of COMPcc. In the assessment of the
 block copolymers, it was observed that there existed an unexpected dependence of
 the physicochemical properties of the fusions on their block ordering (EC vs.
@@ -386,8 +440,6 @@ CE) as well as their block number (triblock vs. diblocks), with each of the
 three constructs demonstrating distinct degrees of the expected properties (i.e.
 thermoresponsiveness, binding affinity, extent of ${\alpha}$ and ${\beta}$
 secondary structure).\cite{Haghpanah2010,Haghpanah2009}
-
-
 
 \subsection{Incorporation of non-natural amino acids}
 
@@ -523,7 +575,7 @@ chromosome.]{Terminal pathway
         \latin{E.coli} strain BL21-(DE3) by P1-mediated transduction using a
         donor strain (NK6024) which had been transposed by TN10 at the
         \latin{pheA} region in the bacterial chromosome.  The transposon
-        mutagenesis results in loss of the chorismate mutage-prephenate mutase
+        mutagenesis results in loss of the chorismate mutase-prephenate mutase
         activity via recombination events on the
 chromosome.}\label{fig:chorismate_pathway} \end{figure}
 % --------------------------
@@ -626,12 +678,13 @@ potentially allowing for the tracking of the delivery agent \latin{in vivo}.
 Indeed, \textsuperscript{19}F contrast agents, such as CS-1000 (Celsence, Inc.,
 USA), have been used already to track dendritic cells \latin{in vivo} using MRI
 and MR spectroscopy.\cite{Bonetto2010} These methods, in contrast to iron
-oxide-based contrast agents, and Gd\pch[3]- and Mn\pch[2]-based contrast agents,
-rely on spin density detection modes, which allow for quantitative measurements
-to be made.\cite{Srinivas2010} The challenge lies with obtaining the complete
-incorporation of fluorinated substitutes into a given protein construct and
-ensuring that the physicochemical properties of the protein that makes it an
-ideal delivery agent are not significantly and/or detrimentally altered.
+oxide-based contrast agents, and \ch{Gd^3+}- and \ch{Mn^2+}-based contrast
+agents, rely on spin density detection modes, which allow for quantitative
+measurements to be made.\cite{Srinivas2010} The challenge lies with obtaining
+the complete incorporation of fluorinated substitutes into a given protein
+construct and ensuring that the physicochemical properties of the protein that
+makes it an ideal delivery agent are not significantly and/or detrimentally
+altered.
 
 \subsection{Scope of work}
 
@@ -778,7 +831,7 @@ All solutions used in the extraction and purification of recombinant proteins
 were filtered through \SI{0.22}{\um} sterile filters. In addition, all solutions
 were adjusted to the appropriate \pH with either \SI{37}{\percent} \ch{HCl} or
 \SI{1}{\moLar} \ch{NaOH}. Cell pellets were thawed at \SI{4}{\celsius} and
-immediately subected to an osmotic shock protocol adapted from methods set forth
+immediately subjected to an osmotic shock protocol adapted from methods set forth
 by Berglund \emph{et al}.  for the preparation of cell lysate for immobilized
 metal affinity chromatography (IMAC)
 purification.\cite{Neu1965,Bae2000,Magnusdottir2009} Briefly, cells were gently
@@ -889,9 +942,9 @@ observed absorption at \SI{350}{\nm}, according to Equations
 
 \begin{equation}
     \label{eq:thermo_gibbs_1}
-    \Delta G_{U \rightarrow F}=-RT\ln K_{a}=
-    \Delta H_{U \rightarrow F}-
-    T \Delta S_{U \rightarrow F}
+    \Delta G^{\circ}_{U \rightarrow F}=-RT\ln K_{a}=
+    \Delta H^{\circ}_{U \rightarrow F}-
+    T \Delta S^{\circ}_{U \rightarrow F}
 \end{equation}
 
 \begin{equation}
@@ -903,19 +956,19 @@ observed absorption at \SI{350}{\nm}, according to Equations
 
 \begin{equation}
     \label{eq:thermo_gibbs_3}
-    \ln K_{a}=-\frac{\Delta H}{R}\cdot\frac{1}{T}+\frac{\Delta S}{R}
+    \ln K_{a}=-\frac{\Delta H^{\circ}}{R}\cdot\frac{1}{T}+\frac{\Delta S^{\circ}}{R}
 \end{equation}
 
-where ${\Delta G}$ is the Gibbs free enthalpy, ${R}$ is the ideal gas constant,
+where ${\Delta G^{\circ}}$ is the Gibbs free enthalpy, ${R}$ is the ideal gas constant,
 ${T}$ is the temperature in Kelvins, ${K_{a}}$ is the equilibrium constant for
-the transition, ${\Delta H}$ is the standard enthalpy of the transition,
-${\Delta S}$ is the standard entropy. ${\theta}$ values correspond to signal
+the transition, ${\Delta H^{\circ}}$ is the standard enthalpy of the transition,
+${\Delta S^{\circ}}$ is the standard entropy. ${\theta}$ values correspond to signal
 intensities for the start (${[\theta]_{U}}$) and end (${[\theta]_{F}}$) points
 of the transition as well as the signal intensity as a function of temperature
 (${[\theta]_{\text{obs}}}$).
 % --------------------------
 van't Hoff plots (${\ln K \text{ vs. } 1/T}$ were generated from these
-relations, from which values for ${\Delta H}$ and ${\Delta S}$ were derived by
+relations, from which values for ${\Delta H^{\circ}}$ and ${\Delta S^{\circ}}$ were derived by
 linear regression of the plot, fit to Equation \ref{eq:thermo_gibbs_3}.
 
 \subsubsection{Circular dichroism spectroscopy}
@@ -1012,7 +1065,7 @@ a \SI{0.22}{\um} filter to a final concentration of \SI{0.4}{\mg\per\mL}.
 Samples were either incubated at \SI{4}{\celsius} or \SI{40}{\celsius} for
 \SI{1.5}{\hour} prior to application onto a carbon-coated copper grid. Sample
 grids were glow-discharged for \SI{1}{\minute} prior to applying samples.
-samples were negatively stained, consistent with the adhesion drop method; a
+Samples were negatively stained, consistent with the adhesion drop method; a
 drop of sample was deposited on a carbon film-coated 400-mesh Cu/Rh grid and was
 allowed to dry at room temperature for \SI{5}{\minute}. The grids were then
 stained with 4 drops of \SI{2}{\volper} uranyl acetate solution, pH 3.5. The
@@ -1324,7 +1377,7 @@ observed previously for the incorporation of \emph{p}FF into tGCN5.\cite{Voloshc
 % --------------------------
 %Implications of incomplete incorporation
 
-\subsection{Secondary Structural Anaylsis}
+\subsection{Secondary Structural Analysis}
 CD spectroscopic wavelength scans were obtained for all three fluorinated
 proteins and compared against previously collected spectra for wild-type
 variants of the protein polymers, shown in Figure
@@ -1618,19 +1671,20 @@ and \textsuperscript{2}H NMR.\cite{Schmidt2005,Ma2012b} Rodriguez-Cabello
 produced FTIR spectra for two model elastin-like peptides, AVGVP and GVGVP,
 demonstrating a significant hysteresis in the thermal transitions of the spectra
 corresponding to the \ch{CH3}, amide I, and amide II regions (see Figure
-\ref{fig:lcst_cabello}).  Rodriguez-Cabello puts forth that certain side residues
-can better expose the peptide backbone to water during the changes in structural
-folding in response to temperature, allowing water to act as a softening agent.
-For the case of poly(GVGVP), a relatively substantial amount of water molecules
-remain between the polymer chains, thereby facilitating the smooth reverse
-separation during the backward cooling of the system. Based of the FTIR data
-presented in their studies, this is not the case for poly(AVGVP), for which a
-majority of the amide groups are bound directly together, leaving few water
-molecules in between as well as blocking the penetration of water upon cooling.
-It may be the case that the protein block copolymers EC, CE, and ECE, experience
-a hysteresis via a similar biophysical phenomenon. That is, the Phe residue that
-is located in the similarly matched motif of poly(GFGVP) may be blocking the
-repenetration of water in the polypeptide backbone upon cooling. 
+\ref{fig:lcst_cabello}).\cite{Schmidt2005} Rodriguez-Cabello puts forth that
+certain side residues can better expose the peptide backbone to water during the
+changes in structural folding in response to temperature, allowing water to act
+as a softening agent.  For the case of poly(GVGVP), a relatively substantial
+amount of water molecules remain between the polymer chains, thereby
+facilitating the smooth reverse separation during the backward cooling of the
+system. Based of the FTIR data presented in their studies, this is not the case
+for poly(AVGVP), for which a majority of the amide groups are bound directly
+together, leaving few water molecules in between as well as blocking the
+penetration of water upon cooling.  It may be the case that the protein block
+copolymers EC, CE, and ECE, experience a hysteresis via a similar biophysical
+phenomenon. That is, the Phe residue that is located in the similarly matched
+motif of poly(GFGVP) may be blocking the repenetration of water in the
+polypeptide backbone upon cooling. 
 % --------------------------
 % Also discuss and reference the paper on mesophase separation.
 
@@ -1688,6 +1742,24 @@ ${\alpha+\beta}$) upon heating in the range of supramolecular transitions (${<}$
 ca. \SI{45}{\celsius}). Increases in entropy, as per Figure \ref{fig:thermo}
 thus suggest that the transitions may be a consequence of hydrophobic
 interactions, driven by positive entropies of (partial) dehydration.
+
+Fluorination appears to depress the enthalpy and entropy associated with the
+thermal transitions during the supramolecular assembly for the cases of the two
+diblocks, EC and CE. Interestingly, the entropic components are lowered,
+suggestive of perhaps less water molecules hydrating the protein in its ground
+state. In the case of the ECE triblock, a positive gain is
+observed in ${\Delta H^{\circ}}$ and ${\Delta S^{\circ}}$ upon fluorination,
+suggesting a more entropically-driven assembly, and conventionally achieved with
+generic ELP sequences by lengthening of the sequence.\cite{Reiersen1998} The
+overall increase in properties may be correlated to the significant effects on
+CD spectrograms upon fluorination, which suggest effects on the secondary
+structural transition. Increases in these values are indeed in accordance with
+the distinct progression to a more complete ${\beta}$-turn conformation upon
+heating as is the case with \emph{p}FF-ECE, indicative of a more complete
+expulsion of hydrating water molecules and thus a more entropically-driven
+process. The reasons, however, for this effect remain elusive within the
+confines of the interpretation of these data.
+
 % -------------------------- 
 %START_TABLE
 %THERMODYNAMIC VALUES TABLE
@@ -1697,8 +1769,9 @@ interactions, driven by positive entropies of (partial) dehydration.
   \hline
   \multicolumn{4}{c}{Calculated Thermodynamic Properties} \\
   \hline
-  Construct & ${T_t}$ (\si{\celsius}) & ${\Delta H}$ (\si{\kilo\cal\per\mole}) &
-  ${\Delta S}$ (\si{\kilo\cal\per\mole}) \\
+  Construct & ${T_t}$ (\si{\celsius}) & ${\Delta H^{\circ}}$ (\si{\kilo\cal\per\mole}) &
+  ${\Delta S^{\circ}}$ (\si{\kilo\cal\per\mole\per\kelvin}) \\
+  \hline
   wt-EC & 24.5 & 38.4 & 0.129 \\
   wt-CE & 36.5 & 70.3 & 0.226 \\
   wt-ECE & 33.0 & 24.3 & 0.079 \\
@@ -1822,7 +1895,7 @@ by the transitions from either unstructured to structured as in the case of
 as demonstrated by \emph{p}FF-CE. As the proteins assume more ${\beta}$ conformation
 due to the elastin composition within the constructs, they undergo self-assembly
 into particle aggregates, as also shown in electron micrographs. Indeed, such correlations between CD spectrograms and
-turbidimetry profiles have been presented by groups studying elastin-like
+turbidity profiles have been presented by groups studying elastin-like
 peptides; the differential light scattering of polarized light effectively
 converts a CD signature to a damped optical rotatory dispersion curve. While
 this technique has raised the notion that changes in CD spectra are in fact
@@ -1925,11 +1998,27 @@ sensitive for applications in temperature-actuated targeting and delivery, an
 established application of elastin-based protein
 polymers.\cite{Simnick2007,Chilkoti2002a} Modifications to the transition window
 have been effected in the past by changes in protein concentration and block
-orientation.\cite{Yamaoka2003,Meyer2002} This work exemplifies the potential for
-fluorinated residues to narrow the transition window but not significantly alter
-the ${T_t}$. Furthermore, larger meso-scale assemblies form in the presence of
-fluorinated components, owing to the perhaps fluorophilic assembly that may
-drive the intermolecular interactions between single macromolecules.
+orientation.\cite{Yamaoka2003,Meyer2002} 
+
+\label{sec:thermo_discussion}
+The thermodynamic properties elucidated for the diblocks from the thermal
+transition curves may be explained by possible ``fluorous'' interactions that
+may prematurely segregate water into the bulk phase prior to the assembly
+process. Fewer water molecules immobilized along the polymer in the unfolded
+ground state would result in a less ${\Delta S^{\circ}}$. The necessary enthalpy
+to overcome the cost of liberating water into the bulk phase would also be
+diminished, as is observed in Table \ref{tab:thermo}. This evidence further
+supports the potential for tuning the physicochemical properties of ELP-based
+block copolymers via fluorination by way of inducing ``fluorous'' effects to
+control the thermodynamics of the system. This expulsion of hydration may also
+be taking place intermolecularly, as is suggested by the insignificant effects
+on CD spectrograms upon fluorination.
+
+This overall work exemplifies the potential for fluorinated residues to narrow
+the transition window but not significantly alter the ${T_t}$. Furthermore,
+larger meso-scale assemblies form in the presence of fluorinated components,
+owing to the perhaps fluorophilic assembly that may drive the intermolecular
+interactions between single macromolecules.
 
 \subsection{Applications in Drug Delivery}
 \label{sec:pff_app_drug}
@@ -2064,7 +2153,7 @@ elastin-based delivery vehicles, proving the technical feasibility for further
 studies, test applications \latin{in vitro} and \latin{in vivo}, and bioprocess
 optimization.
 
-\subsection{Bottlenecks of Biosythesis}
+\subsection{Bottlenecks of Biosynthesis}
 
 While the field of protein engineering has offered numerous examples of
 \textsuperscript{19}F-labeled proteins, by way of the incorporation of
@@ -2129,6 +2218,16 @@ COMP domain, and/or the other elements of the block copolymers, will further
 promote these inventions toward \latin{in vitro} and \latin{in vivo}
 applications; the challenge lies with adopting viable small molecule as payload
 candidates.
+
+The irreversibility of the transition should be further characterized with more
+robust biophysical methods, similar to those performed by Rodriguez-Cabello in
+the study of AVGVP and GVGVP peptides.\cite{Schmidt2005} Namely, differential
+scanning calorimetric measurements and FTIR measurements of the protein
+constructs should be conducted. More moderate temperature windows should be
+imposed (closer to the upper bound of thermal transitions reported in this work)
+to evaluate the possible existence of reversible regions of transition. In
+addition, heating/cooling rates should be varied to probe the existence of
+kinetically-driven assembly.
 
 \printbibliography[heading=subbibliography]
 
