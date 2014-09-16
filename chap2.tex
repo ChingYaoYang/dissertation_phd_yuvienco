@@ -1422,7 +1422,7 @@ D\textsubscript{3}.\cite{Gunasekar2009}
         \label{fig:ze_retention_times}
     \end{subfigure} \caption{Zonal elution profile for BMS493 mixed with
     COMPcc (a) Zonal elution profile for COMPcc mixed with BMS493 as a 1:1
-        mixture of \SI{25}{\micro\moLar} prepared in \SI{100}{\milli\moLar}
+        mixture of \SI{50}{\micro\moLar} prepared in \SI{100}{\milli\moLar}
         Gomori phosphate buffer, pH 8.0, \SI{10}{\volper} ethanol. Injections
         were \SI{1}{\mL} challenged onto a \SI{5}{\mL} HiTrap G-25 Desalting column.
         The dashed line curve corresponds to an initial injection at
@@ -1450,12 +1450,19 @@ the elution curve, as charted in Figure \ref{fig:ze_intensity} and
 \ref{fig:ze_retention_times} may indicate the oligomerization of COMPcc over time
 while the sample resides in the injection loop.
 
+\label{sec:ze_premature_assembly}
 The increase in intensity, contrary to presupposition, may not be due to a
 superposition of BMS493 signal, which in itself is comparatively weak in the
 control injections (data not shown), but may rather be due to macroscopic
 assembly, resulting in light scattering within the flow cell detector. This
 would, however, further confirm the conclusion that the protein is
-self-assembling into larger structure over time.
+self-assembling into larger structures over time. Alternatively, the low signal
+at \SI{0}{\hour} may indicate that the protein, in its fiber assembly form,
+suffers adherence effects to the LC system and column media, and that larger
+structures exist in the sample prior to analysis. The increase in intensity over
+time may be the result of residual protein sloughing off the LC components over
+time, approaching an equilibrium of adherence effects between the components and
+COMPcc. 
 
 \subsubsection{COMPcc and BMS493 exist as pentameric macromolecular complexes}
 % --------------------------
@@ -1510,19 +1517,32 @@ demonstrate a decrease in retention time within the column as compared to its
 migration through the same mobile phase in the absence of BMS493. This suggests
 the dominance of distinctly different oligomeric species for the two conditions.
 A shift is observed for the COMPcc+BMS493 complex from a tetrameric species to a
-molecular weight above its expected pentameric state. The peak retention time
-for COMPcc+BMS493 corresponds to approximately \SI{3200}{\Da} above the expected
-pentameric molecular weight of the protein (i.e. ${7297.2 \times 5}$, or
-\SI{36486}{\Da}). If this loss in retention time is indeed attributed to
-sequestered BMS493 molecules, then the additional weight can be assigned to
-approximately 8 molecules of BMS493 for every pentameric complex.
+molecular weight above its expected pentameric state. 
+
+While the peak retention time is slightly higher than that expected for the
+pentameric state (\SI{3200}{\Da}), it is still within \SI{10}{\percent} of the
+total molecular weight, and thus is within an expected degree of error.
+Regardless, the shift in retention times is significant given the
+sample-to-sample error as well as the correlation coefficients of the
+calibration curves.
+%The peak retention time for COMPcc+BMS493 corresponds to approximately
+%\SI{3200}{\Da} above the expected pentameric molecular weight of the protein
+%(i.e. ${7297.2 \times 5}$, or \SI{36486}{\Da}). 
+%If this loss in retention time is indeed attributed to
+%sequestered BMS493 molecules, then the additional weight can be assigned to
+%approximately 8 molecules of BMS493 for every pentameric complex.
+This loss in retention time may be attributed to the induction of
+pentamerization by BMS493. Synergistic effects between protein structure and
+binding for COMPcc have been demonstrated for certain divalent metal ions and
+their effect on COMPcc assembly and resultant binding
+properties.\cite{Gunasekar2012}
 
 While this particular instance of the Hummel-Dreyer method did not yield the
 anticipated results derived from small molecule signal analysis performed at
 \SI{329}{\nm}, its application on a high-resolution size-exclusion column may
 have still provided valuable insight into the propensity of COMPcc to complex to
 BMS493. This high-resolution separation allowed the observation of BMS493
-forming pentameric complexes with 8 molecules of BMS493. Furthermore, no other
+forming pentameric complexes in the presence of BMS493. Furthermore, no other
 oligomeric species were observed for both conditions of the experiments.
 
 \section{Discussion}
@@ -1636,6 +1656,17 @@ the therapeutic effects of BMS493 and potentially other RAR/RXR interfering
 molecules and (2) a deeper understanding of the applicability of coiled-coils to
 small-molecule encapsulation.
 
+The assessment of binding affinities of COMPcc for BMS493 may most likely
+require determination via equilibrium sedimentation experiments using an
+analytical centrifuge. This is particularly the case as UPLC data has
+demonstrated that BMS493 affects the oligomerization state of COMPcc. Thus, in
+order to separate the synergistic effects of oligomerization and binding, which
+would prove difficult via bulk analyses such as differential scanning
+calorimetry or isothermal titration calorimetry, a method that allows separation
+of species based on size and still maintains equilibrium conditions is desired.
+Gunasekar has performed similar experiments on COMPcc
+variants and other coiled-coil forming proteins.\cite{Gunasekar2009,Fletcher2012} 
+
 \subsection{Meso-scale features of COMPcc promote intra-articular delivery
 applications}
 \label{sec:invivo_fate}
@@ -1669,6 +1700,28 @@ ${\beta}$-nerve growth factor, and BSA.\cite{Liang2005,Chew2005,Xu2006a}
 
 \subsection{Future work}
 % --------------------------
+\label{sec:future_work_endotoxin}
+These preliminary results suggest that the COMPcc does not significantly improve
+the therapeutic effects of BMS493. The signal from these experiments suffers,
+however, from potential noise originating from the presence of endotoxins in the
+sample, possibly eliciting similar catabolic gene expression to what is
+observed. While dosage experiments were performed in this study of COMPcc and
+COMPcc that had undergone endotoxin removal procedures, additional control
+samples can improve the confidence of these results. While LPS have been shown
+to induce catabolic gene expression, known standards of LPS may be administered
+to chondrocytes in future studies to gauge actual response from a positive
+control. In addition, purified lysate from non-transformed BL21 (DE3)
+\latin{E.coli} that undergoes endotoxin removal procedures may be used and
+considered as a negative control sample group toward the testing of COMPcc
+alone.
+
+\label{sec:future_work_ATRA_sequestration}
+The possible ATRA sequestration activity of COMPcc, evidenced by the
+down-regulation of hypertrophic gene marker type X collagen may be further
+assess against negative and positive controls. Measurement of type X collagen in
+the presence of a static amount of COMPcc should demonstrate dosage-dependent
+effects with respect to ATRA. 
+
 The COMPcc protein, however, requires significantly more development, focused
 primarily on the binding and release properties at both the molecular-scale and
 mesoscopic scale, via techniques such as size-exclusion chromatography,
