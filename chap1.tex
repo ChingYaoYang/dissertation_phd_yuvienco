@@ -488,6 +488,7 @@ RNA ligase and ATP.\cite{Baldini1988}
     addition of the aminoacylated tRNA to the \latin{in vitro} system.
     \cite{Noren1989}}\label{fig:schultz_schema} \end{figure}
 % --------------------------
+
 With the seminal efforts of the Schultz \latin{et al.}\cite{Noren1989} shortly
 following these earlier bodies of work, it is now possible to redefine the
 genetic code. This work is based on the premise of directing a suppressor tRNA
@@ -513,18 +514,42 @@ aminoacyl-tRNA synthetase biomolecules, respectively, as depicted in Figure
 \ref{fig:orthogonal_incorporation}. The key difference is that the transcription
 and translation steps of the gene of interest is accomplished in an expression
 host, such as \latin{E.coli}, that also expresses the modified tRNA and
-aminoacyl-tRNA synthetase pair. Similarly, Kwon and coworkers have been able to
-reassign one of the degenerate codons (UUU) that correspond to phenylalanine to
-encode for \iupac{2-naphthylalanine}.\cite{Kwon2003}
+aminoacyl-tRNA synthetase pair.
+%This technique has been employed in various contexts, ranging from the study of
+%the structure-function relationship of enzymes and receptors, to the rationale
+%design of proteins with higher activities or structural stabilities.
+
+Another example of site-specific incorporation is based on frameshift
+suppression allowing for the successful \latin{in vivo} translation of
+quadruplet codons. This has been recently accomplished by Chin \latin{et al.} by
+way of synthetically evolving an orthogonal ribosome that efficiently decodes a
+series of quadruplet codons and the amber codon.\cite{Neumann2010,Rackham2005}
+Neumann demonstrated the potential of this approach by creating mutually
+orthogonal aminoacyl-tRNA synthetase/tRNA pairs - specific to UCCU - and
+combining them with an evolved ribosome - riboQ1 - thereby directing the
+incorporation of distinct non-canonical amino acids in response to two new blank
+codons on the orthogonal mRNA.\cite{Neumann2010} This work, in part, resulted
+in the dual incorporation of two non-canonical amino acids -
+\iupac{\para-azido-\L-phenylalanine} and
+\iupac{\N6-[(2-propynyloxy)carbonyl]-\L-lysine} - into a
+recombinant GST-calmodulin protein.
+
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.9\textwidth]{f_1_27}
-    \caption[]{Site-specific incorporation using orthogonal tRNA and synthetase
-        pair specific for the non-natural amino acid.\cite{Yoder2002}}
+    \caption[Site-specific incorporation using orthogonal tRNA and synthetase
+        pair specific for the non-natural amino acid. A completely \latin{in
+        vivo} system, (A) tRNA modification is accomplished via site-directed
+        mutagenesis, and (B) aminoacyl-tRNA synthetase modification via
+        \latin{in vitro} selection. Expression is conventionally carried out in
+        \latin{E.coli}.]{Site-specific incorporation using orthogonal tRNA and synthetase
+        pair specific for the non-natural amino acid. A completely \latin{in
+        vivo} system, (A) tRNA modification is accomplished via site-directed
+        mutagenesis, and (B) aminoacyl-tRNA synthetase modification via
+        \latin{in vitro} selection. Expression is conventionally carried out in
+        \latin{E.coli}.\cite{Yoder2002}}
     \label{fig:orthogonal_incorporation} \end{figure}
 % --------------------------
-This technique has been employed in various contexts, ranging from the study of
-the structure-function relationship of enzymes and receptors, to the rationale
-design of proteins with higher activities or structural stabilities.
+
 %How site-specific incorporation has been used to probe structure-function
 %relationships
 
@@ -537,26 +562,6 @@ design of proteins with higher activities or structural stabilities.
 
 % Include an argument in support of residue-specific incorporation via
 % endogenous tRNA/aminoacyl-tRNA synthetase
-
-Global incorporation of non-natural amino acids is further made possible by the
-particular technique of residue-specific substitution. This technique is
-typically characterized by a stochastic substitution of all amino acids of a
-particular identity within a given sequence. It is made possible by two
-prominent factors: 1) the promiscuity and relaxed specificity of aminoacyl-tRNA
-synthetase endogenous to certain expression hosts, and 2) the existence of
-auxotrophic expression hosts. Tirrell \latin{et al.} have modified \latin{E.
-coli} as auxotrophic strains for Phe as well as Leu residues, allowing for the
-possibility for downstream incorporation efforts, such as the incorporation of
-both \iupac{(2\S,3\R)-4,4,4-trifluorovaline} and
-\iupac{5,5,5-trifluoroisoleucine} into basic leucine zipper, coiled-coil
-peptides derived from GCN4,\cite{Son2006} and the incorporation of monofluorinated Phe
-residues into the histone acetyltransferase protein,
-tGCN5.\cite{Voloshchuk2009} Generation of these auxotrophic strains, however,
-requires a body of work in and of itself.\cite{Yoshikawa1994,Son2006} Figure
-\ref{fig:chorismate_pathway} shows the pathway that was modified by Tirrell
-\latin{et al.} in 1994 to give rise to the Phe auxotroph strain applied in this
-work. The methods for incorporation have since matured and have become more
-widely known.\cite{Hammill2007}.
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.7\textwidth]{f_1_02}
     \caption[Terminal pathway
@@ -579,27 +584,87 @@ chromosome.]{Terminal pathway
         activity via recombination events on the
 chromosome.}\label{fig:chorismate_pathway} \end{figure}
 % --------------------------
+Global incorporation of non-natural amino acids is further made possible by the
+particular technique of residue-specific substitution. This technique is
+typically characterized by a stochastic substitution of all amino acids of a
+particular identity within a given sequence. It is made possible by two
+prominent factors: 1) the promiscuity and relaxed specificity of aminoacyl-tRNA
+synthetase endogenous to certain expression hosts,\cite{Yoder2002} and 2) the
+existence of auxotrophic expression hosts.\cite{Link2003,Link2005} Tirrell \latin{et al.}
+have employed \latin{E.  coli} auxotrophic strains for Met,\cite{Kiick2002}
+Ile,\cite{Wang2003a}
+Val,\cite{Wang2004}
+Phe,\cite{Yoshikawa1994} 
+and Leu residues,\cite{Tang2001a}
+allowing for the possibility for downstream incorporation efforts,
+such as the incorporation of both \iupac{(2\S,3\R)-4,4,4-trifluorovaline} and
+\iupac{5,5,5-trifluoroisoleucine} into basic leucine zipper, coiled-coil
+peptides derived from GCN4.\cite{Son2006} and the incorporation of
+monofluorinated Phe residues into the histone acetyltransferase protein,
+tGCN5 by the Montclare group.\cite{Voloshchuk2009} 
+Generation of these auxotrophic strains, however,
+requires a body of work in and of itself.\cite{Yoshikawa1994,Son2006} Figure
+\ref{fig:chorismate_pathway} shows the pathway that was modified by Tirrell
+\latin{et al.} in 1994 to give rise to the Phe auxotroph strain applied in this
+work. The methods for incorporation have since matured and have become more
+widely known.\cite{Hammill2007}.
+
+% --------------------------
+\begin{figure}[h!] \centering \includegraphics[width=0.7\textwidth]{f_1_29}
+    \caption[\latin{In vivo} usage of the degenerate codons by way of
+    an orthogonal yeast-derived tRNA\textsuperscript{Phe}/phenylalanyl-tRNA
+    synthetase pair. This example by Tirrell \latin{et al.} is for the
+introduction of phenylalanine in response to UUC codons and naphthylalanine in
+response to UUU codons.]{\latin{In vivo} usage of the degenerate codons by way of
+    an orthogonal yeast-derived tRNA\textsuperscript{Phe}/phenylalanyl-tRNA
+    synthetase pair. This example by Tirrell \latin{et al.} is for the
+introduction of phenylalanine in response to UUC codons and naphthylalanine in
+response to UUU codons.\cite{Link2005,Kwon2003}}
+\label{fig:dbl_site_specific_incorporation} \end{figure}
+% --------------------------
+Additional advancement of this technology was
+demonstrated by Kwon and coworkers, who have been able to
+reassign one of the degenerate codons (UUU) that correspond to phenylalanine to
+encode for \iupac{2-naphthylalanine}, thus demonstrating the potential for
+degenerate codon usage (Figure \ref{fig:dbl_site_specific_incorporation}).\cite{Kwon2003} In this work, the orthogonal
+tRNA\textsuperscript{Phe} and phenylalanyl-tRNA synthetase (PheRS) pair was
+raise from yeast analogues in order to suppress compatibility with endogenous
+\latin{E.coli} charging. This vein of method development, utilizing degenerate
+codons, has enabled multi-site-specific incorporation of non-natural amino
+acids.
+
+Applications of this technique have been used in various contexts. In an attempt
+to increase the bioavailability of annexin V, Budisa successfully incorporated
+thiaproline [\iupac{1,3-thiazolidine-4-carboxylic acid}], which belongs to the
+group of pseudo-prolines on oxazolidine and thiazolidine bases, by way of
+residue-specific incorporation using a proline-auxotrophic \latin{E.coli} DSM
+1563.\cite{Budisa1998} Budisa has further applied selective pressure
+incorporation and exploited the non-absolute substrate specificity of
+aminoacyl-tRNA synthetases, exemplified in his work on the incorporation of
+several variants of Trp into a pseudo-wild-type variant of barstar
+protein.\cite{Budisa2002} This work specifically demonstrated the incorporation
+of variants of Trp containing amino and hydroxyl substitutions on its aromatic
+ring system, in an effort to modulate the spectroscopic properties of barstar.
+Honek has devoted efforts toward the incorporation of isostructural trifluoromethionine in
+order to probe the conserved axial methionine from \latin{Pseudomonas
+aeruginosa} azurin, partially defining the blue copper center
+along.\cite{Garner2006} This work was able to derive conclusions regarding the
+dominant influence of residue hydrophobicity on the reduction potential of the
+copper center. This work was preceded by Honek's previous efforts to incorporate
+trifluoromethionine into bacteriophage ${\lambda}$ lysozyme (LaL) in order to
+study its associated ligand-protein interactions via \textsuperscript{19}F
+NMR.\cite{Duewel1997} Upon binding to chitopentaose, LaL undergoes upfield
+shifts in \textsuperscript{19}F resonance peaks, demonstrating the ability to
+evaluate residue-specific sites for their role in ligand binding. The
+incorporation and application of fluorinated amino acids is indeed a growing
+field with various dimensions of engineering benefit, and warrants deeper
+consideration.
+
 \subsection{Fluorinated amino acids}
 \label{sec:fluorinated_amino_acids}
 
 % What's the earliest precedence found for fluorinated amino acids and the
 % motivation behind their synthesis?
-
-Multiple efforts have been attempted to incorporate non-natural amino acids into
-proteins, specifically fluorinated amino
-acids.\cite{Meng2007,Lee2004,Son2006,Li2010a,Woll2006} Interest in the
-incorporation of fluorinated amino acids has been attributed to the
-stabilization effects of fluorination in general, enhancing hydrophobicity of
-fluorocarbons relative to hydrocarbons and the preference for
-fluorocarbon-fluorocarbon
-interaction.\cite{Woll2006,Lee2004,Marsh2009,Jackel2006,Yoder2002} Examples
-include the incorporation of trifluoromethyl phenylalanine by way of a modified
-tRNA-synthetase to ultimately attempt to study \latin{E.coli} proteins via
-\textsuperscript{19}F NMR,\cite{Li2010a,Jackson2007} the incorporation of hexafluoroleucine into
-Buforin and Magainin,\cite{Meng2007} the incorporation of hexafluoroleucine into
-GCN4 coiled-coils,\cite{Lee2004} and the incorporation of
-pentafluoro-phenylalanine\cite{Woll2006} (Figure
-\ref{fig:fluorination_examples}).
 % --------------------------
 \begin{figure}[h!] \centering \includegraphics[width=0.7\textwidth]{f_1_19}
     \caption[Examples of incorporation of fluorinated, non-natural amino acids
@@ -638,7 +703,7 @@ pentafluoro-phenylalanine\cite{Woll2006} (Figure
         peptides, buforin and magainin, resulting in enhanced activity and
         protease stability.\cite{Meng2007}
         % --------------------------
-        (C) Structural stability of GCN4 coiled-coils by way
+        (C) Structural stability of a \latin{de novo} coiled-coil by way
         of incorporation of \iupac{hexafluoro-\L-leucine} into the hydrophobic
         core region, as evidenced by an increase in ${\Delta\Delta
         G}$.\cite{Lee2004}
@@ -650,8 +715,77 @@ pentafluoro-phenylalanine\cite{Woll2006} (Figure
         \label{fig:fluorination_examples}
     \end{figure}
 % --------------------------
-%\subsection{Fluorous effect}
-%For submission in draft 2
+Multiple efforts have been attempted to incorporate non-natural amino acids into
+proteins, specifically fluorinated amino
+acids.\cite{Meng2007,Lee2004,Son2006,Li2010a,Woll2006} Interest in the
+incorporation of fluorinated amino acids has been attributed to the
+stabilization effects of fluorination in general, enhancing hydrophobicity of
+fluorocarbons relative to hydrocarbons and the preference for
+fluorocarbon-fluorocarbon
+interaction.\cite{Woll2006,Lee2004,Marsh2009,Jackel2006,Yoder2002} Fluorinated
+amino acids have also been incorporated for their hypothesized ``fluorous''
+effect. Derived from the low polarizability of the carbon-fluorine
+bond,\cite{Scott1948}, fluorocarbons in general exhibit unusual phase
+segregating properties, exemplified by the segregation of a
+water:hexane:perfluorohexane mixture into three immiscible phases. This behavior
+of demonstrating neither hydrophilic nor lipophilic properties has been termed
+the ``fluorous'' effect.
+
+Examples include the incorporation of trifluoromethyl phenylalanine by way of a
+modified tRNA-synthetase to ultimately study \latin{E.coli} proteins via
+\textsuperscript{19}F NMR,\cite{Li2010a,Jackson2007} the incorporation of
+hexafluoroleucine into Buforin and Magainin,\cite{Meng2007} the incorporation of
+hexafluoroleucine into GCN4 coiled-coils,\cite{Lee2004} and the incorporation of
+pentafluoro-phenylalanine into chicken villin headpiece subdomain\cite{Woll2006}
+(Figure \ref{fig:fluorination_examples}).
+
+Li provides evidence for the successful incorporation of both
+\iupac{3-fluoro-tyrosine} and \iupac{trifluoromethyl-\L-phenylalanine} into
+proteins of various sizes ranging from
+\SIrange{10}{100}{\kilo\Da}.\cite{Li2010b} This work demonstrated
+\textsuperscript{19}F NMR spectra for several proteins including,
+${\alpha}$-synuclein, ubiquitin, calmodulin, histidinol dehydrogenase, and green
+fluorescent protein. While in-cell \textsuperscript{19}F NMR resonances were
+prevalent, they suffered from severe peak broadening. Resolution of peaks,
+however, were resolved when samples were prepared from lysed cell supernatant
+and purified protein.
+
+Fluorinated amino acid incorporation has been hypothesized to stabilize the
+secondary structure of certain peptides. Notable example include, as previously
+stated, the incorporation of hexafluoroleucine into Buforin and Magainin
+peptides, as well as the incorporation of pentafluoro-phenylalanine into chicken
+villin headpiece subdomain (cVHP).\cite{Meng2007,Woll2006} The former example is
+based on the potential for the increased hydrophobic character of the
+fluorinated amino acid to further stabilize the already hydrophobic aliphatic
+residues of the ${\alpha}$-helical peptides as well as the lipophilic character
+of fluorinated amino acid to promote penetration into the phospholipid bilayer
+of cells (Figure \ref{fig:fluorination_examples}B).\cite{Meng2007} Indeed Meng
+reported overall enhancements in antimicrobial activity and protease resistance
+due to incorporation. In the case of the incorporation of
+pentafluoro-phenylalanine into cVHP, Woll demonstrated, via backbone thioester
+exchange methods, that the substitution triple (full) substitution of all Phe
+residues that partially define the non-polar core cluster of the protein is not
+as thermodynamically stable, with a reported free energy of folding (${\Delta
+    G_{\text{fold}}}$) of \SI{-1.1}{\kilo\cal\per\mole}, when compared to a
+    single substitution (${\Delta G_{\text{fold}}}$ =
+    \SI{-2.5}{\kilo\cal\per\mole}) or even the wild-type (${\Delta
+        G_{\text{fold}}}$ = \SI{-1.9}{\kilo\cal\per\mole}).\cite{Woll2006} This
+        work importantly demonstrates that global incorporation of fluorinated
+        amino acids can impose destabilizing forces upon protein conformation.
+
+Similar effects are observed for oligomeric assemblies, as demonstrated in the
+work by Lee, in which a \latin{de novo} anti-parallel tetrameric coiled-coil -
+${\alpha_{4}}$-H/F\textsubscript{2} - underwent global substitution of
+leucine residues, which predominantly define the \emph{a} and \emph{d} heptad
+motif positions, with hexafluoroleucine resulting in an overall ${\Delta \Delta
+    G_{\text{unfold}}}$ of \SI{-2.5}{\kilo\cal\per\mole} or
+    \SI{-0.3}{\kilo\cal\per\mole} per residue.\cite{Lee2004} It was conveyed
+    that this increase in stability
+    was imparted more likely by the hydrophobic effects associated with the
+    incorporation of the fluorinated residue as opposed to any possible fluorous
+    interactions given the predicted effects from the free energy of
+    partitioning of the fluorinated side chain from \iupac{n-heptanol} into
+    water.
 
 In addition to the additional molecular control exemplified by the physical
 properties of fluorinated amino acids and their incorporation in to
